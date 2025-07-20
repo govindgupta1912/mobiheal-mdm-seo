@@ -1,12 +1,18 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import about from "@/assets/about/Cover-Cyber-Security-1-1600x600.jpg"
-import about_animation1 from "@/assets/about/Animation - 1750941799599.json"
-import about_animation2 from "@/assets/about/Animation - 1750942525054.json"
+import about from "../assets/about/Cover-Cyber-Security-1-1600x600.jpg"
+import about_animation1 from "../assets/about/Animation - 1750941799599.json"
+
 import Lottie from "lottie-react";
 export default function AboutUsPage() {
   return (
-    <main className="bg-gradient-to-b from-white via-blue-50 to-white text-gray-800 font-sans overflow-x-hidden">
+    <>
+       <title>About Us</title>
+      <meta
+        name="description"
+        content="            You place your trust in us — and we take that seriously. Our promise is simple: to deliver tailor-made, proactive cybersecurity frameworks that adapt, scale, and outperform expectations.
+"      />
+         <main className="bg-gradient-to-b from-white via-blue-50 to-white text-gray-800 font-sans overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-950 to-blue-800 text-white py-24 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] bg-cover bg-center opacity-10" />
@@ -41,7 +47,7 @@ export default function AboutUsPage() {
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
-            <img src={about} alt="IIT Delhi and DSCI" className=" rounded-xl shadow-lg" />
+            {/* <img src={about} alt="IIT Delhi and DSCI" className=" rounded-xl shadow-lg" /> */}
           </div>
         </div>
       </section>
@@ -80,7 +86,7 @@ export default function AboutUsPage() {
         </div>
                   {/* Lottie Animation */}
                   <div className="md:w-1/2 flex justify-center items-center">
-                    <Lottie animationData={about_animation1} loop={true} className="w-full max-w-md md:max-w-lg h-auto" />
+                    {/* <Lottie animationData={about_animation1} loop={true} className="w-full max-w-md md:max-w-lg h-auto" /> */}
                   </div>
       </section>
 
@@ -123,6 +129,7 @@ export default function AboutUsPage() {
           </p>
         </div>
       </section>
-    </main>
+    </main></>
+ 
   );
 }
