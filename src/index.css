@@ -1,0 +1,110 @@
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 199 98% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-color: #03a9fc;
+    --secondary-color: #0285c7;
+
+    /* Colors */
+    --orange: #f37020;
+    --yellow: #ffde59;
+    --white: #ffffff;
+    --black: #212121;
+    --red: #f44236;
+    --green: #00a81a;
+    --grey: #737373;
+    --grey-variant: #d9d9d9;
+    --bg-gray-lite: #d3d3d373;
+    --bg-white: #ffffff;
+    --input-bg: #f6f6f6;
+    --text-lite-gray: #f6f6f6;
+    --text-gray: #737373;
+
+    /* Shadows */
+    --primary-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+      0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --primary-shadow-hover: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --header-shadow: 0px 3px 6px rgba(31, 31, 31, 0.12);
+    --card-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    --input-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --button-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.2);
+    --image-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+
+    /* Radius */
+    --card-radius: 24px;
+    --button-radius: 36px;
+    --input-radius: 14px;
+
+    /* Fonts */
+    --default-font: "Roboto", "Open Sans", sans-serif;
+    --font-barlow: "Barlow", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: hsl(var(--background, 0 0% 100%));
+    color: hsl(var(--foreground, 0 0% 0%));
+  }
+}
+
+@layer components {
+  .my-gradient {
+    background-image: linear-gradient(to right, #1e40af, #3b82f6, #60a5fa);
+  }
+
+  .bg-gradient {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  }
+
+  .bg-primary {
+    background-color: var(--primary-color) !important;
+  }
+
+  .bg-primary:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .wavy-bg {
+    background-image: repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(3, 169, 252, 0.1) 0px,
+      rgba(3, 169, 252, 0.1) 1px,
+      transparent 1px,
+      transparent 25px
+    );
+    background-size: 200% 200%;
+    animation: moveWaves 20s linear infinite;
+    opacity: 0.4;
+  }
+}
+
+/* Animations */
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes moveWaves {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
