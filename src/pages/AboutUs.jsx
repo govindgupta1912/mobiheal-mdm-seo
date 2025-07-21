@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import about from "../assets/about/Cover-Cyber-Security-1-1600x600.jpg"
 import about_animation1 from "../assets/about/Animation - 1750941799599.json"
@@ -29,10 +29,10 @@ export default function AboutUsPage() {
           <p className="text-lg leading-relaxed text-gray-700">
           Mobisec Technologies is a cutting-edge cybersecurity startup at the forefront of safeguarding the digital landscape. Founded by a visionary leader whose extensive expertise in cybersecurity has shaped the very core of our mission. With a rich background spanning more than two decades, our founder has been at the forefront of the ever-evolving cybersecurity landscape, navigating through challenges, and anticipating the needs of the digital era.
         </p>
-         {/* Lottie Animation */}
                   {/* <div className="md:w-1/2 flex justify-center items-center">
                     <Lottie animationData={about_animation2} loop={true} className="w-full max-w-md md:max-w-lg h-auto" />
                   </div> */}
+       
         </div>
        
       </section>
@@ -47,7 +47,11 @@ export default function AboutUsPage() {
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
-            {/* <img src={about} alt="IIT Delhi and DSCI" className=" rounded-xl shadow-lg" /> */}
+            <Suspense>
+
+            <img src={about} alt="IIT Delhi and DSCI" className=" rounded-xl shadow-lg" />
+
+            </Suspense>
           </div>
         </div>
       </section>
@@ -86,7 +90,10 @@ export default function AboutUsPage() {
         </div>
                   {/* Lottie Animation */}
                   <div className="md:w-1/2 flex justify-center items-center">
-                    {/* <Lottie animationData={about_animation1} loop={true} className="w-full max-w-md md:max-w-lg h-auto" /> */}
+                  <Suspense>
+                                        <Lottie animationData={about_animation1} loop={true} className="w-full max-w-md md:max-w-lg h-auto" /> 
+
+                  </Suspense>
                   </div>
       </section>
 
