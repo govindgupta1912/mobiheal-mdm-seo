@@ -6,6 +6,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 
 const BlogBody = ({ blog }) => (
   <motion.article
@@ -20,12 +21,13 @@ const BlogBody = ({ blog }) => (
     </p>
 
     {/* Feature Image */}
+    <Suspense>
     <img
       src={blog.featureImage}
       alt="Feature"
       className="rounded-3xl w-full object-cover shadow-xl my-8"
     />
-
+    </Suspense>
     {/* Sections */}
     {blog.sections.map((sec, i) => (
       <section key={i} className="mb-14">

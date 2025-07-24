@@ -1,11 +1,27 @@
-import { renderToString } from 'react-dom/server'
-import App from './App'
-import { StaticRouter } from 'react-router'
- 
-export async function render(url) {
- return renderToString(
-    <StaticRouter location={url}>
-      <App />
-    </StaticRouter>,
-  )
+
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { StaticRouter } from 'react-router';
+import { HelmetProvider } from 'react-helmet-async';
+import App from './App';
+
+export function render(url) {
+  const helmetContext = {};
+
+  const appHtml = renderToString(
+    <HelmetProvider context={helmetContext}>
+      <StaticRouter location={url}>
+        <App />
+      </StaticRouter>
+    </HelmetProvider>
+  );
+
+  return {
+    appHtml,
+    helmet: helmetContext.helmet,
+  };
 }
+
+
+
+

@@ -1,26 +1,38 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-import express from 'express'
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import express from 'express';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 async function createServer() {
-   const app = express();
-  
-    const template = fs.readFileSync(path.resolve(__dirname, './dist/client/index.html'), 'utf-8');
-    const { render } = await import('./dist/server/entry-server.js');
-  
-  
-    app.use('/assets', express.static(path.resolve(__dirname, './dist/client/assets')));
-  
-    app.use('*all', async (req, res) => {
-      const appHtml = await render(req.originalUrl);
-      const html = template.replace('<!--ssr-outlet-->', appHtml);
-      res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
-    });
+  const app = express();
 
-  app.listen(5173)
+  const template = fs.readFileSync(
+    path.resolve(__dirname, './dist/client/index.html'),
+    'utf-8'
+  );
+  const { render } = await import('./dist/server/entry-server.js');
+
+  app.use('/assets', express.static(path.resolve(__dirname, './dist/client/assets')));
+
+  app.use('*all', async (req, res) => {
+    // Get both rendered HTML and helmet info
+    const { appHtml, helmet } = await render(req.originalUrl);
+
+    // Inject rendered app and helmet tags into the template
+    const html = template
+      .replace('<!--ssr-outlet-->', appHtml)
+      .replace('${helmet.title.toString()}', helmet.title.toString())
+      .replace('${helmet.meta.toString()}', helmet.meta.toString())
+      .replace('${helmet.link.toString()}', helmet.link.toString());
+
+    res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+  });
+
+  app.listen(5173, () => {
+    console.log('Server running at http://localhost:5173');
+  });
 }
 
-createServer()
+createServer();

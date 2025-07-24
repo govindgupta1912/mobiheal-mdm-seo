@@ -1,5 +1,6 @@
 import { FaCalendarAlt, FaClock, FaArrowRight } from 'react-icons/fa';
-import { useState, useRef } from 'react';
+import { useState, useRef, Suspense } from 'react';
+import { Link } from 'react-router';
 
 const LatestBlogCarousel = ({ blogs }) => {
   const scrollContainerRef = useRef(null);
@@ -67,11 +68,13 @@ const LatestBlogCarousel = ({ blogs }) => {
               className="flex-none w-[380px] bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col"
             >
               <div className="relative h-48">
-                <img
-                  src={blog.coverImage}
-                  alt={blog.title}
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <img
+                    src={blog.coverImage}
+                    alt={blog.title}
+                    className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </Suspense>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-4 text-white/90 text-sm">
@@ -96,13 +99,13 @@ const LatestBlogCarousel = ({ blogs }) => {
                 </p> */}
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                   <p className="text-sm text-gray-500">By {blog.author}</p>
-                  <a
-                    href={`/blog/${blog.id}`}
+                  <Link
+                    to={`/blog/${blog.id}`}
                     className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-1"
                   >
                     Read More
                     <FaArrowRight className="text-xs" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>

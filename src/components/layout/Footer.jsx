@@ -130,7 +130,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/features#data-encryption"
+                  to="/features#data-encryption"
                   className="hover:text-white"
                 >
                   Data Encryption
@@ -138,7 +138,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/features#work-profile"
+                  to="/features#work-profile"
                   className="hover:text-white"
                 >
                   Work Profile Container
@@ -146,20 +146,20 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/features#remote-management"
+                  to="/features#remote-management"
                   className="hover:text-white"
                 >
                   Remote Management
                 </Link>
               </li>
               <li>
-                <Link href="/features#kiosk-mode" className="hover:text-white">
+                <Link to="/features#kiosk-mode" className="hover:text-white">
                   Kiosk Mode
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/features#app-management"
+                  to="/features#app-management"
                   className="hover:text-white"
                 >
                   App Management
@@ -205,22 +205,22 @@ const Footer = () => {
             <h4 className="text-white font-semibold text-lg mb-4">Resources</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/blog" className="hover:text-white">
+                <Link to="/blog" className="hover:text-white">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="hover:text-white">
+                <Link to="/case-studies" className="hover:text-white">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/whitepapers" className="hover:text-white">
+                <Link to="/whitepapers" className="hover:text-white">
                   Whitepapers
                 </Link>
               </li>
               <li>
-                <Link href="/owasp-mobile" className="hover:text-white">
+                <Link to="/owasp-mobile" className="hover:text-white">
                   OWASP Mobile Top 10
                 </Link>
               </li>
@@ -270,15 +270,15 @@ const Footer = () => {
               Privacy Policy
             </Link>
            
-            <Link href="terms-services" className="hover:text-white">
+            <Link to="terms-services" className="hover:text-white">
               Terms of Service
             </Link>
-            <Link href="/cookies-policy" className="hover:text-white">
+            <Link to="/cookies-policy" className="hover:text-white">
               Cookie Policy
             </Link>
-            <a href="/acceptable-policy" className="hover:text-white">
-             Acceptable Use Policy
-            </a>
+            <Link to="/acceptable-policy" className="hover:text-white">
+              Acceptable Use Policy
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import {
   Sheet,
@@ -15,15 +15,17 @@ import {
 import { Menu, ChevronDown } from "lucide-react";
 
 const Header = () => {
-let location = ""
+  const location = useLocation().pathname;
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               {/* Add your logo or text here */}
+              <span className="font-bold text-lg">MobiHeal</span>
             </Link>
           </div>
 
@@ -55,10 +57,10 @@ let location = ""
 };
 
 const DesktopNavigation = ({ currentPath }) => {
-  const {navigate} = useNavigate()
+  const navigate = useNavigate();
+
   return (
     <>
-      {/* Features */}
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
           <span>Features</span>
@@ -83,7 +85,6 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      {/* Use Cases */}
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
           <span>Use Cases</span>
@@ -102,8 +103,7 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      {/* Other Links */}
-      <Link href="/pricing" className={`text-neutral-700 hover:text-primary ${currentPath === "/pricing" ? "text-primary" : ""}`}>
+      <Link to="/pricing" className={`text-neutral-700 hover:text-primary ${currentPath === "/pricing" ? "text-primary" : ""}`}>
         Pricing
       </Link>
 
@@ -128,7 +128,7 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Link href="/faq" className={`text-neutral-700 hover:text-primary ${currentPath === "/faq" ? "text-primary" : ""}`}>
+      <Link to="/faq" className={`text-neutral-700 hover:text-primary ${currentPath === "/faq" ? "text-primary" : ""}`}>
         FAQs
       </Link>
 
@@ -147,7 +147,7 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Link href="/contact" className={`text-neutral-700 hover:text-primary ${currentPath === "/contact" ? "text-primary" : ""}`}>
+      <Link to="/contact" className={`text-neutral-700 hover:text-primary ${currentPath === "/contact" ? "text-primary" : ""}`}>
         Contact
       </Link>
     </>
@@ -155,7 +155,7 @@ const DesktopNavigation = ({ currentPath }) => {
 };
 
 const MobileNavigation = ({ currentPath }) => {
-  const {navigate} = useNavigate()
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   const handleNavigate = (path) => {
@@ -179,9 +179,13 @@ const MobileNavigation = ({ currentPath }) => {
               { name: "Features", path: "/features" },
               { name: "Use Cases", path: "/use-cases" },
               { name: "Pricing", path: "/pricing" },
-              { name: "Resources", path: "/resources" },
+              { name: "Blog", path: "/blog" },
+              { name: "Case Studies", path: "/case-studies" },
+              { name: "Whitepapers", path: "/whitepapers" },
+              { name: "OWASP Mobile Top 10", path: "/owasp-mobile" },
               { name: "FAQs", path: "/faq" },
               { name: "Partners", path: "/partners" },
+              { name: "Testimonials", path: "/testimonials" },
               { name: "Contact", path: "/contact" },
             ].map((item) => (
               <button
@@ -197,7 +201,9 @@ const MobileNavigation = ({ currentPath }) => {
               <Button variant="outline" className="w-full">
                 Sign In
               </Button>
-              <Button className="w-full">Request Demo</Button>
+              <a href="https://calendly.com/mobiheal-demo/booking" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full">Request Demo</Button>
+              </a>
             </div>
           </nav>
         </SheetContent>

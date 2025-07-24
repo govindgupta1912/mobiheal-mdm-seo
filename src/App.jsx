@@ -4,33 +4,55 @@ import { QueryClientProvider } from "@tanstack/react-query";
 
 import { queryClient } from "./lib/queryClient";
 import Blog from "./pages/Blog";
-import Layout from "./components/layout/Layout";
 import AboutUs from "./pages/AboutUs";
+import Pricing from "./pages/Pricing";
+import Layout from "./components/layout/Layout";
+import BlogDetailPage from "./pages/BlogDetailPage";
+import CaseStudies from "./pages/CaseStudies";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
+import Whitepapers from "./pages/whitepapers/Whitepapers";
+import Features from "./pages/Features";
+import UseCases from "./pages/UseCases";
+import Resources from "./pages/Resources";
+import Home from "./pages/Home";
+import FAQ from "./pages/FAQ";
+import Partners from "./pages/Partners";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
+import OwaspMobile from "./pages/OwaspMobile";
 
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Blog />} />
-            <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/features" element={<Features />} />
 
-      {/* <Route path="/features" element={<Features />} />
+      
       <Route path="/use-cases" element={<UseCases />} />
-      <Route path="/pricing" element={<Pricing />} />
-      <Route path="/resources" element={<Resources />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/blogs/category/:category" element={<Blog />} />
+      <Route path="/pricing" element={<Pricing/>} />
+       <Route path="/blog" element={<Blog />} />
+             <Route path="/blogs/category/:category" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogDetailPage />} />
       <Route path="/case-studies" element={<CaseStudies />} />
-      <Route path="/case-studies/category/:category" element={<CaseStudies />} />
-      <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+            <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+             <Route path="/case-studies/category/:category" element={<CaseStudies />} />
       <Route path="/whitepapers" element={<Whitepapers />} />
       <Route path="/whitepapers/category/:category" element={<Whitepapers />} />
-      <Route path="/whitepapers/:slug" element={<WhitepaperDetailPage />} />
-      <Route path="/owasp-mobile" element={<OwaspMobile />} />
-      <Route path="/faq" element={<FAQ />} />
-      <Route path="/partners" element={<Partners />} />
+      <Route path="/resources" element={<Resources />} />
+       <Route path="/faq" element={<FAQ />} />
+        <Route path="/partners" element={<Partners />} />
       <Route path="/testimonials" element={<Testimonials />} />
-      <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+         <Route path="/owasp-mobile" element={<OwaspMobile />} />
+
+
+      {/* 
+     
+                 <Route path="/whitepapers/:slug" element={<WhitepaperDetailPage />} />
+
+     
+     
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookies-policy" element={<CookiesPolicy />} />
       <Route path="/terms-services" element={<TermsOfService />} />
@@ -45,9 +67,10 @@ function App() {
 
     <QueryClientProvider client={queryClient}>
       {/* <ScrollToTop /> */}
-      <Layout>
+       <Layout>
         <Router />
-      </Layout>
+        </Layout>
+      
       {/* <Toaster /> */}
     </QueryClientProvider>
     

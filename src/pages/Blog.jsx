@@ -8,6 +8,7 @@ import {
   TabsList,
   TabsTrigger,
 } from '../components/ui/tabs';
+import { Helmet } from 'react-helmet-async';
 
 const BlogCategories = [
   { name: 'All', value: 'all' },
@@ -44,12 +45,17 @@ const Blog = () => {
 
   return (
     <>
-      <title>Mobile Device Management Blog</title>
-      <meta
-        name="description"
-        content="
-Insights, trends, and best practices in mobile device management and security."
-      />
+      <Helmet>
+  <title>MobiHeal Insights Blog | Mobile Security Trends & How-Tos</title>
+  <meta
+    name="description"
+    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+  />
+  <meta
+    name="keywords"
+    content="MDM blog, mobile security trends, zero trust, Android Enterprise blog, device management tips, threat landscape"
+  />
+</Helmet>
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

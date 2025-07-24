@@ -1,11 +1,12 @@
-import { useParams } from "wouter";
+import { useParams } from "react-router-dom";
 import { blogs } from "../../src/components/data/blogs";
 import BlogHero from "../components/blog/BlogHero";
 import BlogBody from "../components/blog/BlogBody";
 import LatestBlogCarousel from "../components/blog/LatestBlogCarousel";
 import NewsletterCTA from "../components/blog/NewsletterCTA";
 import SidebarBlogList from "../components/blog/SidebarBlogList";
-import BlogSEO from "@/components/common/BlogSEO";
+import BlogSEO from "../components/common/BlogSEO";
+ //import BlogSEO from "@/components/common/BlogSEO";
 
 const BlogDetailPage = () => {
   const { slug } = useParams();
@@ -21,11 +22,17 @@ const BlogDetailPage = () => {
 
   return (
     <div className="bg-white text-gray-800 font-sans">
-       <BlogSEO
-      title={`${blog.title} | MobiHeal MDM`}
-      description={blog.introduction}
-      // internalLinks={blog.seoRecommendations?.internalLinks}
-    />
+      {/* <BlogSEO
+        title={`${blog.title} | MobiHeal MDM`}
+        description={blog.introduction}
+        // internalLinks={blog.seoRecommendations?.internalLinks}
+      /> */}
+
+       <title>{blog.title} | MobiHeal MDM</title>
+      <meta
+        name="description"
+        content={blog.introduction}
+      />
       <BlogHero blog={blog} />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8 mt-8 px-4 lg:px-0">
         {/* Main Blog Body */}

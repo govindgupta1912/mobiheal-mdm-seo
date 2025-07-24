@@ -8,7 +8,7 @@ const BlogPostCard = ({
   href,
 }) => {
   return (
-    <Link href={href}>
+    <Link to={href}>
       <a className="group block bg-white rounded-lg overflow-hidden h-52 shadow-lg hover:shadow-xl transition-shadow ease-in-out">
         <div className="aspect-w-16 aspect-h-9 bg-neutral-200">
           <div

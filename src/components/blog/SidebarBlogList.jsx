@@ -1,4 +1,5 @@
-import { Link } from "wouter";
+import { Suspense } from "react";
+import { Link } from "react-router-dom";
 
 const SidebarBlogList = ({ blogs, activeBlogId }) => {
   return (
@@ -13,14 +14,16 @@ const SidebarBlogList = ({ blogs, activeBlogId }) => {
           .map((b) => (
             <Link
               key={b.id}
-              href={`/blog/${b.id}`}
+              to={`/blog/${b.id}`}
               className="block bg-white shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-200 overflow-hidden"
             >
+              <Suspense>
               <img
                 src={b.featureImage}
                 alt={b.title}
                 className="w-full h-36 object-cover"
               />
+              </Suspense>
               <div className="p-4">
                 <h4 className="text-sm font-semibold text-gray-800 group-hover:text-blue-600 line-clamp-2">
                   {b.title}

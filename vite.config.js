@@ -19,6 +19,11 @@ export default defineConfig({
     themePlugin(),
     
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
   // root: path.resolve(__dirname, "client"),
   build: {
     outDir: path.resolve(__dirname, 'dist/client'),
