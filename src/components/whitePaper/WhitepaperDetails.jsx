@@ -14,8 +14,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { whitepaperData } from "@/lib/data";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import BlogSEO from "../common/BlogSEO";
+import { Helmet } from "react-helmet-async";
 
 const formSchema = z.object({
   firstName: z.string().min(1, "Required"),
@@ -86,7 +87,10 @@ const WhitepaperDetails = ({
 
   return (
     <>
-      <BlogSEO title={seoTitle} description={seoDescription} />
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+      </Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-gradient text-white py-12 px-4 sm:py-10 sm:px-6 overflow-hidden">
@@ -128,11 +132,13 @@ const WhitepaperDetails = ({
           </div>
 
           <div className="w-full max-w-sm sm:max-w-md flex justify-center">
+           <Suspense>
             <img
               src={heroImage}
               alt="Whitepaper Hero"
               className="rounded-2xl shadow-xl object-cover aspect-[4/3] w-full border-4 border-white/20 max-h-[300px] sm:max-h-[420px]"
             />
+            </Suspense>
           </div>
         </div>
       </section>

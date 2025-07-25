@@ -4,6 +4,7 @@ import { DownloadIcon, FileTextIcon } from "lucide-react";
 import { whitepapers } from "@/lib/data";
 import { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Helmet } from "react-helmet-async";
 
 const categories = [
   { label: "All Topics", value: "all" },
@@ -42,6 +43,7 @@ const Whitepapers = () => {
 
   return (
     <>
+    <Helmet>
       <title>MobiHeal Whitepapers | Security & Compliance Deep Dives</title>
       <meta
         name="description"
@@ -51,6 +53,7 @@ const Whitepapers = () => {
     name="keywords"
     content="mobile security whitepaper, CIS benchmark, zero trust mobility, Android Enterprise security, patch management, compliance"
   />
+  </Helmet>
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import {
@@ -13,6 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "../../components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
+import logo from "../../assets/mobiheal_logo.svg"; // Adjust the path as necessary
 
 const Header = () => {
   const location = useLocation().pathname;
@@ -22,10 +23,16 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
+
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              {/* Add your logo or text here */}
-              <span className="font-bold text-lg">MobiHeal</span>
+              <Suspense>
+                <img
+                  src={logo}
+                  alt="MobiHeal Logo"
+                  className="ml-2 h-8 w-auto"
+                />
+              </Suspense>
             </Link>
           </div>
 

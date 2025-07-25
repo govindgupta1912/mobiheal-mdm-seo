@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
-import { blogs } from "../../src/components/data/blogs";
+import { blogs } from "../components/data/blogs";
 import BlogHero from "../components/blog/BlogHero";
 import BlogBody from "../components/blog/BlogBody";
 import LatestBlogCarousel from "../components/blog/LatestBlogCarousel";
 import NewsletterCTA from "../components/blog/NewsletterCTA";
 import SidebarBlogList from "../components/blog/SidebarBlogList";
 import BlogSEO from "../components/common/BlogSEO";
+import { Helmet } from "react-helmet-async";
  //import BlogSEO from "@/components/common/BlogSEO";
 
 const BlogDetailPage = () => {
@@ -27,12 +28,13 @@ const BlogDetailPage = () => {
         description={blog.introduction}
         // internalLinks={blog.seoRecommendations?.internalLinks}
       /> */}
-
-       <title>{blog.title} | MobiHeal MDM</title>
-      <meta
-        name="description"
-        content={blog.introduction}
-      />
+       <Helmet>
+         <title>{blog.title} | MobiHeal MDM</title>
+         <meta
+           name="description"
+           content={blog.introduction}
+         />
+       </Helmet>
       <BlogHero blog={blog} />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8 mt-8 px-4 lg:px-0">
         {/* Main Blog Body */}

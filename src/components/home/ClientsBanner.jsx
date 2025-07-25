@@ -1,4 +1,3 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import slide1  from "../../assets/ClinetImages/clients-11.png";
 import slide2  from "../../assets/ClinetImages/clients-5.png";
 import slide3  from "../../assets/ClinetImages/clients-1.png";

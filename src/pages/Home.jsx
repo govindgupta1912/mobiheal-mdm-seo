@@ -9,6 +9,7 @@ import ResourcesSection from "../components/home/ResourcesSection";
 import UseCasesSection from "../components/home/UsesCasesSection";
 import FAQSection from "../components/home/FAQSection";
 import ContactSection from "../components/home/ContactSection";
+import ClientsBanner from "../components/home/ClientsBanner";
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
   />
 </Helmet>
       <Hero className="my-8 py-12 px-4 md:px-8 bg-white shadow-sm rounded-2xl border border-gray-100" />
-      {/* <ClientsBanner /> */}
+      <ClientsBanner/>
       <FeaturesSection />
       <UseCasesSection />
      <PricingSection />
