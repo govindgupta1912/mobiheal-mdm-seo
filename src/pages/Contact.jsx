@@ -48,7 +48,7 @@ const Contact = () => {
               <Phone className="h-5 w-5 mt-1 mr-4 text-primary" />
               <div>
                 <h3 className="font-medium text-neutral-800">Phone</h3>
-                <p className="text-neutral-600">Support: +91 11 6926 8029</p>
+                <p className="text-neutral-600"> +91 11 6926 8029</p>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ const Contact = () => {
               <Mail className="h-5 w-5 mt-1 mr-4 text-primary" />
               <div>
                 <h3 className="font-medium text-neutral-800">Email</h3>
-                <p className="text-neutral-600">Support: support@mobiheal.in</p>
+                <p className="text-neutral-600"> support@mobiheal.in</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-neutral-800">Business Hours</h3>
                 <p className="text-neutral-600">
-                  Mon - Fri: 9:00 AM - 6:00 PM EST
+                  Mon - Fri: 9:00 AM - 6:00 PM IST
                   <br />
                   24/7 Support for Professional Plan customers
                 </p>

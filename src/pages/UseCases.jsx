@@ -3,23 +3,25 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import byod from "../assets/useCases/kiosk_mode_720.jpg";
-import corporate from "../assets/useCases/kiosk_mode_720.jpg";
-import kiosk from "../assets/useCases/kiosk_mode_720.jpg";
 import { Helmet } from "react-helmet-async";
+
+// ✅ Use different images for each use case
+import kiosk from "@/assets/useCases/kiosk_mode_720.jpg";
+import corporate from "@/assets/useCases/corporate_owned_720.jpg";
+import byod from "@/assets/useCases/byod_720.jpg";
 
 const UseCases = () => {
   const [activeTab, setActiveTab] = useState("kiosk");
 
   useEffect(() => {
-    function onHashChange() {
+    const onHashChange = () => {
       const hash = window.location.hash.replace("#", "");
       if (["kiosk", "corporate", "byod"].includes(hash)) {
         setActiveTab(hash);
       }
-    }
+    };
 
-    onHashChange(); // initial
+    onHashChange();
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
@@ -94,29 +96,26 @@ const UseCases = () => {
     }
   };
 
-  const activeCase = useCases[activeTab];
-
   return (
     <>
-     <Helmet>
-  <title>MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility</title>
-  <meta
-    name="description"
-    content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
-  />
-  <meta
-    name="keywords"
-    content="MDM use cases, BFSI security, defence mobility, healthcare MDM, rugged device management, logistics, retail kiosk, education tablets"
-  />
-</Helmet>
+      <Helmet>
+        <title>MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility</title>
+        <meta
+          name="description"
+          content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
+        />
+        <meta
+          name="keywords"
+          content="MDM use cases, BFSI security, defence mobility, healthcare MDM, rugged device management, logistics, retail kiosk, education tablets"
+        />
+      </Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">MDM Use Cases</h1>
-            <p className="text-lg md:text-xl mb-8 text-blue-100">
-              Our mobile device management solution adapts to multiple deployment scenarios across various industries.
-            </p>
-          </div>
+        <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">MDM Use Cases</h1>
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            Our mobile device management solution adapts to multiple deployment scenarios across various industries.
+          </p>
         </div>
       </section>
 
@@ -141,12 +140,12 @@ const UseCases = () => {
               const useCase = useCases[tab];
               return (
                 <TabsContent key={tab} value={tab} className="mt-0 animate-fade-in">
-                  <div className="flex flex-col md:flex-row items-start gap-12">
+                  <div className="flex flex-col md:flex-row gap-12 items-start">
                     <div className="md:w-1/2">
-                      <h2 className="text-3xl font-bold mb-6 text-neutral-800">{useCase.title}</h2>
-                      <p className="text-neutral-600 mb-8 text-lg">{useCase.description}</p>
+                      <h2 className="text-3xl font-bold text-neutral-800 mb-6">{useCase.title}</h2>
+                      <p className="text-lg text-neutral-600 mb-8">{useCase.description}</p>
 
-                      <h3 className="text-xl font-semibold mb-4 text-neutral-800">Key Features</h3>
+                      <h3 className="text-xl font-semibold text-neutral-800 mb-4">Key Features</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
                         {useCase.features.map((feature, index) => (
                           <div key={index} className="flex items-start">
@@ -156,12 +155,12 @@ const UseCases = () => {
                         ))}
                       </div>
 
-                      <h3 className="text-xl font-semibold mb-4 text-neutral-800">Target Industries</h3>
+                      <h3 className="text-xl font-semibold text-neutral-800 mb-4">Target Industries</h3>
                       <div className="space-y-4 mb-8">
                         {useCase.industries.map((industry, index) => (
-                          <div key={index} className="bg-white rounded-lg p-2 border border-neutral-100">
+                          <div key={index} className="bg-white p-2 border border-neutral-100 rounded-lg">
                             <h4 className="font-medium text-neutral-800">{industry.name}</h4>
-                            <p className="text-neutral-600 text-sm">{industry.description}</p>
+                            <p className="text-sm text-neutral-600">{industry.description}</p>
                           </div>
                         ))}
                       </div>
@@ -172,23 +171,24 @@ const UseCases = () => {
                     </div>
 
                     <div className="md:w-1/2 mt-8 md:mt-0">
-                    <Suspense>
-                      <div
-                        className="rounded-lg shadow-lg overflow-hidden w-full"
-                        style={{
-                          height: "450px",
-                          backgroundImage: `url('${useCase.image}')`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center"
-                        }}
-                      />
-                 </Suspense>
+                      <Suspense>
+                        <div
+                          className="rounded-lg shadow-lg w-full overflow-hidden"
+                          style={{
+                            height: "450px",
+                            backgroundImage: `url(${useCase.image})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center"
+                          }}
+                        />
+                      </Suspense>
+
                       <div className="bg-white p-6 mt-6 rounded-lg border border-neutral-200">
                         <h3 className="text-xl font-semibold mb-4 text-neutral-800">Success Story</h3>
-                        <blockquote className="border-l-4 border-primary pl-4 italic text-neutral-600 mb-4">
-                          {tab === "kiosk" && "Distributing large educational packages to our field educators across remote locations used to be a logistical nightmare. MobiHeal’s bulk file push and usage analytics let us seamlessly deliver content and track engagement patterns—empowering our Acharyas with timely resources and central admins with actionable insights."}
-                          {tab === "corporate" && "Controlling leakage of our sensitive design and commercial data across corporate and employee devices was mission-critical. MobiHeal’s USB data transfer blocking, screenshot restrictions, secure work-profile containerization, and remote lock/wipe capabilities delivered airtight data sanctity—giving us complete peace of mind over our intellectual property."}
-                          {tab === "byod" && "Our medical reps carry highly sensitive drug formulation content on their company‐issued Android devices, so we needed rock‐solid security and oversight. MobiHeal’s device security, real‐time location tracking, and remote lock/wipe capabilities give us end‐to‐end control—ensuring confidential materials never fall into the wrong hands."}
+                        <blockquote className="italic border-l-4 border-primary pl-4 text-neutral-600 mb-4">
+                          {tab === "kiosk" && "Distributing large educational packages..."}
+                          {tab === "corporate" && "Controlling leakage of our sensitive design..."}
+                          {tab === "byod" && "Our medical reps carry highly sensitive drug..."}
                         </blockquote>
                         <div className="text-right text-sm text-neutral-500">
                           {tab === "kiosk" && "— Ekal Sansthan"}
@@ -206,8 +206,10 @@ const UseCases = () => {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-neutral-800">Ready to implement these solutions in your organization?</h2>
+        <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-neutral-800 mb-6">
+            Ready to implement these solutions in your organization?
+          </h2>
           <p className="text-neutral-600 mb-8">
             Our team of MDM experts can help you determine the right approach for your specific business needs.
           </p>

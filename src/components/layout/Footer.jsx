@@ -1,4 +1,7 @@
 import { Link } from "react-router";
+import  mobisecLogo from "../../assets/MOBISEC_logo-footer.png";
+import registerLogo from "../../assets/registered2.png";
+import { Suspense } from "react";
 
 
 const Footer = () => {
@@ -13,8 +16,10 @@ const Footer = () => {
 
              <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-            
-              
+              <Suspense>
+             <img src={mobisecLogo} width="200" alt="mobisec" />
+              <img src={registerLogo} width="15" alt="mobisec" />
+              </Suspense>
             </div>
             <p className="mb-6">
              Mobisec Technologies Pvt. Ltd. is a mobile security company

@@ -5,7 +5,7 @@ import partner4 from "../assets/partnerImages/partner4.png";
 import partner5 from "../assets/partnerImages/partner5.png";
 import partner6 from "../assets/partnerImages/partner6.png";
 import partner7 from "../assets/partnerImages/partner7.jpg";
-import partner8 from "../assets/partnerImages/partner7.jpg";
+import partner8 from "../assets/partnerImages/partner8.png";
 
 import client1 from "../assets/ClinetImages/clients.png";
 import client2 from "../assets/ClinetImages/clients-1.png";

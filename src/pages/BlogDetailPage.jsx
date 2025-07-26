@@ -28,13 +28,12 @@ const BlogDetailPage = () => {
         description={blog.introduction}
         // internalLinks={blog.seoRecommendations?.internalLinks}
       /> */}
-       <Helmet>
-         <title>{blog.title} | MobiHeal MDM</title>
-         <meta
-           name="description"
-           content={blog.introduction}
-         />
-       </Helmet>
+      <Helmet>
+  <title>{blog.titleTag}</title>
+  <meta name="description" content={blog.metaDescription} />
+  <meta name="keywords" content={`${blog.primaryKeyword}, ${blog.secondaryKeywords.join(", ")}`} />
+</Helmet>
+
       <BlogHero blog={blog} />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8 mt-8 px-4 lg:px-0">
         {/* Main Blog Body */}

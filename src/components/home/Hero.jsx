@@ -7,11 +7,11 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative overflow-hidden text-white py-16 md:py-24 bg-gradient">
+    <section className="relative overflow-hidden text-white py-20  bg-gradient">
       {/* Optional dark overlay for contrast */}
       {/* <div className="absolute inset-0 bg-black/30 z-0" /> */}
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-14 sm:px-18 lg:px-22">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex justify-center items-center">
+          <div className="md:w-1/2 flex justify-center items-center ml-10">
             <Suspense>
             <img
               src={hero}

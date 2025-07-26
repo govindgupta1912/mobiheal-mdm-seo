@@ -19,47 +19,80 @@ const Header = () => {
   const location = useLocation().pathname;
 
   return (
+    // <header className="sticky top-0 z-50 bg-white shadow-md">
+    //   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    //     <div className="flex justify-between items-center py-4">
+    //       {/* Logo */}
+
+    //       <div className="flex items-center">
+    //         <Link to="/" className="flex items-center">
+    //           <Suspense>
+    //             <img
+    //               src={logo}
+    //               alt="MobiHeal Logo"
+    //               className="ml-2 h-8 w-auto"
+    //             />
+    //           </Suspense>
+    //         </Link>
+    //       </div>
+
+    //       {/* Desktop Navigation */}
+    //       <nav className="hidden md:flex space-x-8 ">
+    //         <DesktopNavigation currentPath={location} />
+    //       </nav>
+
+    //       {/* CTA Buttons */}
+    //       <div className="hidden md:flex items-center space-x-4">
+    //         <Button variant="ghost" className="font-medium">
+    //           Sign In
+    //         </Button>
+    //         <a
+    //           href="https://calendly.com/mobiheal-demo/booking"
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //         >
+    //           <Button className="font-medium">Request Demo</Button>
+    //         </a>
+    //       </div>
+
+    //       {/* Mobile Menu */}
+    //       <MobileNavigation currentPath={location} />
+    //     </div>
+    //   </div>
+    // </header>
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <Suspense>
-                <img
-                  src={logo}
-                  alt="MobiHeal Logo"
-                  className="ml-2 h-8 w-auto"
-                />
-              </Suspense>
-            </Link>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <DesktopNavigation currentPath={location} />
-          </nav>
-
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="font-medium">
-              Sign In
-            </Button>
-            <a
-              href="https://calendly.com/mobiheal-demo/booking"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="font-medium">Request Demo</Button>
-            </a>
-          </div>
-
-          {/* Mobile Menu */}
-          <MobileNavigation currentPath={location} />
-        </div>
+  <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <div className="flex justify-between items-center py-2">
+      {/* Logo */}
+      <div className="flex items-center">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="MobiHeal Logo" className="ml-2 h-8 w-auto" />
+        </Link>
       </div>
-    </header>
+
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex space-x-4">
+        <DesktopNavigation currentPath={location} />
+      </nav>
+
+      {/* CTA Buttons */}
+      <div className="hidden md:flex items-center space-x-2">
+        <Button variant="ghost" className="font-medium">Sign In</Button>
+        <a
+          href="https://calendly.com/mobiheal-demo/booking"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="font-medium">Request Demo</Button>
+        </a>
+      </div>
+
+      {/* Mobile Menu */}
+      <MobileNavigation currentPath={location} />
+    </div>
+  </div>
+</header>
+
   );
 };
 
@@ -179,17 +212,22 @@ const MobileNavigation = ({ currentPath }) => {
             <span className="sr-only">Open menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-          <nav className="flex flex-col gap-4 mt-6">
+        <SheetContent
+       side="right"
+       className="w-[300px] sm:w-[400px] flex flex-col overflow-y-auto max-h-screen"
+     >
+
+          <nav className="flex flex-col gap-4 mt-6 flex-1 overflow-y-auto">
             {[
               { name: "Home", path: "/" },
               { name: "Features", path: "/features" },
               { name: "Use Cases", path: "/use-cases" },
               { name: "Pricing", path: "/pricing" },
-              { name: "Blog", path: "/blog" },
-              { name: "Case Studies", path: "/case-studies" },
-              { name: "Whitepapers", path: "/whitepapers" },
-              { name: "OWASP Mobile Top 10", path: "/owasp-mobile" },
+              // { name: "Blog", path: "/blog" },
+              // { name: "Case Studies", path: "/case-studies" },
+              // { name: "Whitepapers", path: "/whitepapers" },
+              // { name: "OWASP Mobile Top 10", path: "/owasp-mobile" },
+              { name: "Resources", path: "/resources" },
               { name: "FAQs", path: "/faq" },
               { name: "Partners", path: "/partners" },
               { name: "Testimonials", path: "/testimonials" },

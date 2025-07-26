@@ -17,7 +17,7 @@ import slide13 from "../../assets/partnerImages/partner4.png";
 import slide14 from "../../assets/partnerImages/partner5.png";
 import slide15 from "../../assets/partnerImages/partner6.png"
 import slide16 from "../../assets/partnerImages/partner7.jpg"
-import slide17 from "../../assets/partnerImages/partner7.jpg"
+import slide17 from "../../assets/partnerImages/partner8.png";
 import { Suspense } from "react";
 const PartnersSection = () => {
   const clients = [

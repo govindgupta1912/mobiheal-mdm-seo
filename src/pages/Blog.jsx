@@ -138,7 +138,7 @@ const Blog = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-neutral-50">
+      {/* <section className="py-16 bg-neutral-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-neutral-800">
@@ -162,7 +162,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
