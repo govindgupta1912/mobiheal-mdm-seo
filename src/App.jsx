@@ -27,6 +27,7 @@ import AcceptableUsePolicy from "./pages/AcceptableUsePolicy";
 import NotFound from "./pages/not-found";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import WhitepaperDetailPage from "./pages/whitepapers/[slug]";
+import { ToastContainer } from "react-toastify";
 
 
 function Router() {
@@ -81,6 +82,8 @@ function App() {
         </Layout>
       
       {/* <Toaster /> */}
+              <ToastContainer position="top-right" autoClose={3000} />
+
     </QueryClientProvider>
     
   );

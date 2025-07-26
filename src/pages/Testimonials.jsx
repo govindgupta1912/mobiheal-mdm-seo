@@ -54,7 +54,7 @@ const Testimonials = () => {
           {/* <div className="mb-12 overflow-x-auto">
             <div className="flex space-x-2 min-w-max pb-2"> */}
               <Tabs defaultValue="all">
-                <TabsList className="flex space-x-2">
+                <TabsList className="flex flex-wrap gap-2 mb-24 sm:mb-14 md:mb-10">
                   {industries.map((industry) => (
                     <TabsTrigger
                       key={industry} 

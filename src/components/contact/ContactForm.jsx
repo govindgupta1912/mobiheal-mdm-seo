@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "react-toastify";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -21,18 +22,16 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { Link } from "react-router-dom";
 
 const formSchema = z.object({
-  firstName: z.string().min(2),
-  lastName: z.string().min(2),
-  email: z.string().email(),
-  company: z.string().min(2),
-  subject: z.string().min(1),
-  message: z.string().min(10),
-  privacyPolicy: z.boolean().refine(val => val === true, {
+  firstName: z.string().min(2, "First name is required"),
+  lastName: z.string().min(2, "Last name is required"),
+  email: z.string().email("Invalid email"),
+  company: z.string().min(2, "Company name is required"),
+  subject: z.string().min(1, "Subject is required"),
+  message: z.string().min(10, "Message should be at least 10 characters"),
+  privacyPolicy: z.boolean().refine((val) => val === true, {
     message: "You must agree to the privacy policy.",
   }),
 });
@@ -41,7 +40,6 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [offset, setOffset] = useState(0);
   const [directionRight, setDirectionRight] = useState(true);
-  const { toast } = useToast();
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -60,19 +58,24 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      await apiRequest("POST", "/api/contact", data);
-      toast({
-        title: "Message sent",
-        description: "We'll get back to you soon.",
+      const res = await fetch("/api/contactssd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(errorText || "Failed to send message");
+      }
+
+      toast.success("Message sent! We'll get back to you soon.");
       form.reset();
       setOffset(0);
-    } catch {
-      toast({
-        title: "Error",
-        description: "Failed to send message.",
-        variant: "destructive",
-      });
+    } catch (error) {
+      toast.error(error.message || "Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -237,7 +240,7 @@ const ContactForm = () => {
                 onMouseEnter={handleMouseEnter}
                 disabled={isSubmitting}
                 className="transition-all duration-300 absolute w-full"
-                // style={{ transform: `translateX(${offset}px)` }}
+                style={{ transform: `translateX(${offset}px)` }}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>

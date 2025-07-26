@@ -58,51 +58,64 @@ console.log("caseStudies",study.seoTitle);
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient text-white py-24 px-4 overflow-hidden shadow-lg">
-        <div className="absolute inset-0 pointer-events-none">
-          <svg width="100%" height="100%" className="opacity-20">
-            <defs>
-              <radialGradient id="cs-bg-grad" cx="50%" cy="50%" r="80%">
-                <stop offset="0%" stopColor="#fff" stopOpacity="0.12" />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cs-bg-grad)" />
-          </svg>
+ <section className="relative bg-gradient text-white py-28 px-4 overflow-hidden shadow-lg">
+  {/* Decorative radial background */}
+  <div className="absolute inset-0 pointer-events-none">
+    <svg width="100%" height="100%" className="opacity-20">
+      <defs>
+        <radialGradient id="cs-bg-grad" cx="50%" cy="50%" r="80%">
+          <stop offset="0%" stopColor="#fff" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#cs-bg-grad)" />
+    </svg>
+  </div>
+
+  <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+    {/* Grid layout */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      
+      {/* Left: Text */}
+      <div className="text-left">
+        <Link to="/case-studies">
+          <Button variant="ghost" className="text-white hover:text-white/90 mb-3">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Case Studies
+          </Button>
+        </Link>
+
+        <h1 className="text-3xl md:text-5xl font-bold mb-3 drop-shadow-lg tracking-tight">
+          {study.title}
+        </h1>
+
+        <div className="flex flex-wrap gap-2 mt-3">
+          {study.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 bg-white/20 rounded-full text-sm md:text-lg font-medium shadow hover:bg-white/30 transition"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
-        <div className="container flex mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto lg:mx-0 text-left">
-            <Link to="/case-studies">
-              <Button variant="ghost" className="text-white hover:text-white/90 mb-4">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Case Studies
-              </Button>
-            </Link>
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg tracking-tight text-left">
-              {study.title}
-            </h1>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {study.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-1 bg-white/20 rounded-full text-sm font-medium shadow hover:bg-white/30 transition-all duration-150"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <Suspense>
-            <img
-              src={study.imageSrc}
-              alt="Whitepaper Hero"
-              className="rounded-3xl shadow-2xl max-h-[420px] w-full object-cover border-4 border-white/30"
-            />
-            </Suspense>
-          </div>
-        </div>
-      </section>
+      </div>
+
+      {/* Right: Image */}
+      <div className="w-full flex justify-center">
+        <Suspense>
+          <img
+            src={study.imageSrc}
+            alt="Case Study"
+            className="rounded-2xl shadow-xl w-full max-w-md object-cover border-2 border-white/30
+                       max-h-[320px] sm:max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
+          />
+        </Suspense>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Executive Summary */}
       <section className="py-20 bg-white">
