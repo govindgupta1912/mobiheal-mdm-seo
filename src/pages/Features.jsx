@@ -128,7 +128,7 @@ const Features = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Comprehensive MDM Features
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-blue-100">
+            <p className="text-lg md:text-xl  text-blue-100">
               Our enterprise-grade MDM solution offers a full suite of features to help you manage, secure, and optimize your mobile device fleet.
             </p>
           </div>

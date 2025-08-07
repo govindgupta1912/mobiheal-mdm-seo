@@ -8,10 +8,11 @@ import {
 } from "../components/ui/tooltip";
 import { Button } from "../components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
-
+  const navigate = useNavigate();
   const pricingPlans = [
     {
       title: "Basic",
@@ -181,9 +182,10 @@ const Pricing = () => {
 
                     <Button
                       variant={plan.popular ? "default" : "outline"}
+                      onClick={() => navigate(plan.ctaLink)}
                       className={`w-full ${plan.popular ? 'bg-primary hover:bg-primary-dark text-white' : 'text-primary hover:bg-primary hover:text-white'} hover:scale-95 transition-transform duration-300 ease-in-out`}
                     >
-                      <a href={plan.ctaLink}>{plan.ctaText}</a>
+                      {plan.ctaText}
                     </Button>
                   </div>
                   <div className="p-6">

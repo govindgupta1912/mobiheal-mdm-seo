@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import TestimonialCard from "@/components/common/TestimonialCard";
-import slide1  from "../../assets/ClinetImages/clients-3.png";
-import slide2  from "../../assets/ClinetImages/clients-1.png";
+import slide1  from "../../assets/ClinetImages/clients-3.webp";
+import slide2  from "../../assets/ClinetImages/clients-1.webp";
 // import slide3  from "../../assets/ClinetImages/clients-10.png";
-import slide4  from "../../assets/ClinetImages/clients-2.png";
-import slide5  from "../../assets/ClinetImages/clients-4.png";
-import slide6  from "../../assets/ClinetImages/clients-5.png";
-import slide7  from "../../assets/ClinetImages/clients-6.png";
-import slide8 from "../../assets/ClinetImages/clients-7.png";
-import slide9 from "../../assets/ClinetImages/clients-8.png";
-import slide10 from "../../assets/partnerImages/partner1.png";
-import slide11 from "../../assets/partnerImages/partner2.png"
-import slide12 from "../../assets/partnerImages/partner3.png";
-import slide13 from "../../assets/partnerImages/partner4.png";
-import slide14 from "../../assets/partnerImages/partner5.png";
-import slide15 from "../../assets/partnerImages/partner6.png"
-import slide16 from "../../assets/partnerImages/partner7.jpg"
-import slide17 from "../../assets/partnerImages/partner8.png";
+import slide4  from "../../assets/ClinetImages/clients-2.webp";
+import slide5  from "../../assets/ClinetImages/clients-4.webp";
+import slide6  from "../../assets/ClinetImages/clients-5.webp";
+import slide7  from "../../assets/ClinetImages/clients-6.webp";
+import slide8 from "../../assets/ClinetImages/clients-7.webp";
+import slide9 from "../../assets/ClinetImages/clients-8.webp";
+import slide10 from "../../assets/partnerImages/partner1.webp";
+import slide11 from "../../assets/partnerImages/partner2.webp"
+import slide12 from "../../assets/partnerImages/partner3.webp";
+import slide13 from "../../assets/partnerImages/partner4.webp";
+import slide14 from "../../assets/partnerImages/partner5.webp";
+import slide15 from "../../assets/partnerImages/partner6.webp"
+import slide16 from "../../assets/partnerImages/partner7.webp"
+import slide17 from "../../assets/partnerImages/partner8.webp";
 import { Suspense } from "react";
 const PartnersSection = () => {
   const clients = [
@@ -110,7 +110,7 @@ const PartnersSection = () => {
 
         <div className="text-center mt-12">
           <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:scale-95 transition-transform duration-200" asChild>
-            <Link href="/testimonials">View all Testimonials</Link>
+            <Link to="/testimonials">View all Testimonials</Link>
           </Button>
         </div>
       </div>

@@ -7,6 +7,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Button } from "../ui/button";
 
 const BlogBody = ({ blog }) => {
   const [currentUrl, setCurrentUrl] = useState("");
@@ -101,15 +102,20 @@ const BlogBody = ({ blog }) => {
             <div className="bg-gradient text-white rounded-2xl px-6 py-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-2">{blog.conclusion.cta.title}</h3>
               <p className="text-blue-100 mb-5 text-base md:text-lg">{blog.conclusion.cta.description}</p>
-              <a
-                href="https://calendly.com/mobiheal-demo/booking/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-md hover:bg-blue-100 transition"
-              >
-                {blog.conclusion.cta.buttonText}
-                <FaArrowRight />
-              </a>
+             <Button
+  asChild
+  variant="outline"
+  className="inline-flex items-center gap-2 px-6 py-3 font-semibold border-primary text-primary hover:scale-95 transition-transform duration-200"
+>
+  <a
+    href="https://calendly.com/mobiheal-demo/booking/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {blog.conclusion.cta.buttonText}
+    <FaArrowRight />
+  </a>
+</Button>
             </div>
           )}
         </section>

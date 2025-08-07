@@ -5,7 +5,7 @@ import BlogBody from "../components/blog/BlogBody";
 import LatestBlogCarousel from "../components/blog/LatestBlogCarousel";
 import NewsletterCTA from "../components/blog/NewsletterCTA";
 import SidebarBlogList from "../components/blog/SidebarBlogList";
-import BlogSEO from "../components/common/BlogSEO";
+// import BlogSEO from "../components/common/BlogSEO";
 import { Helmet } from "react-helmet-async";
  //import BlogSEO from "@/components/common/BlogSEO";
 
@@ -50,7 +50,7 @@ const BlogDetailPage = () => {
       </div>
 
       <LatestBlogCarousel blogs={blogs.filter((b) => b.id !== blog.id)} />
-      <NewsletterCTA />
+      {/* <NewsletterCTA /> */}
     </div>
   );
 };

@@ -57,12 +57,12 @@ const Blog = () => {
   />
 </Helmet>
       <section className="bg-gradient text-white py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Mobile Device Management Blog
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-blue-100">
+            <p className="text-lg md:text-xl  text-blue-100">
               Insights, trends, and best practices in mobile device management
               and security.
             </p>
@@ -97,7 +97,7 @@ const Blog = () => {
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {getblogs(value)
-                      .slice(0, 3)
+                      .slice(0)
                       .map((post, index) => (
                         <BlogPostCard
                           key={index}
@@ -112,7 +112,7 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <h2 className="text-2xl font-bold mb-6 text-neutral-800">
                     Latest Articles
                   </h2>
@@ -131,7 +131,7 @@ const Blog = () => {
                         />
                       ))}
                   </div>
-                </div>
+                </div> */}
               </TabsContent>
             ))}
           </Tabs>

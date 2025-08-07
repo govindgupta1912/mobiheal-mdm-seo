@@ -4,9 +4,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckIcon } from "lucide-react";
 
 // Replace these with actual paths if you have different images for each
-import kiosk from "@/assets/useCases/kiosk_mode_720.jpg";
-import corporate from "@/assets/useCases/corporate_owned_720.jpg";
-import byod from "@/assets/useCases/byod_720.jpg";
+import kiosk from "@/assets/useCases/kiosk_mode_720.webp";
+import corporate from "@/assets/useCases/corporate_owned_720.webp";
+import byod from "@/assets/useCases/byod_720.webp";
 
 const UseCasesSection = () => {
   const [activeTab, setActiveTab] = useState("kiosk");

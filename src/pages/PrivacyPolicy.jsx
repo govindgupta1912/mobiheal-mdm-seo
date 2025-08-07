@@ -3,23 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans min-h-screen py-16 px-4 sm:px-8 md:px-12 lg:px-20 max-w-6xl mx-auto shadow-lg rounded-xl my-8">
-      <style >{`
-        .text-primary {
-          color: #03a9fc; /* Your primary color */
-        }
-        .text-secondary {
-          color: #0285c7; /* Your secondary color */
-        }
-        .border-primary-light {
-          border-color: rgba(3, 169, 252, 0.3); /* Lighter primary for borders */
-        }
-        .text-blue-600 {
-          color: #03a9fc; /* Overriding Tailwind's default blue for links to your primary */
-        }
-        .hover\:text-blue-800:hover {
-          color: #0285c7; /* Overriding Tailwind's default blue hover for links to your secondary */
-        }
-      `}</style>
+    
       <header className="text-center mb-16">
         <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Privacy Policy</h1>
         <p className="text-md text-gray-600">Last updated: <span className="font-semibold">November 14, 2023</span></p>
@@ -40,16 +24,16 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Interpretation and Definitions</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Interpretation and Definitions</h2>
 
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Interpretation</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Interpretation</h3>
           <p className="mb-6">
             The words of which the initial letter is capitalized have meanings defined
             under the following conditions. The following definitions shall have the
             same meaning regardless of whether they appear in singular or in plural.
           </p>
 
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Definitions</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Definitions</h3>
           <p className="mb-4">For the purposes of this Privacy Policy:</p>
           <ul className="list-disc list-inside space-y-2 pl-4">
             <li><strong>Account</strong> means a unique account created for you to access our Service or parts of our Service.</li>
@@ -69,9 +53,9 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Collecting and Using Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Collecting and Using Your Personal Data</h2>
 
-          <h3 className="text-xl font-medium text-secondary mb-3">Types of Data Collected</h3>
+          <h3 className="text-xl font-medium  mb-3">Types of Data Collected</h3>
 
           <h4 className="text-xl font-medium text-primary mb-2">Personal Data</h4>
           <p className="mb-4">While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to:</p>
@@ -98,7 +82,7 @@ const PrivacyPolicy = () => {
         </section>
 
       <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Tracking Technologies and Cookies</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Tracking Technologies and Cookies</h2>
           <p className="mb-4">We use cookies and similar tracking technologies to track the activity on our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service. The technologies we use may include:</p>
           <ul className="list-disc list-inside space-y-4 pl-4">
             <li>
@@ -134,7 +118,7 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Use of Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Use of Your Personal Data</h2>
           <p className="mb-4">The company may use Personal Data for the following purposes:</p>
           <ul className="list-disc list-inside space-y-3 pl-4">
             <li><strong>To provide and maintain our Service,</strong> including to monitor the usage of our Service.</li>
@@ -159,20 +143,20 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Retention of Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Retention of Your Personal Data</h2>
           <p className="mb-4">The company will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
           <p>The company will also retain usage data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Transfer of Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Transfer of Your Personal Data</h2>
           <p className="mb-4">Your information, including Personal Data, is processed at the company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
           <p className="mb-4">Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
           <p>The company will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Delete Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Delete Your Personal Data</h2>
           <p className="mb-4">You have the right to delete or request that we assist in deleting the Personal Data that we have collected about you.</p>
           <p className="mb-4">Our Service may give you the ability to delete certain information about you from within the Service.</p>
           <p className="mb-4">You may update, amend, or delete your information at any time by signing in to your account, if you have one, and visiting the account settings section that allows you to manage your personal information. You may also contact us to request access to, correct, or delete any personal information that you have provided to us.</p>
@@ -180,12 +164,12 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Disclosure of Your Personal Data</h2>
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Business Transactions</h3>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Disclosure of Your Personal Data</h2>
+          <h3 className="text-2xl font-semibold  mb-3">Business Transactions</h3>
           <p className="mb-6">If the company is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Law enforcement</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Law enforcement</h3>
           <p className="mb-6">Under certain circumstances, the company may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Other legal requirements</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Other legal requirements</h3>
           <p className="mb-4">The company may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
           <ul className="list-disc list-inside space-y-2 pl-4">
             <li>Comply with a legal obligation</li>
@@ -197,29 +181,29 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Security of Your Personal Data</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Security of Your Personal Data</h2>
           <p>The security of your Personal Data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Children's Privacy</h2>
+          <h2 className="text-3xl font-bold mb-6 border-b-2 border-primary-light pb-2">Children's Privacy</h2>
           <p>Our Service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Links to Other Websites</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Links to Other Websites</h2>
           <p className="mb-4">Our Service may contain links to other websites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
           <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Changes to This Privacy Policy</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Changes to This Privacy Policy</h2>
           <p className="mb-4">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
           <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Contact Us</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Contact Us</h2>
           <p className="mb-4">If you have any questions about this Privacy Policy, you can contact us:</p>
           <ul className="list-disc list-inside pl-4">
             <li>By phone : <a href="tel:+91-11-6926-8029" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">+91-11-6926-8029</a></li>

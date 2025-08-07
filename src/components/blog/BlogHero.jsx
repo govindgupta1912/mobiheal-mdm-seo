@@ -11,7 +11,7 @@ const BlogHero = ({ blog }) => {
   }, []);
 
   return (
-    <div className="relative w-full min-h-[500px] overflow-hidden text-white bg-gradient">
+    <div className="relative w-full  overflow-hidden text-white bg-gradient">
       {/* Optional Background Image */}
       {/* <div className="absolute inset-0 overflow-hidden z-0">
         <img
@@ -22,10 +22,10 @@ const BlogHero = ({ blog }) => {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-12 py-20 h-full flex flex-col justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-24 py-18 h-full flex flex-col justify-center">
         <div className="max-w-4xl">
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             {blog.title.split(" ").map((word, index) => (
               <span key={index} className="text-white">
                 {word + " "}

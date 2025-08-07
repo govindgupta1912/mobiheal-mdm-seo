@@ -1,16 +1,16 @@
-import { CaseStudy } from "./data";
-import cs1 from "../assets/caseStudies/Preventing Mobile Fraud in Banking.png"
-import cs2 from "../assets/caseStudies/cs2.jpg"
-import cs3 from "../assets/caseStudies/cs3.jpg"
-import cs4 from "../assets/caseStudies/cs4.jpg"
-import cs5 from "../assets/caseStudies/cs5.jpg"   
+// Removed CaseStudy import as it's not exported from data.js
+import cs1 from "../assets/caseStudies/Preventing Mobile Fraud in Banking.webp"
+import cs2 from "../assets/caseStudies/cs2.webp"
+import cs3 from "../assets/caseStudies/cs3.webp"
+import cs4 from "../assets/caseStudies/cs4.webp"
+import cs5 from "../assets/caseStudies/cs5.webp"   
 
-import cs7 from "../assets/caseStudies/cs7.jpg" 
-import cs8 from "../assets/caseStudies/cs8.jpg" 
-import cs9 from "../assets/caseStudies/cs9.jpg"
-import cs10 from "../assets/caseStudies/cs10.jpg"
-import cs11 from "../assets/caseStudies/cs11.jpg"
-import cs12 from "../assets/caseStudies/cs12.jpg"
+import cs7 from "../assets/caseStudies/cs7.webp" 
+import cs8 from "../assets/caseStudies/cs8.webp" 
+import cs9 from "../assets/caseStudies/cs9.webp"
+import cs10 from "../assets/caseStudies/cs10.webp"
+import cs11 from "../assets/caseStudies/cs11.webp"
+import cs12 from "../assets/caseStudies/cs12.webp"
 
 
 

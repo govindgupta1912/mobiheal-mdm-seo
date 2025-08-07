@@ -1,8 +1,8 @@
 // lib/whitepapersData.ts
-import wp1 from "@/assets/whitepaper/wp1.png";
-import wp2 from "@/assets/whitepaper/wp2.png";
-import wp3 from "@/assets/whitepaper/wp3.png";
-import wp4 from "@/assets/whitepaper/wp4.jpg";
+import wp1 from "@/assets/whitepaper/wp1.webp";
+import wp2 from "@/assets/whitepaper/wp2.webp";
+import wp3 from "@/assets/whitepaper/wp3.webp";
+import wp4 from "@/assets/whitepaper/wp4.webp";
 export const whitepapers = [
   {
     id: "mobile-security",

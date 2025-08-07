@@ -237,7 +237,7 @@ const ContactForm = () => {
             <div className="w-full flex justify-center relative">
               <Button
                 type="submit"
-                onMouseEnter={handleMouseEnter}
+                // onMouseEnter={handleMouseEnter}
                 disabled={isSubmitting}
                 className="transition-all duration-300 absolute w-full"
                 style={{ transform: `translateX(${offset}px)` }}

@@ -3,23 +3,7 @@ import React from "react";
 const CookiesPolicy = () => {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans min-h-screen py-16 px-4 sm:px-8 md:px-12 lg:px-20 max-w-6xl mx-auto shadow-lg rounded-xl my-8">
-      <style >{`
-        .text-primary {
-          color: #03a9fc; /* Your primary color */
-        }
-        .text-secondary {
-          color: #0285c7; /* Your secondary color */
-        }
-        .border-primary-light {
-          border-color: rgba(3, 169, 252, 0.3); /* Lighter primary for borders */
-        }
-        .text-blue-600 {
-          color: #03a9fc; /* Overriding Tailwind's default blue for links to your primary */
-        }
-        .hover\:text-blue-800:hover {
-          color: #0285c7; /* Overriding Tailwind's default blue hover for links to your secondary */
-        }
-      `}</style>
+      
       <header className="text-center mb-16">
         <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Cookies Policy</h1>
         <p className="text-md text-gray-600">Last updated: <span className="font-semibold">November 14, 2023</span></p>
@@ -39,14 +23,14 @@ const CookiesPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Interpretation and Definitions</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Interpretation and Definitions</h2>
 
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Interpretation</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Interpretation</h3>
           <p className="mb-6">
             The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
           </p>
 
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Definitions</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Definitions</h3>
           <p className="mb-4">For the purposes of this Cookies Policy:</p>
           <ul className="list-disc list-inside space-y-2 pl-4">
             <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Cookies Policy) refers to <em>Mobisec Technologies Pvt. Ltd</em>, F-200, FF, Phase-1, New Palam Vihar, Sec-110, Gurugram, Haryana-122017, India.</li>
@@ -57,9 +41,9 @@ const CookiesPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">The Use of the Cookies</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">The Use of the Cookies</h2>
 
-          <h3 className="text-2xl font-semibold text-secondary mb-3">Type of Cookies We Use</h3>
+          <h3 className="text-2xl font-semibold  mb-3">Type of Cookies We Use</h3>
           <p className="mb-4">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser.</p>
           <p className="mb-4">We use both session and persistent Cookies for the purposes set out below:</p>
           <ul className="list-disc list-inside space-y-4 pl-4">
@@ -79,7 +63,7 @@ const CookiesPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Your Choices Regarding Cookies</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Your Choices Regarding Cookies</h2>
           <p className="mb-4">If you prefer to avoid the use of Cookies on the Website, first you must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this website. you may use this option for preventing the use of Cookies at any time.</p>
           <p className="mb-4">If you do not accept Our Cookies, you may experience some inconvenience in your use of the Website and some features may not function properly.</p>
           <p className="mb-4">If you'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser.</p>
@@ -93,12 +77,12 @@ const CookiesPolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">More Information about Cookies</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">More Information about Cookies</h2>
           <p>You can learn more about cookies: <a href="https://www.privacypolicies.com/blog/cookies-what-do-they-do/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Cookies: What Do They Do?</a>.</p>
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Contact Us</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Contact Us</h2>
           <p className="mb-4">If you have any questions about this Cookies Policy, you can contact us:</p>
           <ul className="list-disc list-inside pl-4">
             <li>By phone : <a href="tel:+91-11-6926-8029" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">+91-11-6926-8029</a></li>

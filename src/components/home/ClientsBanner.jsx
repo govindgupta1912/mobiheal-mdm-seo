@@ -1,15 +1,15 @@
-import slide1  from "../../assets/ClinetImages/clients-11.png";
-import slide2  from "../../assets/ClinetImages/clients-5.png";
-import slide3  from "../../assets/ClinetImages/clients-1.png";
-import slide4  from "../../assets/ClinetImages/clients-2.png";
-import slide5  from "../../assets/ClinetImages/clients-3.png";
-import slide6  from "../../assets/ClinetImages/clients-4.png";
-import slide7  from "../../assets/ClinetImages/clients-6.png";
-import slide8 from "../../assets/ClinetImages/clients-7.png";
-import slide9 from "../../assets/ClinetImages/clients-8.png";
-import slide10 from "../../assets/ClinetImages/clients-9.png";
-import slide11 from "../../assets/ClinetImages/clients-10.png"
-import slide12 from "../../assets/ic_teceze.png";
+import slide1  from "../../assets/ClinetImages/clients-11.webp";
+import slide2  from "../../assets/ClinetImages/clients-5.webp";
+import slide3  from "../../assets/ClinetImages/clients-1.webp";
+import slide4  from "../../assets/ClinetImages/clients-2.webp";
+import slide5  from "../../assets/ClinetImages/clients-3.webp";
+import slide6  from "../../assets/ClinetImages/clients-4.webp";
+import slide7  from "../../assets/ClinetImages/clients-6.webp";
+import slide8 from "../../assets/ClinetImages/clients-7.webp";
+import slide9 from "../../assets/ClinetImages/clients-8.webp";
+import slide10 from "../../assets/ClinetImages/clients-9.webp";
+import slide11 from "../../assets/ClinetImages/clients-10.webp"
+import slide12 from "../../assets/ClinetImages/clients.webp";
 import slide13 from "../../assets/ic_wesee.png";
 import slide14 from "../../assets/mrotek.png";
 import slide15 from "../../assets/ncat.png"
@@ -31,7 +31,7 @@ const ClientsBanner = () => {
   slide9,
    slide10,
    slide11,
-  // slide12,
+   slide12,
   // slide13,
   // slide14,
   // slide15

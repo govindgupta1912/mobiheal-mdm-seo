@@ -58,7 +58,7 @@ console.log("caseStudies",study.seoTitle);
       </Helmet>
 
       {/* Hero Section */}
- <section className="relative bg-gradient text-white py-28 px-4 overflow-hidden shadow-lg">
+ <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
   {/* Decorative radial background */}
   <div className="absolute inset-0 pointer-events-none">
     <svg width="100%" height="100%" className="opacity-20">
@@ -72,20 +72,21 @@ console.log("caseStudies",study.seoTitle);
     </svg>
   </div>
 
-  <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+  <div className="container mx-auto relative z-10 px-6 sm:px-12 lg:px-16">
     {/* Grid layout */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-      
-      {/* Left: Text */}
-      <div className="text-left">
-        <Link to="/case-studies">
-          <Button variant="ghost" className="text-white hover:text-white/90 mb-3">
+     <Link to="/case-studies">
+          <Button variant="ghost" className="text-white  mb-3">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Case Studies
           </Button>
         </Link>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      
+      {/* Left: Text */}
+      <div className="text-left">
+       
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-3 drop-shadow-lg tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg tracking-tight">
           {study.title}
         </h1>
 
@@ -118,7 +119,7 @@ console.log("caseStudies",study.seoTitle);
 
 
       {/* Executive Summary */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="items-center bg-neutral-50/80 rounded-2xl shadow-lg p-8">
             <div>
@@ -306,7 +307,7 @@ console.log("caseStudies",study.seoTitle);
               </Button>
             </Link>
             <Link to="/pricing">
-              <Button size="lg" variant="outline" className="border-white text-primary hover:bg-white/10 font-bold">
+              <Button size="lg"  className="bg-white text-primary hover:bg-neutral-100">
                 View Pricing
               </Button>
             </Link>

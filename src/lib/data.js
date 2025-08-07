@@ -1,41 +1,41 @@
-import partner1 from "../assets/partnerImages/partner1.png";
-import partner2 from "../assets/partnerImages/partner2.png";
-import partner3 from "../assets/partnerImages/partner3.png";
-import partner4 from "../assets/partnerImages/partner4.png";
-import partner5 from "../assets/partnerImages/partner5.png";
-import partner6 from "../assets/partnerImages/partner6.png";
-import partner7 from "../assets/partnerImages/partner7.jpg";
-import partner8 from "../assets/partnerImages/partner8.png";
+import partner1 from "../assets/partnerImages/partner1.webp";
+import partner2 from "../assets/partnerImages/partner2.webp";
+import partner3 from "../assets/partnerImages/partner3.webp";
+import partner4 from "../assets/partnerImages/partner4.webp";
+import partner5 from "../assets/partnerImages/partner5.webp";
+import partner6 from "../assets/partnerImages/partner6.webp";
+import partner7 from "../assets/partnerImages/partner7.webp";
+import partner8 from "../assets/partnerImages/partner8.webp";
 
-import client1 from "../assets/ClinetImages/clients.png";
-import client2 from "../assets/ClinetImages/clients-1.png";
-import client3 from "../assets/ClinetImages/clients-2.png";
-import client4 from "../assets/ClinetImages/clients-3.png";
-import client5 from "../assets/ClinetImages/clients-4.png";
-import client6 from "../assets/ClinetImages/clients-5.png";
-import client7 from "../assets/ClinetImages/clients-6.png";
-import client8 from "../assets/ClinetImages/clients-7.png";
-import client9 from "../assets/ClinetImages/clients-8.png";
-import client10 from "../assets/ClinetImages/clients-9.png";
-import client11 from "../assets/ClinetImages/clients-10.png";
-import client12 from "../assets/ClinetImages/clients-11.png";
+import client1 from "../assets/ClinetImages/clients.webp";
+import client2 from "../assets/ClinetImages/clients-1.webp";
+import client3 from "../assets/ClinetImages/clients-2.webp";
+import client4 from "../assets/ClinetImages/clients-3.webp";
+import client5 from "../assets/ClinetImages/clients-4.webp";
+import client6 from "../assets/ClinetImages/clients-5.webp";
+import client7 from "../assets/ClinetImages/clients-6.webp";
+import client8 from "../assets/ClinetImages/clients-7.webp";
+import client9 from "../assets/ClinetImages/clients-8.webp";
+import client10 from "../assets/ClinetImages/clients-9.webp";
+import client11 from "../assets/ClinetImages/clients-10.webp";
+import client12 from "../assets/ClinetImages/clients-11.webp";
 
-import cs1 from "../assets/caseStudies/Preventing Mobile Fraud in Banking.png";
-import cs2 from "../assets/caseStudies/cs2.jpg";
-import cs3 from "../assets/caseStudies/cs3.jpg";
-import cs4 from "../assets/caseStudies/cs4.jpg";
-import cs5 from "../assets/caseStudies/cs5.jpg";
+import cs1 from "../assets/caseStudies/Preventing Mobile Fraud in Banking.webp";
+import cs2 from "../assets/caseStudies/cs2.webp";
+import cs3 from "../assets/caseStudies/cs3.webp";
+import cs4 from "../assets/caseStudies/cs4.webp";
+import cs5 from "../assets/caseStudies/cs5.webp";
 
-import cs7 from "../assets/caseStudies/cs7.jpg";
-import cs8 from "../assets/caseStudies/cs8.jpg";
-import cs9 from "../assets/caseStudies/cs9.jpg";
-import cs10 from "../assets/caseStudies/cs10.jpg";
-import cs11 from "../assets/caseStudies/cs11.jpg";
-import cs12 from "../assets/caseStudies/cs12.jpg";
+import cs7 from "../assets/caseStudies/cs7.webp";
+import cs8 from "../assets/caseStudies/cs8.webp";
+import cs9 from "../assets/caseStudies/cs9.webp";
+import cs10 from "../assets/caseStudies/cs10.webp";
+import cs11 from "../assets/caseStudies/cs11.webp";
+import cs12 from "../assets/caseStudies/cs12.webp";
 
-import blog1 from "../assets/BlogImages/blog1.png"
-import blog2 from "../assets/BlogImages/blog2.png";
-import blog3 from "../assets/BlogImages/blog3.png";    
+import blog1 from "../assets/BlogImages/blog1.webp"
+import blog2 from "../assets/BlogImages/blog2.webp";
+import blog3 from "../assets/BlogImages/blog3.webp";    
 
 export const blogPosts = [
   {
@@ -1082,6 +1082,14 @@ export const testimonials = [
     rating: 5,
     industry: "hospitality",
   },
+  {
+  quote:
+    "With stringent internal security protocols and national data sensitivity at stake, adopting MobiHeal’s MDM was a mission-critical move. Its advanced device encryption, remote control features, and zero-trust access model allowed us to securely manage field devices—even in air-gapped or restricted environments—while staying fully compliant with government cybersecurity directives.",
+  author: "DRDO",
+  position: "",
+  rating: 5,
+  industry: "defense",
+},
 ];
 
 

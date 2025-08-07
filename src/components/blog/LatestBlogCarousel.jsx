@@ -63,9 +63,12 @@ const LatestBlogCarousel = ({ blogs }) => {
           className="flex gap-6 overflow-x-auto no-scrollbar pb-6"
         >
           {blogs.map((blog, i) => (
+             <Link
+                    to={`/blog/${blog.id}`}
+                    >
             <article
               key={i}
-              className="flex-none w-[380px] bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col"
+              className="flex-none w-[380px] bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col"
             >
               <div className="relative h-48">
                 <Suspense fallback={<div>Loading...</div>}>
@@ -109,6 +112,7 @@ const LatestBlogCarousel = ({ blogs }) => {
                 </div>
               </div>
             </article>
+            </Link>
           ))}
         </div>
       </div>

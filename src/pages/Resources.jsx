@@ -80,12 +80,12 @@ const Resources = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild>
-                <Link href="/contact">
+                <Link to="/contact">
                   Contact Our Team
                 </Link>
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
-                <Link href="/pricing">
+                <Link to="/pricing">
                   View Pricing Plans
                 </Link>
               </Button>

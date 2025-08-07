@@ -106,7 +106,7 @@ const Partners = () => {
 
               <div className="text-center mb-12">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
-                  <Link href="/testimonials">
+                  <Link to="/testimonials">
                     View Client Testimonials
                   </Link>
                 </Button>
@@ -148,7 +148,7 @@ const Partners = () => {
 
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-neutral-200">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-neutral-800">
@@ -161,7 +161,7 @@ const Partners = () => {
               </div>
               <div className="text-center">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Apply to Become a Partner</Link>
+                  <Link to="/contact">Apply to Become a Partner</Link>
                 </Button>
               </div>
             </div>

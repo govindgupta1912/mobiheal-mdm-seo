@@ -13,71 +13,34 @@ import {
   DropdownMenuTrigger,
 } from "../../components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
-import logo from "../../assets/mobiheal_logo.svg"; // Adjust the path as necessary
+import logo from "../../assets/mobiheal_logo.webp"; // Adjust the path as necessary
 
 const Header = () => {
   const location = useLocation().pathname;
 
   return (
-    // <header className="sticky top-0 z-50 bg-white shadow-md">
-    //   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-    //     <div className="flex justify-between items-center py-4">
-    //       {/* Logo */}
-
-    //       <div className="flex items-center">
-    //         <Link to="/" className="flex items-center">
-    //           <Suspense>
-    //             <img
-    //               src={logo}
-    //               alt="MobiHeal Logo"
-    //               className="ml-2 h-8 w-auto"
-    //             />
-    //           </Suspense>
-    //         </Link>
-    //       </div>
-
-    //       {/* Desktop Navigation */}
-    //       <nav className="hidden md:flex space-x-8 ">
-    //         <DesktopNavigation currentPath={location} />
-    //       </nav>
-
-    //       {/* CTA Buttons */}
-    //       <div className="hidden md:flex items-center space-x-4">
-    //         <Button variant="ghost" className="font-medium">
-    //           Sign In
-    //         </Button>
-    //         <a
-    //           href="https://calendly.com/mobiheal-demo/booking"
-    //           target="_blank"
-    //           rel="noopener noreferrer"
-    //         >
-    //           <Button className="font-medium">Request Demo</Button>
-    //         </a>
-    //       </div>
-
-    //       {/* Mobile Menu */}
-    //       <MobileNavigation currentPath={location} />
-    //     </div>
-    //   </div>
+   
     // </header>
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-    <div className="flex justify-between items-center py-2">
+  <header className="sticky top-0 z-50 bg-white shadow-md">
+  <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-2">
+    <div className="flex flex-wrap justify-between items-center gap-1 lg:gap-4 py-2">
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center flex-shrink-0">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="MobiHeal Logo" className="ml-2 h-8 w-auto" />
+          <img src={logo} alt="MobiHeal Logo" className="h-8 w-auto" />
         </Link>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex space-x-4">
+      <div className="hidden md:flex flex-wrap items-center justify-center gap-3 flex-grow">
         <DesktopNavigation currentPath={location} />
-      </nav>
+      </div>
 
       {/* CTA Buttons */}
-      <div className="hidden md:flex items-center space-x-2">
-        <Button variant="ghost" className="font-medium">Sign In</Button>
+      <div className="hidden md:flex items-center space-x-2 flex-shrink-0">
+        <Button variant="ghost" className="font-medium">
+          Sign In
+        </Button>
         <a
           href="https://calendly.com/mobiheal-demo/booking"
           target="_blank"
@@ -87,8 +50,10 @@ const Header = () => {
         </a>
       </div>
 
-      {/* Mobile Menu */}
-      <MobileNavigation currentPath={location} />
+      {/* Mobile Navigation */}
+      <div className="md:hidden ml-auto">
+        <MobileNavigation currentPath={location} />
+      </div>
     </div>
   </div>
 </header>
@@ -96,13 +61,24 @@ const Header = () => {
   );
 };
 
+
+
+
 const DesktopNavigation = ({ currentPath }) => {
   const navigate = useNavigate();
+
+  const handleHashNavigation = (target) => {
+  if (currentPath === "/use-cases") {
+    window.location.hash = target;
+  } else {
+    navigate(`/use-cases#${target}`);
+  }
+};
 
   return (
     <>
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
+        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent  cursor-pointer focus:outline-none focus:ring-0">
           <span>Features</span>
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
@@ -126,29 +102,30 @@ const DesktopNavigation = ({ currentPath }) => {
       </DropdownMenu>
 
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
-          <span>Use Cases</span>
-          <ChevronDown className="h-4 w-4" />
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuItem onSelect={() => navigate("/use-cases#kiosk")}>
-            Kiosk Mode Management
-          </DropdownMenuItem>
-          <DropdownMenuItem onSelect={() => navigate("/use-cases#corporate")}>
-            Corporate-Owned Devices
-          </DropdownMenuItem>
-          <DropdownMenuItem onSelect={() => navigate("/use-cases#byod")}>
-            BYOD Management
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+  <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
+    <span>Use Cases</span>
+    <ChevronDown className="h-4 w-4" />
+  </DropdownMenuTrigger>
+  <DropdownMenuContent>
+    <DropdownMenuItem onSelect={() => handleHashNavigation("kiosk")}>
+      Kiosk Mode Management
+    </DropdownMenuItem>
+    <DropdownMenuItem onSelect={() => handleHashNavigation("corporate")}>
+      Corporate-Owned Devices
+    </DropdownMenuItem>
+    <DropdownMenuItem onSelect={() => handleHashNavigation("byod")}>
+      BYOD Management
+    </DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>
+
 
       <Link to="/pricing" className={`text-neutral-700 hover:text-primary ${currentPath === "/pricing" ? "text-primary" : ""}`}>
         Pricing
       </Link>
 
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
+        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
           <span>Resources</span>
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
@@ -173,7 +150,7 @@ const DesktopNavigation = ({ currentPath }) => {
       </Link>
 
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer">
+        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
           <span>Partners</span>
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>

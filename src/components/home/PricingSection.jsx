@@ -103,12 +103,14 @@ const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-neutral-600 mb-4">Need a custom plan for your organization?</p>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:scale-95 transition-transform duration-200" >
             <Link to="/contact" className="flex items-center justify-center">
+          <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:scale-95 transition-transform duration-200" >
+          
               Contact our Sales Team
-            </Link>
           
           </Button>
+            </Link>
+          
         </div>
       </div>
     </section>

@@ -60,7 +60,7 @@ const Whitepapers = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Whitepapers & Technical Resources
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-blue-100">
+            <p className="text-lg md:text-xl  text-blue-100">
               In-depth technical resources and research on mobile security topics.
             </p>
           </div>

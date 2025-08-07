@@ -112,7 +112,7 @@ const WhitepaperDetails = ({
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient text-white py-18 px-4 sm:py-24 sm:px-6 overflow-hidden">
+      <section className="relative bg-gradient text-white py-14 px-4 sm:py-18 sm:px-24 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <svg width="100%" height="100%" className="opacity-20">
             <defs>

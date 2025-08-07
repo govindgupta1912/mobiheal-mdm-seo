@@ -3,23 +3,7 @@ import React from "react";
 const AcceptableUsePolicy = () => {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans min-h-screen py-16 px-4 sm:px-8 md:px-12 lg:px-20 max-w-6xl mx-auto shadow-lg rounded-xl my-8">
-      <style >{`
-        .text-primary {
-          color: #03a9fc; /* Your primary color */
-        }
-        .text-secondary {
-          color: #0285c7; /* Your secondary color */
-        }
-        .border-primary-light {
-          border-color: rgba(3, 169, 252, 0.3); /* Lighter primary for borders */
-        }
-        .text-blue-600 {
-          color: #03a9fc; /* Overriding Tailwind's default blue for links to your primary */
-        }
-        .hover\:text-blue-800:hover {
-          color: #0285c7; /* Overriding Tailwind's default blue hover for links to your secondary */
-        }
-      `}</style>
+    
       <header className="text-center mb-16">
         <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Acceptable Use Policy</h1>
         <p className="text-md text-gray-600">Last updated: <span className="font-semibold">November 14, 2023</span></p>
@@ -40,7 +24,7 @@ const AcceptableUsePolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Who We Are</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Who We Are</h2>
           <p className="mb-4">
             We are **Mobisec Technologies Pvt. Ltd** ("Company," "we," "us," or "our") a company registered in India at F-200, FF, Phase-1, New Palam Vihar, Sec-110, Gurugram, Haryana 122017.
           </p>
@@ -50,7 +34,7 @@ const AcceptableUsePolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Use of the Services</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Use of the Services</h2>
           <p className="mb-4">
             When you use the Services, you warrant that you will comply with this Policy and with all applicable laws. You also acknowledge that you may not:
           </p>
@@ -93,7 +77,7 @@ const AcceptableUsePolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">Consequences of breaching this policy</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">Consequences of breaching this policy</h2>
           <p className="mb-4">
             The consequences for violating our Policy will vary depending on the severity of the breach and the user's history on the Services, by way of example:
           </p>
@@ -103,7 +87,7 @@ const AcceptableUsePolicy = () => {
         </section>
 
         <section className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-          <h2 className="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary-light pb-2">How can you contact us about this policy?</h2>
+          <h2 className="text-3xl font-bold  mb-6 border-b-2 border-primary-light pb-2">How can you contact us about this policy?</h2>
           <p className="mb-4">If you have any further questions or comments, you may contact us by:</p>
           <ul className="list-disc list-inside pl-4">
             <li>Phone: <a href="tel:+91-11-6926-8029" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">+91-11-6926-8029</a></li>

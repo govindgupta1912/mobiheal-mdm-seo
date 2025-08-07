@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import hero from "@/assets/hero.png";
+import hero from "@/assets/hero.webp";
 import { Suspense } from "react";
 
 const Hero = () => {

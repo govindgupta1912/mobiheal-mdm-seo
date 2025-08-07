@@ -1,13 +1,13 @@
 
-import blog1 from "../../assets/BlogImages/blog1.png"
-import blog2 from "../../assets/BlogImages/blog2.png"
-import blog3 from "../../assets/BlogImages/blog3.png"
-import blog4 from "../../assets/BlogImages/blog4.png"
-import blog5 from "../../assets/BlogImages/blog5.jpg"
+import blog1 from "../../assets/BlogImages/blog1.webp"
+import blog2 from "../../assets/BlogImages/blog2.webp"
+import blog3 from "../../assets/BlogImages/blog3.webp"
+import blog4 from "../../assets/BlogImages/blog4.webp"
+import blog5 from "../../assets/BlogImages/blog5.webp"
 import blog6 from "../../assets/BlogImages/blog6.webp"
-import blog7 from "../../assets/BlogImages/blog7.png"
-import blog8 from "../../assets/BlogImages/blog8.png"
-import blog9 from "../../assets/BlogImages/blog9.png"
+import blog7 from "../../assets/BlogImages/blog7.webp"
+import blog8 from "../../assets/BlogImages/blog8.webp"
+import blog9 from "../../assets/BlogImages/blog9.webp"
 
 export const blogs = [
   // {

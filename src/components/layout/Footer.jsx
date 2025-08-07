@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import  mobisecLogo from "../../assets/MOBISEC_logo-footer.png";
-import registerLogo from "../../assets/registered2.png";
+import  mobisecLogo from "../../assets/Footer/MOBISEC_logo-footer.webp";
+import registerLogo from "../../assets/Footer/registered2.webp";
 import { Suspense } from "react";
 
 
@@ -182,23 +182,19 @@ const Footer = () => {
                   About Us
                 </Link>
               </li>
+             
               <li>
-                <a href="#" className="hover:text-white">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <Link href="/partners" className="hover:text-white">
+                <Link to="/partners" className="hover:text-white">
                   Partners
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Press & Media
-                </a>
+                <Link to="/testimonials" className="hover:text-white">
+                  Testimonials
+                </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white">
+                <Link to="/contact" className="hover:text-white">
                   Contact Us
                 </Link>
               </li>
@@ -230,7 +226,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-white">
+                <Link to="/faq" className="hover:text-white">
                   FAQs
                 </Link>
               </li>

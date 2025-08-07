@@ -28,6 +28,7 @@ import NotFound from "./pages/not-found";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import WhitepaperDetailPage from "./pages/whitepapers/[slug]";
 import { ToastContainer } from "react-toastify";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 
 function Router() {
@@ -76,7 +77,7 @@ function App() {
   return (
 
     <QueryClientProvider client={queryClient}>
-      {/* <ScrollToTop /> */}
+       <ScrollToTop /> 
        <Layout>
         <Router />
         </Layout>
