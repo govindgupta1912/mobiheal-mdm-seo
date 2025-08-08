@@ -21,9 +21,9 @@ const Header = () => {
   return (
    
     // </header>
-  <header className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-2">
-    <div className="flex flex-wrap justify-between items-center gap-1 lg:gap-4 py-2">
+<header className="sticky top-0 z-50 bg-white shadow-md">
+  <div className="mx-auto w-full max-w-screen-xl px-2 sm:px-4 md:px-6 lg:px-8 py-2">
+    <div className="flex items-center justify-between gap-3 lg:gap-4 py-2 flex-nowrap">
       {/* Logo */}
       <div className="flex items-center flex-shrink-0">
         <Link to="/" className="flex items-center">
@@ -32,13 +32,16 @@ const Header = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex flex-wrap items-center justify-center gap-3 flex-grow">
+      <div className="hidden md:flex items-center justify-center gap-2 md:gap-3 flex-wrap min-w-0 text-sm lg:text-base">
         <DesktopNavigation currentPath={location} />
       </div>
 
       {/* CTA Buttons */}
-      <div className="hidden md:flex items-center space-x-2 flex-shrink-0">
-        <Button variant="ghost" className="font-medium">
+      <div className="hidden md:flex items-center space-x-1 md:space-x-2 flex-shrink-0">
+        <Button
+          variant="ghost"
+          className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3"
+        >
           Sign In
         </Button>
         <a
@@ -46,7 +49,9 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="font-medium">Request Demo</Button>
+          <Button className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3">
+            Request Demo
+          </Button>
         </a>
       </div>
 
@@ -57,6 +62,7 @@ const Header = () => {
     </div>
   </div>
 </header>
+
 
   );
 };

@@ -16,7 +16,8 @@ import {
   BarChart3
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-
+import mobihealLogo from "../assets/mobiheal_logo.svg"; // Adjust the path as necessary
+import { m } from "framer-motion";
 const Features = () => {
   const features = [
     {
@@ -119,6 +120,34 @@ const Features = () => {
     name="keywords"
     content="MDM features, zero-touch enrollment, patch management, threat defence, compliance dashboard, kiosk mode, BYOD control"
   />
+   {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/features" />
+
+  {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/features" />
+  <meta
+    property="og:title"
+    content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
+  />
+  <meta
+    property="og:description"
+    content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
+  />
+ 
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/features" />
+  <meta
+    name="twitter:title"
+    content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
+  />
+ 
 </Helmet>
       
 

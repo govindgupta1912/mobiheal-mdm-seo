@@ -1,6 +1,6 @@
 const TestimonialCard = ({ quote, author, position, rating }) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-neutral-200 flex flex-col justify-content h-full">
+    <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-neutral-200 flex flex-col justify-content h-full">
       {/* Rating */}
       <div className="flex items-center mb-4">
         <div className="text-amber-500 flex space-x-1">

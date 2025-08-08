@@ -124,16 +124,16 @@ const UseCasesSection = () => {
 
                   <div className="md:w-1/2">
                     <Suspense>
-                      <div
-                        className="rounded-lg shadow-lg overflow-hidden"
-                        style={{
-                          height: "450px",
-                          backgroundImage: `url('${useCase.image}')`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      />
-                    </Suspense>
+   <div
+  className="rounded-lg shadow-lg w-full overflow-hidden min-h-[250px] sm:min-h-[350px] md:min-h-[450px]"
+>
+  <img
+    src={useCase.image}
+    alt={useCase.title}
+    className="rounded-lg shadow-lg w-full h-auto object-cover min-h-[250px] sm:min-h-[350px] md:min-h-[450px]"
+  />
+</div>
+</Suspense>
                   </div>
                 </div>
               </TabsContent>

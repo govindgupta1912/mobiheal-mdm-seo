@@ -172,17 +172,16 @@ const UseCases = () => {
 
                     <div className="md:w-1/2 mt-8 md:mt-0">
                       <Suspense>
-                        <div
-                          className="rounded-lg shadow-lg w-full overflow-hidden"
-                          style={{
-                            height: "450px",
-                            backgroundImage: `url(${useCase.image})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center"
-                          }}
-                        />
-                      </Suspense>
+   <div
+  className="rounded-lg shadow-lg w-full overflow-hidden min-h-[250px] sm:min-h-[350px] md:min-h-[450px]"
+  style={{
+    backgroundImage: `url(${useCase.image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+  }}
+></div>
 
+  </Suspense>
                       <div className="bg-white p-6 mt-6 rounded-lg border border-neutral-200">
                         <h3 className="text-xl font-semibold mb-4 text-neutral-800">Success Story</h3>
                         <blockquote className="italic border-l-4 border-primary pl-4 text-neutral-600 mb-4">

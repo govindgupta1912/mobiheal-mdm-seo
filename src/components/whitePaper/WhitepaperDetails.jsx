@@ -265,7 +265,7 @@ const WhitepaperDetails = ({
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-md rounded-lg"
+                    className="w-full text-lg font-semibold bg-gradient text-white shadow-md rounded-lg"
                   >
                     {isSubmitting ? (
                       <>
