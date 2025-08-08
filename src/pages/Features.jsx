@@ -153,7 +153,7 @@ const Features = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM Features dashboard preview" />
  
