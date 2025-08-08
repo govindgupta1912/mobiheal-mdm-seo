@@ -59,7 +59,39 @@ const CaseStudies = () => {
     name="keywords"
     content="MDM case studies, customer success, BFSI devices, education tablets, defence cybersecurity, ROI stories"
   />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/case-studies" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/case-studies" />
+  <meta property="og:title" content="MobiHeal Success Stories | Real-World MDM Case Studies" />
+  <meta
+    property="og:description"
+    content="Read how enterprises across BFSI, education and defence cut risk and boosted productivity with MobiHeal’s unified device management."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta property="og:image:alt" content="MobiHeal case studies preview" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/case-studies" />
+  <meta name="twitter:title" content="MobiHeal Success Stories | Real-World MDM Case Studies" />
+  <meta
+    name="twitter:description"
+    content="Read how enterprises across BFSI, education and defence cut risk and boosted productivity with MobiHeal’s unified device management."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal case studies preview" />
 </Helmet>
+
       {/* Hero */}
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

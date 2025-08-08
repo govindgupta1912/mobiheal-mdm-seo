@@ -45,7 +45,7 @@ const Blog = () => {
 
   return (
     <>
-      <Helmet>
+     <Helmet>
   <title>MobiHeal Insights Blog | Mobile Security Trends & How-Tos</title>
   <meta
     name="description"
@@ -55,7 +55,39 @@ const Blog = () => {
     name="keywords"
     content="MDM blog, mobile security trends, zero trust, Android Enterprise blog, device management tips, threat landscape"
   />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/blog" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/blog" />
+  <meta property="og:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
+  <meta
+    property="og:description"
+    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta property="og:image:alt" content="MobiHeal Insights Blog cover" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/blog" />
+  <meta name="twitter:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
+  <meta
+    name="twitter:description"
+    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal Insights Blog cover" />
 </Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto text-center">

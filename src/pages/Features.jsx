@@ -136,7 +136,7 @@ const Features = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
   />
   <meta property="og:image:alt" content="MobiHeal MDM Features dashboard preview" />
 

@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 const OwaspMobile = () => {
   return (
     <>
-    <Helmet>
+   <Helmet>
   <title>OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM</title>
   <meta
     name="description"
@@ -17,7 +17,39 @@ const OwaspMobile = () => {
     name="keywords"
     content="OWASP Mobile Top 10, mobile risks, insecure data storage, MobiHeal mitigation, mobile security, threat prevention"
   />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/owasp-mobile" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/owasp-mobile" />
+  <meta property="og:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
+  <meta
+    property="og:description"
+    content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta property="og:image:alt" content="OWASP Mobile Top 10 infographic preview" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/owasp-mobile" />
+  <meta name="twitter:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
+  <meta
+    name="twitter:description"
+    content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta name="twitter:image:alt" content="OWASP Mobile Top 10 infographic preview" />
 </Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

@@ -4,14 +4,53 @@ import about from "../assets/about/about_us2.webp"
 import about_animation1 from "../assets/about/Animation - 1750941799599.json"
 
 import Lottie from "lottie-react";
+import { Helmet } from "react-helmet-async";
 export default function AboutUsPage() {
   return (
     <>
-       <title>About Us</title>
-      <meta
-        name="description"
-        content="            You place your trust in us — and we take that seriously. Our promise is simple: to deliver tailor-made, proactive cybersecurity frameworks that adapt, scale, and outperform expectations.
-"      />
+      <Helmet>
+  <title>About MobiHeal | Our Mission in Cybersecurity & MDM</title>
+  <meta
+    name="description"
+    content="You place your trust in us — and we take that seriously. Our promise is simple: to deliver tailor-made, proactive cybersecurity frameworks that adapt, scale, and outperform expectations."
+  />
+  <meta
+    name="keywords"
+    content="About MobiHeal, cybersecurity mission, MDM company, mobile security experts, enterprise mobility, device management team"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/about-us" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/about-us" />
+  <meta property="og:title" content="About MobiHeal | Our Mission in Cybersecurity & MDM" />
+  <meta
+    property="og:description"
+    content="You place your trust in us — and we take that seriously. Our promise is simple: to deliver tailor-made, proactive cybersecurity frameworks that adapt, scale, and outperform expectations."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta property="og:image:alt" content="MobiHeal team working on cybersecurity solutions" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/about-us" />
+  <meta name="twitter:title" content="About MobiHeal | Our Mission in Cybersecurity & MDM" />
+  <meta
+    name="twitter:description"
+    content="You place your trust in us — and we take that seriously. Our promise is simple: to deliver tailor-made, proactive cybersecurity frameworks that adapt, scale, and outperform expectations."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal team working on cybersecurity solutions" />
+</Helmet>
+
          <main className="bg-gradient-to-b from-white via-blue-50 to-white text-gray-800 font-sans overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient text-white py-24 px-6 text-center overflow-hidden">

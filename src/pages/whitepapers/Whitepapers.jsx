@@ -43,17 +43,49 @@ const Whitepapers = () => {
 
   return (
     <>
-    <Helmet>
-      <title>MobiHeal Whitepapers | Security & Compliance Deep Dives</title>
-      <meta
-        name="description"
-        content="Download authoritative whitepapers on Android Enterprise security, Zero Trust mobility and patch-management."
-      />
-      <meta
+   <Helmet>
+  <title>MobiHeal Whitepapers | Security & Compliance Deep Dives</title>
+  <meta
+    name="description"
+    content="Download authoritative whitepapers on Android Enterprise security, Zero Trust mobility and patch-management."
+  />
+  <meta
     name="keywords"
     content="mobile security whitepaper, CIS benchmark, zero trust mobility, Android Enterprise security, patch management, compliance"
   />
-  </Helmet>
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/whitepapers" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/whitepapers" />
+  <meta property="og:title" content="MobiHeal Whitepapers | Security & Compliance Deep Dives" />
+  <meta
+    property="og:description"
+    content="Download authoritative whitepapers on Android Enterprise security, Zero Trust mobility and patch-management."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta property="og:image:alt" content="MobiHeal whitepapers preview" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/whitepapers" />
+  <meta name="twitter:title" content="MobiHeal Whitepapers | Security & Compliance Deep Dives" />
+  <meta
+    name="twitter:description"
+    content="Download authoritative whitepapers on Android Enterprise security, Zero Trust mobility and patch-management."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal whitepapers preview" />
+</Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
