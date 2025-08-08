@@ -123,7 +123,7 @@ const Features = () => {
    {/* Canonical */}
   <link rel="canonical" href="https://www.mobiheal.in/features" />
 
-  {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+  {/* Open Graph */}
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.mobiheal.in/features" />
   <meta
@@ -134,7 +134,11 @@ const Features = () => {
     property="og:description"
     content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
   />
- 
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta property="og:image:alt" content="MobiHeal MDM Features dashboard preview" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -147,6 +151,11 @@ const Features = () => {
     name="twitter:description"
     content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
   />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal MDM Features dashboard preview" />
  
 </Helmet>
       
