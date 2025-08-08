@@ -39,7 +39,7 @@ const Home = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/src/assets/hero.webp"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
     />
   <meta property="og:image:alt" content="MobiHeal MDM dashboard preview" />
 
@@ -53,7 +53,8 @@ const Home = () => {
   />
   <meta
     name="twitter:image"
- content="https://mobiheal-mdm-seo-mgqj.vercel.app/src/assets/hero.webp"  />
+     content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+  />
   <meta name="twitter:image:alt" content="MobiHeal MDM dashboard preview" />
 </Helmet>
       <Hero className="my-8 py-12 px-4 md:px-8 bg-white shadow-sm rounded-2xl border border-gray-100" />
