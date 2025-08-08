@@ -11,10 +11,49 @@ const Contact = () => {
   return (
     <>
     <Helmet>
+  {/* Basic SEO */}
   <title>Contact MobiHeal | Book a Demo or Speak with MDM Experts</title>
-  <meta name="description" content="Need answers fast? Reach our India-based experts for demos, pricing, POCs or technical queries." />
-  <meta name="keywords" content="contact MobiHeal, book demo, MDM experts, pricing enquiry, technical support, POC request, India cybersecurity startup" />
+  <meta
+    name="description"
+    content="Need answers fast? Reach our India-based experts for demos, pricing, POCs or technical queries."
+  />
+  <meta
+    name="keywords"
+    content="contact MobiHeal, book demo, MDM experts, pricing enquiry, technical support, POC request, India cybersecurity startup"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+
+  {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+  <meta property="og:title" content="Contact MobiHeal | Book a Demo or Speak with MDM Experts" />
+  <meta
+    property="og:description"
+    content="Need answers fast? Reach our India-based experts for demos, pricing, POCs or technical queries."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta property="og:image:alt" content="MobiHeal contact support team illustration" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+  <meta name="twitter:title" content="Contact MobiHeal | Book a Demo or Speak with MDM Experts" />
+  <meta
+    name="twitter:description"
+    content="Need answers fast? Reach our India-based experts for demos, pricing, POCs or technical queries."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal contact support team illustration" />
 </Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">Contact Us</h1>

@@ -22,17 +22,50 @@ const FAQ = () => {
   return (
     <>
 
-     <Helmet>
-        <title>MobiHeal MDM FAQs | Deployment, Security, ROI Answers</title>
-        <meta
-          name="description"
-          content="Find answers on platform support, Android Enterprise validation, data privacy, pricing, support SLAs and migration from legacy MDMs."
-        />
-        <meta
-          name="keywords"
-          content="MDM FAQs, Android Enterprise validated, data privacy, MDM migration, support SLA, platform support, licensing"
-        />
-      </Helmet>
+    <Helmet>
+  {/* Basic SEO */}
+  <title>MobiHeal MDM FAQs | Deployment, Security, ROI Answers</title>
+  <meta
+    name="description"
+    content="Find answers on platform support, Android Enterprise validation, data privacy, pricing, support SLAs and migration from legacy MDMs."
+  />
+  <meta
+    name="keywords"
+    content="MDM FAQs, Android Enterprise validated, data privacy, MDM migration, support SLA, platform support, licensing"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/faq" />
+
+  {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/faq" />
+  <meta property="og:title" content="MobiHeal MDM FAQs | Deployment, Security, ROI Answers" />
+  <meta
+    property="og:description"
+    content="Find answers on platform support, Android Enterprise validation, data privacy, pricing, support SLAs and migration from legacy MDMs."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta property="og:image:alt" content="MobiHeal MDM FAQs illustration" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/faq" />
+  <meta name="twitter:title" content="MobiHeal MDM FAQs | Deployment, Security, ROI Answers" />
+  <meta
+    name="twitter:description"
+    content="Find answers on platform support, Android Enterprise validation, data privacy, pricing, support SLAs and migration from legacy MDMs."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal MDM FAQs illustration" />
+</Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

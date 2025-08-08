@@ -25,17 +25,49 @@ const Testimonials = () => {
 
   return (
     <>
-    <Helmet>
-      <title>MobiHeal Testimonials | Trusted by Security-First Brands</title>
-      <meta
-        name="description"
-        content="Hear how CIOs and CISOs across healthcare, BFSI and defence trust MobiHeal to protect endpoints and slash operating costs."
-      />
-      <meta
-        name="keywords"
-        content="MDM testimonials, customer reviews, CIO quotes, CISO feedback, BFSI security, healthcare mobility, defence MDM"
-      />
-    </Helmet>
+  <Helmet>
+  <title>MobiHeal Testimonials | Trusted by Security-First Brands</title>
+  <meta
+    name="description"
+    content="Hear how CIOs and CISOs across healthcare, BFSI and defence trust MobiHeal to protect endpoints and slash operating costs."
+  />
+  <meta
+    name="keywords"
+    content="MDM testimonials, customer reviews, CIO quotes, CISO feedback, BFSI security, healthcare mobility, defence MDM"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/testimonials" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/testimonials" />
+  <meta property="og:title" content="MobiHeal Testimonials | Trusted by Security-First Brands" />
+  <meta
+    property="og:description"
+    content="Hear how CIOs and CISOs across healthcare, BFSI and defence trust MobiHeal to protect endpoints and slash operating costs."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+  />
+  <meta property="og:image:alt" content="Happy clients using MobiHeal MDM" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/testimonials" />
+  <meta name="twitter:title" content="MobiHeal Testimonials | Trusted by Security-First Brands" />
+  <meta
+    name="twitter:description"
+    content="Hear how CIOs and CISOs across healthcare, BFSI and defence trust MobiHeal to protect endpoints and slash operating costs."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+  />
+  <meta name="twitter:image:alt" content="Happy clients using MobiHeal MDM" />
+</Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

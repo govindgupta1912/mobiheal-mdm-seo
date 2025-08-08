@@ -110,6 +110,7 @@ const Pricing = () => {
   return (
     <>
     <Helmet>
+  {/* Title & Description */}
   <title>MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI</title>
   <meta
     name="description"
@@ -119,7 +120,45 @@ const Pricing = () => {
     name="keywords"
     content="MDM pricing, SaaS MDM cost, on-premises device management, transparent pricing, ROI, enterprise support, bulk licensing"
   />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/pricing" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/pricing" />
+  <meta
+    property="og:title"
+    content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
+  />
+  <meta
+    property="og:description"
+    content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta property="og:image:alt" content="MobiHeal MDM pricing plans preview" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/pricing" />
+  <meta
+    name="twitter:title"
+    content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
+  />
+  <meta
+    name="twitter:description"
+    content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal MDM pricing plans preview" />
 </Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

@@ -98,17 +98,56 @@ const UseCases = () => {
 
   return (
     <>
-      <Helmet>
-        <title>MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility</title>
-        <meta
-          name="description"
-          content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
-        />
-        <meta
-          name="keywords"
-          content="MDM use cases, BFSI security, defence mobility, healthcare MDM, rugged device management, logistics, retail kiosk, education tablets"
-        />
-      </Helmet>
+     <Helmet>
+  {/* Title & Description */}
+  <title>MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility</title>
+  <meta
+    name="description"
+    content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
+  />
+  <meta
+    name="keywords"
+    content="MDM use cases, BFSI security, defence mobility, healthcare MDM, rugged device management, logistics, retail kiosk, education tablets"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/use-cases" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/use-cases" />
+  <meta
+    property="og:title"
+    content="MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility"
+  />
+  <meta
+    property="og:description"
+    content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/use-cases.png"
+  />
+  <meta property="og:image:alt" content="MobiHeal MDM use case dashboard preview" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/use-cases" />
+  <meta
+    name="twitter:title"
+    content="MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility"
+  />
+  <meta
+    name="twitter:description"
+    content="See how MobiHeal secures BFSI data, defends air-gapped fleets, enables healthcare mobility and hardens rugged Android devices across logistics and retail."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/use-cases.png"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal MDM use case dashboard preview" />
+</Helmet>
+
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">

@@ -16,16 +16,48 @@ const Partners = () => {
   return (
     <>
     <Helmet>
-      <title>MobiHeal Partner Program | Reseller & MSP Opportunities</title>
-      <meta
-        name="description"
-        content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
-      />
-      <meta
-        name="keywords"
-        content="MDM partner program, reseller opportunity, MSP, channel partner, deal registration, partner margin, MDF, training"
-      />
-    </Helmet>
+  <title>MobiHeal Partner Program | Reseller & MSP Opportunities</title>
+  <meta
+    name="description"
+    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+  />
+  <meta
+    name="keywords"
+    content="MDM partner program, reseller opportunity, MSP, channel partner, deal registration, partner margin, MDF, training"
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://www.mobiheal.in/partners" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mobiheal.in/partners" />
+  <meta property="og:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
+  <meta
+    property="og:description"
+    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+  />
+  <meta
+    property="og:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta property="og:image:alt" content="MobiHeal Partner Program graphic" />
+
+  {/* Twitter / X */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.mobiheal.in/partners" />
+  <meta name="twitter:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
+  <meta
+    name="twitter:description"
+    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+  />
+  <meta name="twitter:image:alt" content="MobiHeal Partner Program graphic" />
+</Helmet>
+
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
