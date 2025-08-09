@@ -192,6 +192,46 @@ export const caseStudyDetails = {
       "MDM for Fintech",
       "Secure Mobile Payments"
     ],
+  // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/securing-customer-data-digital-wallets",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Securing Customer Data in Digital Wallets: MDM Implementation for a Leading Fintech Firm | MobiHeal MDM",
+  ogDescription: "See how MobiHeal MDM helped a fintech leader achieve 100% PCI-DSS compliance and eliminate BYOD-related incidents.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/securing-customer-data-digital-wallets",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-15T00:00:00Z",
+  articleModifiedTime: "2025-06-15T00:00:00Z",
+  articleTags: [
+    "Digital Wallet Security",
+    "Fintech Security",
+    "PCI-DSS Compliance",
+    "Mobile Payment Security",
+    "AI-Driven Threat Detection",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Securing Customer Data in Digital Wallets: MDM Implementation for a Leading Fintech Firm | MobiHeal MDM",
+  twitterDescription: "Learn how MobiHeal MDM helped a fintech firm secure digital wallets, achieve PCI-DSS compliance, and boost customer trust by 40%.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Original Data
   "results": [
     { "stat": "90%", "label": "Reduction in phishing attempts" },
     { "stat": "100%", "label": "PCI-DSS compliance score" },
@@ -303,6 +343,45 @@ export const caseStudyDetails = {
     ],
   seoTitle:"HIPAA Compliance Achieved: Protecting Patient Data on Tablets in a Multi-Hospital Network ",
   seoDescription:"Discover how a multi-hospital network achieved 100% HIPAA compliance using MobiHeal MDM. Learn strategies to secure patient data on tablets and prevent breaches.",
+  // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/hipaa-compliance-healthcare-tablets",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "HIPAA Compliance Achieved: Protecting Patient Data on Tablets in a Multi-Hospital Network | MobiHeal MDM",
+  ogDescription: "Discover how a multi-hospital network achieved 100% HIPAA compliance using MobiHeal MDM. Learn strategies to secure patient data on tablets and prevent breaches.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/hipaa-compliance-healthcare-tablets",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-20T00:00:00Z",
+  articleModifiedTime: "2025-06-20T00:00:00Z",
+  articleTags: [
+    "Healthcare Data Security",
+    "HIPAA Compliance",
+    "Tablet MDM Solutions",
+    "PHI Protection",
+    "Mobile Device Management in Healthcare",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "HIPAA Compliance Achieved: Protecting Patient Data on Tablets in a Multi-Hospital Network | MobiHeal MDM",
+  twitterDescription: "Discover how a multi-hospital network achieved 100% HIPAA compliance using MobiHeal MDM. Learn strategies to secure patient data on tablets and prevent breaches.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "100%", "label": "HIPAA compliance achieved" },
     { "stat": "89%", "label": "Reduction in PHI exposure incidents" },
