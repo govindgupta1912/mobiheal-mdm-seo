@@ -118,6 +118,23 @@ export const blogs = [
     ],
     titleTag: "5 Essential Benefits of Mobile Device Management for Enterprises | MobiHeal MDM",
     metaDescription: "Discover the top 5 benefits of Mobile Device Management (MDM) for enterprises. Learn how MDM enhances security, improves productivity, and simplifies compliance.",
+     canonical: "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/mdm-benefits",  // replace with actual URL
+  og: {
+    type: "article",
+    url: "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/mdm-benefits",    // replace with actual URL
+    title: "5 Essential Benefits of Mobile Device Management for Enterprises | MobiHeal MDM",
+    description: "Discover the top 5 benefits of Mobile Device Management (MDM) for enterprises. Learn how MDM enhances security, improves productivity, and simplifies compliance.",
+    image: "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog1.png", // replace with actual image URL
+    imageAlt: "Illustration showing Mobile Device Management benefits"
+  },
+  twitter: {
+    card: "summary_large_image",
+    url: "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/mdm-benefits",    // optional, Twitter usually infers from canonical
+    title: "5 Essential Benefits of Mobile Device Management for Enterprises | MobiHeal MDM",
+    description: "Discover the top 5 benefits of Mobile Device Management (MDM) for enterprises. Learn how MDM enhances security, improves productivity, and simplifies compliance.",
+    image: "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog1.png", // replace with actual image URL
+    imageAlt: "Illustration showing Mobile Device Management benefits"
+  },
   "sections": [
     {
       "heading": "1. Enhanced Security for Corporate Data",
@@ -228,6 +245,23 @@ export const blogs = [
     ],
     titleTag: "How Geo-Fencing Enhances Security and Productivity in BFSI Sector | MobiHeal MDM",
     metaDescription: "Explore how Geo-Fencing technology strengthens security and boosts productivity in the BFSI sector. Learn its key benefits and implementation strategies with MobiHeal MDM.",
+     "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/geo-fencing-bfsi", // replace with actual URL
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/geo-fencing-bfsi", // replace with actual URL
+    "title": "How Geo-Fencing Enhances Security and Productivity in BFSI Sector | MobiHeal MDM",
+    "description": "Explore how Geo-Fencing technology strengthens security and boosts productivity in the BFSI sector. Learn its key benefits and implementation strategies with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog2.png", // replace with actual image URL
+    "imageAlt": "Illustration showing Geo-Fencing in BFSI sector"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/geo-fencing-bfsi", // optional
+    "title": "How Geo-Fencing Enhances Security and Productivity in BFSI Sector | MobiHeal MDM",
+    "description": "Explore how Geo-Fencing technology strengthens security and boosts productivity in the BFSI sector. Learn its key benefits and implementation strategies with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog2.png", // replace with actual image URL
+    "imageAlt": "Illustration showing Geo-Fencing in BFSI sector"
+  },
   "sections": [
     {
       "heading": "What is Geo-Fencing?",
@@ -350,6 +384,23 @@ export const blogs = [
     ],
     titleTag: "How QR Code Enrollment Simplifies Device Setup | MobiHeal MDM",
     metaDescription: "Learn how QR Code Enrollment streamlines mobile device setup for enterprises. Discover key benefits, best practices, and implementation tips with MobiHeal MDM.",
+     "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/qr-code-enrollment", // replace with actual URL
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/qr-code-enrollment", // replace with actual URL
+    "title": "How QR Code Enrollment Simplifies Device Setup | MobiHeal MDM",
+    "description": "Learn how QR Code Enrollment streamlines mobile device setup for enterprises. Discover key benefits, best practices, and implementation tips with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog3.png", // replace with actual image URL
+    "imageAlt": "Illustration showing QR Code Enrollment for mobile devices"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/qr-code-enrollment", // optional
+    "title": "How QR Code Enrollment Simplifies Device Setup | MobiHeal MDM",
+    "description": "Learn how QR Code Enrollment streamlines mobile device setup for enterprises. Discover key benefits, best practices, and implementation tips with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog3.png", // replace with actual image URL
+    "imageAlt": "Illustration showing QR Code Enrollment for mobile devices"
+  },
   "sections": [
     {
       "heading": "What is QR Code Enrollment?",
@@ -474,6 +525,23 @@ export const blogs = [
     ],
     titleTag: "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises | MobiHeal MDM",
     metaDescription: "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
+     "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/ai-driven-threat-detection", 
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/ai-driven-threat-detection",
+    "title": "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises | MobiHeal MDM",
+    "description": "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog4.png",
+    "imageAlt": "Illustration showing AI-powered threat detection in enterprise mobile devices"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/ai-driven-threat-detection",
+    "title": "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises | MobiHeal MDM",
+    "description": "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog4.png",
+    "imageAlt": "Illustration showing AI-powered threat detection in enterprise mobile devices"
+  },
   "sections": [
     {
       "heading": "What is AI-Driven Threat Detection?",
@@ -608,6 +676,23 @@ export const blogs = [
     ],
     titleTag: "Securing IoT Devices in Healthcare: Challenges and MDM Solutions | MobiHeal MDM",
     metaDescription: "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
+    "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/securing-iot-devices-healthcare",
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/securing-iot-devices-healthcare",
+    "title": "Securing IoT Devices in Healthcare: Challenges and MDM Solutions | MobiHeal MDM",
+    "description": "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog5.png",
+    "imageAlt": "Illustration showing secure IoT devices in a healthcare environment"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/securing-iot-devices-healthcare",
+    "title": "Securing IoT Devices in Healthcare: Challenges and MDM Solutions | MobiHeal MDM",
+    "description": "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog5.png",
+    "imageAlt": "Illustration showing secure IoT devices in a healthcare environment"
+  },
   "sections": [
     {
       "heading": "Challenges of IoT Security in Healthcare",
@@ -764,6 +849,23 @@ export const blogs = [
     ],
     titleTag: "Enhancing Retail Customer Experience with Secure Mobile Kiosks | MobiHeal MDM",
     metaDescription: "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
+    "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/enhancing-retail-customer-experience-secure-mobile-kiosks",
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/enhancing-retail-customer-experience-secure-mobile-kiosks",
+    "title": "Enhancing Retail Customer Experience with Secure Mobile Kiosks | MobiHeal MDM",
+    "description": "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog6.png",
+    "imageAlt": "Illustration showing secure mobile kiosks enhancing retail customer interactions"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/enhancing-retail-customer-experience-secure-mobile-kiosks",
+    "title": "Enhancing Retail Customer Experience with Secure Mobile Kiosks | MobiHeal MDM",
+    "description": "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog6.png",
+    "imageAlt": "Illustration showing secure mobile kiosks enhancing retail customer interactions"
+  },
   "sections": [
     {
       "heading": "The Rise of Mobile Kiosks in Retail",
@@ -946,6 +1048,24 @@ export const blogs = [
     ],
     titleTag: "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management | MobiHeal MDM",
     metaDescription: "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
+     "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/endpoint-security-distributed-workforces",
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/endpoint-security-distributed-workforces",
+    "title": "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management | MobiHeal MDM",
+    "description": "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog7.png",
+    "imageAlt": "Illustration showing secure remote workforce endpoint management"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/endpoint-security-distributed-workforces",
+    "title": "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management | MobiHeal MDM",
+    "description": "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog7.png",
+    "imageAlt": "Illustration showing secure remote workforce endpoint management"
+  },
+    
   "sections": [
     {
       "heading": "Challenges of Securing Distributed Workforces",
@@ -1108,6 +1228,23 @@ export const blogs = [
     ],
     titleTag: "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
     metaDescription: "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
+    "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/zero-touch-enrollment-android",
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/zero-touch-enrollment-android",
+    "title": "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
+    "description": "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog8.png",
+    "imageAlt": "Illustration showing automated Android device provisioning via Zero-Touch Enrollment"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/zero-touch-enrollment-android",
+    "title": "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
+    "description": "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog8.png",
+    "imageAlt": "Illustration showing automated Android device provisioning via Zero-Touch Enrollment"
+  },
   "sections": [
     {
       "heading": "What is Zero-Touch Enrollment?",
@@ -1269,6 +1406,23 @@ export const blogs = [
     ],
     titleTag: "GDPR Compliance Made Simple: MDM Solutions for Data Protection | MobiHeal MDM",
     metaDescription: "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
+    "canonical": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/gdpr-compliance-mdm-solutions-data-protection",
+  "og": {
+    "type": "article",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/gdpr-compliance-mdm-solutions-data-protection",
+    "title": "GDPR Compliance Made Simple: MDM Solutions for Data Protection | MobiHeal MDM",
+    "description": "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog9.png",
+    "imageAlt": "Illustration showing GDPR compliance with secure mobile device management"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "url": "https://mobiheal-mdm-seo-mgqj.vercel.app/blog/gdpr-compliance-mdm-solutions-data-protection",
+    "title": "GDPR Compliance Made Simple: MDM Solutions for Data Protection | MobiHeal MDM",
+    "description": "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
+    "image": "https://mobiheal-mdm-seo-mgqj.vercel.app/assets/BlogImages/blog9.png",
+    "imageAlt": "Illustration showing GDPR compliance with secure mobile device management"
+  },
   "sections": [
     {
       "heading": "GDPR Compliance Challenges for Enterprises",
