@@ -86,8 +86,59 @@ export const whitepapers = [
   heroImage: wp2, // Replace with the actual imported image reference
   type: "Whitepaper",
   // ✅ SEO Fields
-  seoTitle:": Comprehensive Guide to Mobile Device Security | MobiHeal MDM",
-  seoDescription:"Explore our Comprehensive Guide to Mobile Device Security. Learn best practices, strategies, and solutions to secure enterprise mobile devices efficiently.",
+  seoTitle: "Comprehensive Guide to Mobile Device Security | MobiHeal MDM",
+  seoDescription: "Explore our Comprehensive Guide to Mobile Device Security. Learn best practices, strategies, and solutions to secure enterprise mobile devices efficiently.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/comprehensive-guide-mobile-device-security`,
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Comprehensive Guide to Mobile Device Security | MobiHeal MDM",
+  ogDescription: "Master mobile device security with MobiHeal's comprehensive guide, covering compliance, BYOD security, kiosk mode, and advanced MDM strategies.",
+  ogType: "article",
+  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/comprehensive-guide-mobile-device-security`,
+  get ogImage() {
+    return this.heroImage?.startsWith("http")
+      ? this.heroImage
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-20T00:00:00Z",
+  articleModifiedTime: "2025-06-20T00:00:00Z",
+  articleTags: [
+    "Mobile Device Security",
+    "MDM Strategies",
+    "BYOD Security",
+    "Kiosk Mode",
+    "Enterprise Mobility Management",
+    "Compliance Monitoring"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Comprehensive Guide to Mobile Device Security | MobiHeal MDM",
+  twitterDescription: "Discover how to secure enterprise mobility with MobiHeal's in-depth mobile device security guide — from compliance to kiosk mode.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Meta Keywords
+  metaKeywords: [
+    "Mobile Device Security",
+    "MDM Strategies",
+    "BYOD Security",
+    "Kiosk Mode",
+    "Enterprise Mobility Management",
+    "Compliance Monitoring",
+    "MobiHeal MDM"
+  ],
+
   highlights: [
     "Combat phishing, malware, and device theft threats",
     "Ensure GDPR, HIPAA, and industry-specific compliance",
@@ -108,9 +159,60 @@ export const whitepapers = [
   heroSubtitle: "Learn how to securely manage personal devices at work while boosting employee productivity and ensuring compliance.",
   heroImage: wp3, // Replace with actual import or image reference
   type: "Whitepaper",
-  // ✅ SEO Fields
-  seoTitle:"Best Practices for BYOD Implementation in Enterprises | MobiHeal MDM",
-  seoDescription:"Discover proven strategies for secure BYOD implementation in enterprises. Learn how MobiHeal MDM ensures compliance, enhances productivity, and mitigates risks.",
+   // ✅ SEO Fields
+  seoTitle: "Best Practices for BYOD Implementation in Enterprises | MobiHeal MDM",
+  seoDescription: "Discover proven strategies for secure BYOD implementation in enterprises. Learn how MobiHeal MDM ensures compliance, enhances productivity, and mitigates risks.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/best-practices-byod-enterprises`,
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Best Practices for BYOD Implementation in Enterprises | MobiHeal MDM",
+  ogDescription: "Master BYOD security and compliance with MobiHeal's expert guide — covering risk mitigation, data separation, and policy enforcement.",
+  ogType: "article",
+  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/best-practices-byod-enterprises`,
+  get ogImage() {
+    return this.heroImage?.startsWith("http")
+      ? this.heroImage
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-22T00:00:00Z",
+  articleModifiedTime: "2025-06-22T00:00:00Z",
+  articleTags: [
+    "BYOD Security",
+    "Enterprise Mobility",
+    "Data Protection",
+    "Mobile Device Management",
+    "Compliance Enforcement",
+    "Work Profile Containerization"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Best Practices for BYOD Implementation in Enterprises | MobiHeal MDM",
+  twitterDescription: "Learn how to securely manage personal devices at work with MobiHeal's proven BYOD strategies — compliance, productivity, and risk reduction.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Meta Keywords
+  metaKeywords: [
+    "BYOD Security",
+    "Enterprise Mobility",
+    "Data Protection",
+    "Mobile Device Management",
+    "Compliance Enforcement",
+    "Work Profile Containerization",
+    "MobiHeal MDM"
+  ],
+
   highlights: [
     "Mitigate BYOD security risks like data leakage and malware",
     "Achieve compliance with GDPR, HIPAA, and PCI-DSS",
@@ -131,9 +233,61 @@ export const whitepapers = [
   heroSubtitle: "Discover how MobiHeal’s unified MDM solution fortifies enterprise mobility, reduces costs, and future-proofs your digital ecosystem.",
   heroImage: wp4, // Replace with the actual image reference
   type: "Whitepaper",
-  // ✅ SEO Fields
-  seoTitle:"Advanced Mobile Device Management with MobiHeal: Secure, Scalable & Future-Ready | MobiHeal MDM",
-  seoDescription:"Discover how MobiHeal’s next-gen Mobile Device Management solution fortifies security, optimizes costs, ensures compliance, and accelerates mobile workforce productivity for SMEs and enterprises alike.",
+ // ✅ SEO Fields
+  seoTitle: "Advanced Mobile Device Management with MobiHeal: Secure, Scalable & Future-Ready | MobiHeal MDM",
+  seoDescription: "Discover how MobiHeal’s next-gen Mobile Device Management solution fortifies security, optimizes costs, ensures compliance, and accelerates mobile workforce productivity for SMEs and enterprises alike.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/mobiheal-advanced-mdm-enterprise`,
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Advanced Mobile Device Management with MobiHeal: Secure, Scalable & Future-Ready | MobiHeal MDM",
+  ogDescription: "MobiHeal’s advanced MDM secures devices, streamlines operations, and empowers enterprises to scale efficiently while meeting compliance.",
+  ogType: "article",
+  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/mobiheal-advanced-mdm-enterprise`,
+  get ogImage() {
+    return this.heroImage?.startsWith("http")
+      ? this.heroImage
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-25T00:00:00Z",
+  articleModifiedTime: "2025-06-25T00:00:00Z",
+  articleTags: [
+    "Advanced MDM",
+    "Enterprise Mobility",
+    "Zero Trust Security",
+    "Mobile Device Management",
+    "Compliance Automation",
+    "Cloud-Native Infrastructure"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Advanced Mobile Device Management with MobiHeal: Secure, Scalable & Future-Ready | MobiHeal MDM",
+  twitterDescription: "Explore how MobiHeal’s advanced MDM delivers security, compliance, cost efficiency, and growth for modern enterprises.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Meta Keywords
+  metaKeywords: [
+    "Advanced MDM",
+    "Enterprise Mobility",
+    "Zero Trust Security",
+    "Mobile Device Management",
+    "Compliance Automation",
+    "Cloud-Native Infrastructure",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Highlights
   highlights: [
     "Combat zero-day threats with Zero-Trust enforcement",
     "Automate device provisioning and reduce IT workload",
