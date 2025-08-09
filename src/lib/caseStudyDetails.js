@@ -30,9 +30,50 @@ export const caseStudyDetails = {
       "Transaction Monitoring",
       "Fraud Detection Technology"
     ],
-   // ✅ SEO Fields
-  seoTitle: "Preventing Mobile Fraud in Banking: How MDM Reduced Unauthorized Transactions by 60% ",
+  // ✅ SEO Fields
+  seoTitle: "Preventing Mobile Fraud in Banking: How MDM Reduced Unauthorized Transactions by 60%",
   seoDescription: "Discover how a leading bank reduced mobile fraud by 60% using MobiHeal MDM. Learn strategies for securing transactions, ensuring compliance, and enhancing customer trust.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/preventing-mobile-fraud-banking`,
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Preventing Mobile Fraud in Banking: How MDM Reduced Unauthorized Transactions by 60% | MobiHeal MDM",
+  ogDescription: "See how MobiHeal MDM helped a multinational bank cut mobile fraud by 60% while achieving full PCI-DSS compliance.",
+  ogType: "article",
+  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/preventing-mobile-fraud-banking`,
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-20T00:00:00Z",
+  articleModifiedTime: "2025-06-20T00:00:00Z",
+  articleTags: [
+    "Mobile Fraud Prevention",
+    "Banking Security",
+    "PCI-DSS Compliance",
+    "Financial Cybersecurity",
+    "AI-Driven Fraud Detection",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Preventing Mobile Fraud in Banking: How MDM Reduced Unauthorized Transactions by 60% | MobiHeal MDM",
+  twitterDescription: "Learn how MobiHeal MDM secured mobile banking, reduced fraud by 60%, and ensured compliance for a global bank.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Results
   results: [
     { stat: "60%", label: "Reduction in fraudulent activities" },
     { stat: "100%", label: "PCI-DSS compliance achieved" },

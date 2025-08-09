@@ -49,13 +49,63 @@ console.log("caseStudies",study.seoTitle);
     <>
       {/* SEO */}
       {/* <BlogSEO title={study.seoTitle} description={study.seoDescription} /> */}
-      <Helmet>
+      {/* <Helmet>
       <title>{`${study.seoTitle}`}</title>
 
         <meta name="description" content={study.seoDescription} />
         <meta name="keywords" content={[study.primaryKeyword, ...study.secondaryKeywords].join(', ')} />
 
-      </Helmet>
+      </Helmet> */}
+
+      <Helmet>
+  {/* ✅ Basic SEO */}
+  <title>{study.seoTitle}</title>
+  <meta name="description" content={study.seoDescription} />
+  {study.primaryKeyword && (
+    <meta
+      name="keywords"
+      content={[study.primaryKeyword, ...(study.secondaryKeywords || [])].join(", ")}
+    />
+  )}
+
+  {/* ✅ Canonical */}
+  {study.canonicalUrl && (
+    <link rel="canonical" href={study.canonicalUrl} />
+  )}
+
+  {/* ✅ Open Graph */}
+  {study.ogTitle && <meta property="og:title" content={study.ogTitle} />}
+  {study.ogDescription && <meta property="og:description" content={study.ogDescription} />}
+  {study.ogType && <meta property="og:type" content={study.ogType} />}
+  {study.ogUrl && <meta property="og:url" content={study.ogUrl} />}
+  {study.ogImage && <meta property="og:image" content={study.ogImage} />}
+  {study.ogLocale && <meta property="og:locale" content={study.ogLocale} />}
+  {study.ogSiteName && <meta property="og:site_name" content={study.ogSiteName} />}
+
+  {/* ✅ Article-specific OG tags */}
+  {study.articleAuthor && <meta property="article:author" content={study.articleAuthor} />}
+  {study.articlePublishedTime && (
+    <meta property="article:published_time" content={study.articlePublishedTime} />
+  )}
+  {study.articleModifiedTime && (
+    <meta property="article:modified_time" content={study.articleModifiedTime} />
+  )}
+  {Array.isArray(study.articleTags) &&
+    study.articleTags.map((tag, index) => (
+      <meta key={`article-tag-${index}`} property="article:tag" content={tag} />
+    ))}
+
+  {/* ✅ Twitter */}
+  {study.twitterCard && <meta name="twitter:card" content={study.twitterCard} />}
+  {study.twitterTitle && <meta name="twitter:title" content={study.twitterTitle} />}
+  {study.twitterDescription && (
+    <meta name="twitter:description" content={study.twitterDescription} />
+  )}
+  {study.twitterImage && <meta name="twitter:image" content={study.twitterImage} />}
+  {study.twitterSite && <meta name="twitter:site" content={study.twitterSite} />}
+  {study.twitterCreator && <meta name="twitter:creator" content={study.twitterCreator} />}
+</Helmet>
+
 
       {/* Hero Section */}
  <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
