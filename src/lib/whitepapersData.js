@@ -11,9 +11,59 @@ export const whitepapers = [
     heroSubtitle: "Discover how Mobile Device Management solutions optimize operations, enhance security, and drive cost-efficiency.",
     heroImage: wp1,
     type: "Whitepaper",
-    // ✅ SEO Fields
-    seoTitle:"Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
-    seoDescription:"Explore how MDM solutions can transform your business operations by enhancing security, ensuring compliance, and reducing costs. Learn about the benefits of MDM in various industries.",
+   
+     // ✅ SEO Fields
+  seoTitle: "Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
+  seoDescription: "Explore how MDM solutions can transform your business operations by enhancing security, ensuring compliance, and reducing costs. Learn about the benefits of MDM in various industries.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/unlocking-business-potential`,
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
+  ogDescription: "Discover how MobiHeal's MDM solutions can optimize operations, enhance security, and reduce costs across industries.",
+  ogType: "article",
+  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/unlocking-business-potential`,
+  get ogImage() {
+    return this.heroImage?.startsWith("http")
+      ? this.heroImage
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-18T00:00:00Z",
+  articleModifiedTime: "2025-06-18T00:00:00Z",
+  articleTags: [
+    "Mobile Device Management",
+    "MDM Solutions",
+    "Enterprise Mobility",
+    "BYOD Security",
+    "Device Compliance"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
+  twitterDescription: "Learn how MobiHeal's MDM solutions can enhance security, improve compliance, and drive cost-efficiency.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
+  // ✅ Meta Keywords
+  metaKeywords: [
+    "Mobile Device Management",
+    "MDM Solutions",
+    "Enterprise Mobility",
+    "BYOD Security",
+    "Device Compliance",
+    "Business Cost Efficiency",
+    "MobiHeal MDM"
+  ],
     // ✅ Highlights
     highlights: [
       "Secure corporate and personal mobile devices",

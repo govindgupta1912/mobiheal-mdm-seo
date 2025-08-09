@@ -31,10 +31,29 @@ const formSchema = z.object({
 const WhitepaperDetails = ({
   id,
   title,
-  seoTitle,
-  seoDescription,
   heroSubtitle,
   heroImage,
+  seoTitle,
+  seoDescription,
+  canonicalUrl,
+  ogSiteName,
+  ogLocale,
+  ogTitle,
+  ogDescription,
+  ogType,
+  ogUrl,
+  ogImage,
+  articleAuthor,
+  articlePublishedTime,
+  articleModifiedTime,
+  articleTags,
+  twitterCard,
+  twitterTitle,
+  twitterDescription,
+  twitterImage,
+  twitterSite,
+  twitterCreator,
+  metaKeywords,
   highlights,
   downloadForm,
   pdfUrl,
@@ -106,10 +125,63 @@ const WhitepaperDetails = ({
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
-      </Helmet>
+      </Helmet> */}
+
+        <Helmet>
+      {/* Title & Description */}
+      <title>{seoTitle}</title>
+      <meta name="description" content={seoDescription} />
+
+      {/* Canonical */}
+      {canonicalUrl && (
+        <link rel="canonical" href={canonicalUrl} />
+      )}
+
+      {/* Meta Keywords */}
+      {metaKeywords && (
+        <meta name="keywords" content={metaKeywords.join(", ")} />
+      )}
+
+      {/* Open Graph Tags */}
+      <meta property="og:site_name" content={ogSiteName} />
+      <meta property="og:locale" content={ogLocale} />
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={ogUrl} />
+      <meta property="og:image" content={typeof ogImage === "function" ? ogImage() : ogImage} />
+
+      {/* Article-specific Open Graph Tags */}
+      {articleAuthor && (
+        <meta property="article:author" content={articleAuthor} />
+      )}
+      {articlePublishedTime && (
+        <meta property="article:published_time" content={articlePublishedTime} />
+      )}
+      {articleModifiedTime && (
+        <meta property="article:modified_time" content={articleModifiedTime} />
+      )}
+      {articleTags &&
+        articleTags.map((tag, i) => (
+          <meta key={i} property="article:tag" content={tag} />
+        ))}
+
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content={twitterCard} />
+      <meta name="twitter:title" content={twitterTitle} />
+      <meta name="twitter:description" content={twitterDescription} />
+      <meta name="twitter:image" content={typeof twitterImage === "function" ? twitterImage() : twitterImage} />
+      {twitterSite && (
+        <meta name="twitter:site" content={twitterSite} />
+      )}
+      {twitterCreator && (
+        <meta name="twitter:creator" content={twitterCreator} />
+      )}
+    </Helmet>
+  
 
       {/* Hero Section */}
       <section className="relative bg-gradient text-white py-14 px-4 sm:py-18 sm:px-24 overflow-hidden">
