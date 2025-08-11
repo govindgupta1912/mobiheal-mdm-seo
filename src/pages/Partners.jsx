@@ -181,7 +181,7 @@ const Partners = () => {
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-neutral-200">
+            <div className="bg-white p-8 rounded-3xl shadow-md border border-neutral-200">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-neutral-800">
                   Become a Partner

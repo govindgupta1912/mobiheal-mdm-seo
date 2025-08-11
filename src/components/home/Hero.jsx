@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section className="relative overflow-hidden text-white py-12 sm:py-16 lg:py-10 bg-gradient">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative container z-10  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16">
           
           {/* Text Section */}
@@ -52,9 +52,9 @@ const Hero = () => {
                 src={hero}
                 alt="Mobile Device Management Dashboard"
                 className="
-                  w-full
+                  max-w-full
                   md:w-[95%] lg:w-[90%]
-                  min-h-[250px] sm:min-h-[300px] md:min-h-[380px] lg:min-h-[420px]
+                  h-auto
                   object-contain
                 "
               />

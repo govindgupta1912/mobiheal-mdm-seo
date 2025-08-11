@@ -233,14 +233,13 @@ const ContactForm = () => {
             )}
           />
 
-          <div className="relative h-20 overflow-hidden">
+          <div className="relative h-10 overflow-hidden">
             <div className="w-full flex justify-center relative">
               <Button
                 type="submit"
                 // onMouseEnter={handleMouseEnter}
                 disabled={isSubmitting}
-                className="transition-all duration-300 absolute w-full"
-                style={{ transform: `translateX(${offset}px)` }}
+                className="transition-all duration-300 absolute w-full "
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>

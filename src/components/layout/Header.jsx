@@ -22,7 +22,7 @@ const Header = () => {
    
     // </header>
 <header className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="mx-auto w-full max-w-screen-xl px-2 sm:px-4 md:px-6 lg:px-8 py-2">
+  <div className="container mx-auto w-full  px-2 sm:px-4 md:px-6 lg:px-8 py-2">
     <div className="flex items-center justify-between gap-3 lg:gap-4 py-2 flex-nowrap">
       {/* Logo */}
       <div className="flex items-center flex-shrink-0">

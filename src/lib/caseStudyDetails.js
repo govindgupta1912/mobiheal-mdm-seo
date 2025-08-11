@@ -495,6 +495,44 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Securing Telemedicine Devices: How MDM Enabled Remote Consultations Without Compromising Privacy",
   seoDescription:": Discover how a healthcare provider achieved HIPAA compliance and zero data breaches with MobiHeal MDM. Learn strategies to secure telemedicine devices and protect patient privacy.",
+   // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/telemedicine-device-security",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Securing Telemedicine Devices: How MDM Enabled Remote Consultations Without Compromising Privacy | MobiHeal MDM",
+  ogDescription: "Discover how a healthcare provider achieved HIPAA compliance and zero data breaches with MobiHeal MDM. Learn strategies to secure telemedicine devices and protect patient privacy.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/telemedicine-device-security",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-25T00:00:00Z",
+  articleModifiedTime: "2025-06-25T00:00:00Z",
+  articleTags: [
+    "Telemedicine Device Security",
+    "HIPAA Compliance",
+    "Remote Consultations",
+    "PHI Protection",
+    "Mobile Device Management in Healthcare",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Securing Telemedicine Devices: How MDM Enabled Remote Consultations Without Compromising Privacy | MobiHeal MDM",
+  twitterDescription: "Discover how a healthcare provider achieved HIPAA compliance and zero data breaches with MobiHeal MDM. Learn strategies to secure telemedicine devices and protect patient privacy.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
   "results": [
     { "stat": "100%", "label": "HIPAA Audit Pass Rate" },
     { "stat": "87%", "label": "Reduction in Device Loss-Related Risks" },
@@ -607,6 +645,44 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Securing IoT-Powered Stores: MDM for Smart Shelves and Mobile POS Systems , MobiHeal Case Study ",
   seoDescription:"Discover how a retail chain secured IoT-powered stores using MobiHeal MDM. Learn strategies to protect smart shelves, POS systems, and enhance customer trust",
+   // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/iot-retail-security",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Securing IoT-Powered Stores: MDM for Smart Shelves and Mobile POS Systems | MobiHeal MDM",
+  ogDescription: "Discover how a retail chain secured IoT-powered stores using MobiHeal MDM. Learn strategies to protect smart shelves, POS systems, and enhance customer trust.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/iot-retail-security",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-26T00:00:00Z",
+  articleModifiedTime: "2025-06-26T00:00:00Z",
+  articleTags: [
+    "IoT Security in Retail",
+    "PCI-DSS Compliance",
+    "POS System Security",
+    "Smart Shelves",
+    "Mobile Device Management in Retail",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Securing IoT-Powered Stores: MDM for Smart Shelves and Mobile POS Systems | MobiHeal MDM",
+  twitterDescription: "Discover how a retail chain secured IoT-powered stores using MobiHeal MDM. Learn strategies to protect smart shelves, POS systems, and enhance customer trust.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
   "results": [
     { "stat": "100%", "label": "PCI-DSS Compliance Score" },
     { "stat": "92%", "label": "Reduction in Inventory Data Leaks" },
@@ -718,6 +794,45 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Boosting Customer Engagement: Secure Tablet Deployment for In-Store Product Demos | MobiHeal Case Study",
   seoDescription:"Discover how a retail brand increased sales conversions by 25% using secure tablets for in-store demos. Learn MDM strategies to enhance engagement and prevent cyber threats.",
+   // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/retail-tablet-demos",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Boosting Customer Engagement: Secure Tablet Deployment for In-Store Product Demos | MobiHeal MDM",
+  ogDescription: "Discover how a retail brand increased sales conversions by 25% using secure tablets for in-store demos. Learn MDM strategies to enhance engagement and prevent cyber threats.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/retail-tablet-demos",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-26T00:00:00Z",
+  articleModifiedTime: "2025-06-26T00:00:00Z",
+  articleTags: [
+    "Secure Tablet Deployment for Retail",
+    "Retail Customer Engagement",
+    "Kiosk Mode Benefits",
+    "POS System Security",
+    "Mobile Device Management in Retail",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Boosting Customer Engagement: Secure Tablet Deployment for In-Store Product Demos | MobiHeal MDM",
+  twitterDescription: "Discover how a retail brand increased sales conversions by 25% using secure tablets for in-store demos. Learn MDM strategies to enhance engagement and prevent cyber threats.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "40%", "label": "Sales Conversions After MDM" },
     { "stat": "90%", "label": "Customer Satisfaction Score" },
@@ -828,6 +943,46 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Securing Student Data in Hybrid Classrooms: MDM for Safe BYOD | MobiHeal Case Study ",
   seoDescription:"Discover how MobiHeal MDM secured 10,000+ student devices with BYOD policies, ensuring FERPA compliance and data privacy in hybrid learning environments.",
+
+    // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/education-byod-security",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Securing Student Data in Hybrid Classrooms: MDM for Safe BYOD | MobiHeal MDM",
+  ogDescription: "Discover how MobiHeal MDM secured 10,000+ student devices with BYOD policies, ensuring FERPA compliance and data privacy in hybrid learning environments.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/education-byod-security",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-26T00:00:00Z",
+  articleModifiedTime: "2025-06-26T00:00:00Z",
+  articleTags: [
+    "EdTech Device Management",
+    "Student Data Privacy",
+    "BYOD Security",
+    "FERPA Compliance",
+    "Hybrid Learning Solutions",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Securing Student Data in Hybrid Classrooms: MDM for Safe BYOD | MobiHeal MDM",
+  twitterDescription: "Discover how MobiHeal MDM secured 10,000+ student devices with BYOD policies, ensuring FERPA compliance and data privacy in hybrid learning environments.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "100%", "label": "FERPA Compliance Rate" },
     { "stat": "0", "label": "Data Leak Incidents After MDM" },
@@ -937,6 +1092,46 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Streamlining Tablet Deployment Across 50 Schools: Kiosk Mode for Digital Learning | MobiHeal Case Study",
   seoDescription:"Discover how MobiHeal MDM’s Kiosk Mode streamlined tablet deployment across 50 schools, ensuring secure, distraction-free digital learning environments.",
+
+  // ✅ Canonical Tag
+  canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/education-kiosk-mode",
+
+  // ✅ Open Graph Tags
+  ogSiteName: "MobiHeal MDM",
+  ogLocale: "en_US",
+  ogTitle: "Streamlining Tablet Deployment Across 50 Schools: Kiosk Mode for Digital Learning | MobiHeal MDM",
+  ogDescription: "Discover how MobiHeal MDM’s Kiosk Mode streamlined tablet deployment across 50 schools, ensuring secure, distraction-free digital learning environments.",
+  ogType: "article",
+  ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/education-kiosk-mode",
+  get ogImage() {
+    return this.imageSrc?.startsWith("http")
+      ? this.imageSrc
+      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+  },
+
+  // ✅ Article-specific OG tags
+  articleAuthor: "MobiHeal Editorial Team",
+  articlePublishedTime: "2025-06-26T00:00:00Z",
+  articleModifiedTime: "2025-06-26T00:00:00Z",
+  articleTags: [
+    "EdTech Kiosk Solutions",
+    "Classroom Tablet Management",
+    "Scalable Device Deployment",
+    "Secure Digital Learning",
+    "Kiosk Mode for Education",
+    "MobiHeal MDM"
+  ],
+
+  // ✅ Twitter Card Tags
+  twitterCard: "summary_large_image",
+  twitterTitle: "Streamlining Tablet Deployment Across 50 Schools: Kiosk Mode for Digital Learning | MobiHeal MDM",
+  twitterDescription: "Discover how MobiHeal MDM’s Kiosk Mode streamlined tablet deployment across 50 schools, ensuring secure, distraction-free digital learning environments.",
+  get twitterImage() {
+    return this.ogImage;
+  },
+  twitterSite: "@MobiHealMDM",
+  twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "90%", "label": "Faster School-Wide Tablet Deployment" },
     { "stat": "80%", "label": "Fewer IT Support Tickets" },
@@ -1047,6 +1242,45 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Protecting Clinical Trial Data: MDM for Global Pharma Research | MobiHeal Case Study",
   seoDescription:"Discover how a global pharma team achieved HIPAA compliance and zero data breaches with MobiHeal MDM. Learn strategies for securing clinical trial data on mobile devices.",
+  // ✅ Canonical Tag
+canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/clinical-trial-mdm",
+
+// ✅ Open Graph Tags
+ogSiteName: "MobiHeal MDM",
+ogLocale: "en_US",
+ogTitle: "Protecting Clinical Trial Data: MDM for Global Pharma Research | MobiHeal MDM",
+ogDescription: "Learn how MobiHeal MDM secured 2,000+ devices for a global pharma research team, achieving 100% HIPAA compliance.",
+ogType: "article",
+ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/clinical-trial-mdm",
+get ogImage() {
+  return this.imageSrc?.startsWith("http")
+    ? this.imageSrc
+    : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+},
+
+// ✅ Article-specific OG tags
+articleAuthor: "MobiHeal Editorial Team",
+articlePublishedTime: "2025-08-01T09:00:00Z",
+articleModifiedTime: "2025-08-01T09:00:00Z",
+articleTags: [
+  "Clinical Trial Data Security",
+  "Pharma MDM Solutions",
+  "HIPAA Compliance",
+  "Data Encryption in Pharma",
+  "Secure Mobile Device Management",
+  "MobiHeal MDM"
+],
+
+// ✅ Twitter Card Tags
+twitterCard: "summary_large_image",
+twitterTitle: "Protecting Clinical Trial Data: MDM for Global Pharma Research | MobiHeal MDM",
+twitterDescription: "See how MobiHeal MDM reduced PHI breach risks by 90% and improved compliance for a global pharma research team.",
+get twitterImage() {
+  return this.ogImage;
+},
+twitterSite: "@MobiHealMDM",
+twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "100%", "label": "HIPAA Compliance Achieved" },
     { "stat": "90%", "label": "Reduction in PHI Breach Risk" },
@@ -1156,6 +1390,44 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Securing Drug Manufacturing Facilities: Geo-Fencing & Access Control for Pharma IoT | MobiHeal Case Study",
   seoDescription:"Discover how a pharma giant secured IoT devices in drug manufacturing using MobiHeal MDM. Achieve 100% compliance and prevent unauthorized access with geo-fencing.",
+  // ✅ Canonical Tag
+canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/pharma-iot-geo-fencing",
+
+// ✅ Open Graph Tags
+ogSiteName: "MobiHeal MDM",
+ogLocale: "en_US",
+ogTitle: "Securing Drug Manufacturing Facilities: Geo-Fencing & Access Control for Pharma IoT | MobiHeal MDM",
+ogDescription: "A top pharmaceutical manufacturer secured 5,000+ IoT devices across 20+ sites, achieving FDA compliance and cutting unauthorized access by 95%.",
+ogType: "article",
+ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/pharma-iot-geo-fencing",
+get ogImage() {
+  return this.imageSrc?.startsWith("http")
+    ? this.imageSrc
+    : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+},
+
+// ✅ Article-specific OG tags
+articleAuthor: "MobiHeal Editorial Team",
+articlePublishedTime: "2025-08-05T09:00:00Z",
+articleModifiedTime: "2025-08-05T09:00:00Z",
+articleTags: [
+  "Pharma IoT Security",
+  "Geo-Fencing for Drug Manufacturing",
+  "Access Control Compliance",
+  "Pharma Manufacturing Security",
+  "IoT Device Management",
+  "MobiHeal MDM"
+],
+
+// ✅ Twitter Card Tags
+twitterCard: "summary_large_image",
+twitterTitle: "Securing Drug Manufacturing Facilities: Geo-Fencing & Access Control for Pharma IoT | MobiHeal MDM",
+twitterDescription: "See how MobiHeal MDM enabled FDA compliance and reduced unauthorized access by 95% for a global pharma manufacturer.",
+get twitterImage() {
+  return this.ogImage;
+},
+twitterSite: "@MobiHealMDM",
+twitterCreator: "@MobiHealMDM",
   "results": [
     { "stat": "100%", "label": "FDA 21 CFR Part 11 Compliance" },
     { "stat": "95%", "label": "Reduction in Unauthorized Access" },
@@ -1265,6 +1537,47 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Preventing Cargo Theft: MDM Secures 2,000+ Driver Tablets for Logistics Giant | MobiHeal Case Study",
   seoDescription:"Discover how MobiHeal MDM reduced cargo theft risks by 95% for a logistics giant using GPS tracking, geo-fencing, and remote lock/wipe. Learn fleet security strategies.",
+
+  // ✅ Canonical Tag
+canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/cargo-theft-mdm-logistics",
+
+// ✅ Open Graph Tags
+ogSiteName: "MobiHeal MDM",
+ogLocale: "en_US",
+ogTitle: "Preventing Cargo Theft: How MDM Secured 2,000+ Driver Tablets for a Logistics Giant | MobiHeal MDM",
+ogDescription: "A global logistics firm reduced cargo theft by 95% and saved $4.2M annually by securing 2,000+ driver tablets with MobiHeal MDM, achieving real-time fleet visibility and insurance savings.",
+ogType: "article",
+ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/cargo-theft-mdm-logistics",
+get ogImage() {
+  return this.imageSrc?.startsWith("http")
+    ? this.imageSrc
+    : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+},
+
+// ✅ Article-specific OG tags
+articleAuthor: "MobiHeal Editorial Team",
+articlePublishedTime: "2025-08-06T09:00:00Z",
+articleModifiedTime: "2025-08-06T09:00:00Z",
+articleTags: [
+  "Cargo Theft Prevention",
+  "Logistics Device Security",
+  "Fleet Management MDM",
+  "Driver Tablet Security",
+  "GPS Tracking for Cargo",
+  "MobiHeal MDM"
+],
+
+// ✅ Twitter Card Tags
+twitterCard: "summary_large_image",
+twitterTitle: "Preventing Cargo Theft: How MDM Secured 2,000+ Driver Tablets for a Logistics Giant | MobiHeal MDM",
+twitterDescription: "See how MobiHeal MDM reduced cargo theft by 95% and saved $4.2M annually for a global logistics leader.",
+get twitterImage() {
+  return this.ogImage;
+},
+twitterSite: "@MobiHealMDM",
+twitterCreator: "@MobiHealMDM",
+
+
   "results": [
     { "stat": "95%", "label": "Reduction in Cargo Theft Incidents" },
     { "stat": "$4.2M", "label": "Annual Theft Losses Recovered" },
@@ -1374,6 +1687,46 @@ export const caseStudyDetails = {
     ],
   seoTitle:"Optimizing Warehouse Operations: MDM for IoT-Powered Inventory Management | MobiHeal Case Study",
   seoDescription:"Discover how MobiHeal MDM streamlined IoT-powered inventory management for a logistics firm, reducing errors by 90% and boosting operational efficiency.",
+
+  // ✅ Canonical Tag
+canonicalUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/warehouse-iot-mdm-logistics",
+
+// ✅ Open Graph Tags
+ogSiteName: "MobiHeal MDM",
+ogLocale: "en_US",
+ogTitle: "Optimizing Warehouse Operations: MDM for IoT-Powered Inventory Management | MobiHeal MDM",
+ogDescription: "A global logistics company deployed MobiHeal MDM across 50+ warehouses, achieving 99.9% inventory accuracy, 70% less IoT downtime, and real-time tracking for 10,000+ devices.",
+ogType: "article",
+ogUrl: "https://mobiheal-mdm-seo-mgqj.vercel.app/case-studies/warehouse-iot-mdm-logistics",
+get ogImage() {
+  return this.imageSrc?.startsWith("http")
+    ? this.imageSrc
+    : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.imageSrc}`;
+},
+
+// ✅ Article-specific OG tags
+articleAuthor: "MobiHeal Editorial Team",
+articlePublishedTime: "2025-08-07T09:00:00Z",
+articleModifiedTime: "2025-08-07T09:00:00Z",
+articleTags: [
+  "Warehouse IoT Security",
+  "Inventory Tracking Automation",
+  "Logistics Automation Solutions",
+  "MDM for Warehouse IoT",
+  "IoT Device Management",
+  "MobiHeal MDM"
+],
+
+// ✅ Twitter Card Tags
+twitterCard: "summary_large_image",
+twitterTitle: "Optimizing Warehouse Operations: MDM for IoT-Powered Inventory Management | MobiHeal MDM",
+twitterDescription: "See how MobiHeal MDM reduced inventory errors by 90% and boosted operational efficiency for a global logistics company.",
+get twitterImage() {
+  return this.ogImage;
+},
+twitterSite: "@MobiHealMDM",
+twitterCreator: "@MobiHealMDM",
+
   "results": [
     { "stat": "90%", "label": "Reduction in Inventory Discrepancies" },
     { "stat": "70%", "label": "Decrease in IoT Downtime" },
