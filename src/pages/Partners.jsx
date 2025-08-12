@@ -77,46 +77,35 @@ const Partners = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800 text-center">
               Strategic Partners
             </h2>
-            <div className="mb-16 space-y-8">
-              {Array.from({ length: Math.ceil(partners.length / 3) }).map((_, rowIndex) => {
-                const rowItems = partners.slice(rowIndex * 3, rowIndex * 3 + 3);
-                const isIncompleteRow = rowItems.length < 3;
+        <div className="mb-16 flex flex-wrap justify-center gap-8">
+  {partners.map((partner, index) => (
+    <div
+      key={index}
+      className="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-md transition-shadow
+                 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)]"
+    >
+      <div className="flex items-center justify-center h-20 mb-6">
+        <Suspense fallback={<div>Loading...</div>}>
+          <img
+            src={partner.imageSrc}
+            alt={partner.name}
+            className="max-h-28 object-contain"
+          />
+        </Suspense>
+      </div>
+      <h3 className="text-xl font-semibold mb-2 text-neutral-800">{partner.name}</h3>
+      <p className="text-neutral-600 mb-4">{partner.description}</p>
+      <div className="flex items-center text-sm text-neutral-500">
+        <span className="mr-2 px-2 py-1 bg-neutral-100 rounded-full">
+          {partner.partnerType}
+        </span>
+      </div>
+    </div>
+  ))}
+</div>
 
-                return (
-                  <div
-                    key={rowIndex}
-                    className={`grid gap-8 ${isIncompleteRow
-                      ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-' + rowItems.length + ' justify-center'
-                      : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
-                      }`}
-                  >
-                    {rowItems.map((partner, index) => (
-                      <div
-                        key={index}
-                        className="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-                      >
-                        <div className="flex items-center justify-center h-20 mb-6">
-                          <Suspense fallback={<div>Loading...</div>}>
-                            <img
-                              src={partner.imageSrc}
-                              alt={partner.name}
-                              className="max-h-28 object-contain"
-                            />
-                          </Suspense>
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2 text-neutral-800">{partner.name}</h3>
-                        <p className="text-neutral-600 mb-4">{partner.description}</p>
-                        <div className="flex items-center text-sm text-neutral-500">
-                          <span className="mr-2 px-2 py-1 bg-neutral-100 rounded-full">
-                            {partner.partnerType}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                );
-              })}
-            </div>
+
+
 
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800 text-center">

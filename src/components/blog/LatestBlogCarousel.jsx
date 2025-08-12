@@ -32,7 +32,7 @@ const LatestBlogCarousel = ({ blogs }) => {
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white mt-16 px-4 py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto sm:px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-3xl font-bold text-gray-900">Latest Articles</h3>
           <div className="flex gap-2">
@@ -104,7 +104,7 @@ const LatestBlogCarousel = ({ blogs }) => {
                   <p className="text-sm text-gray-500">By {blog.author}</p>
                   <Link
                     to={`/blog/${blog.id}`}
-                    className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-1"
+                    className="text-primary hover:text-blue-700 font-medium text-sm flex items-center gap-1"
                   >
                     Read More
                     <FaArrowRight className="text-xs" />

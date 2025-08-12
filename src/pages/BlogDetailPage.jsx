@@ -53,8 +53,8 @@ const BlogDetailPage = () => {
     <meta name="twitter:image" content={blog.twitter.image} />
     <meta name="twitter:image:alt" content={blog.twitter.imageAlt} />
   </Helmet>
-      <BlogHero blog={blog} />
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8 mt-8 px-4 lg:px-0">
+      <BlogHero blog={blog}  />
+      <div className="container mx-auto md:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 mt-8 ">
         {/* Main Blog Body */}
         <div className="lg:col-span-9">
           <BlogBody blog={blog} />

@@ -1147,6 +1147,7 @@ export const partners = [
     partnerType: "Consortium Partner",
     imageSrc: partner4,
   },
+   
 ];
 export const clients = [
   {

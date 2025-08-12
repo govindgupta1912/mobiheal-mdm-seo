@@ -121,7 +121,8 @@ const Whitepapers = () => {
                   <div key={index}
   className="bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
 >
-  <div className="p-6 flex flex-col h-full">
+  
+  <Link  to={`/whitepapers/${whitepaper.slug}`} className="p-6 flex flex-col h-full">
     <div className="flex items-center gap-4 mb-4">
       <div className="bg-primary-dark/10 rounded-full p-3">
         <FileTextIcon className="h-6 w-6 text-primary" />
@@ -169,7 +170,7 @@ const Whitepapers = () => {
         </Link>
       </Button>
     </div>
-  </div>
+  </Link>
 </div>
 
 

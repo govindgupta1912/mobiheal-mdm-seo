@@ -96,17 +96,23 @@ const PartnersSection = () => {
 
         {/* Testimonials Section */}
         <h3 className="text-2xl font-bold mb-8 text-neutral-800">What Our Clients Say</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              quote={testimonial.quote}
-              author={testimonial.author}
-              position={testimonial.position}
-              rating={testimonial.rating}
-            />
-          ))}
-        </div>
+        <div className="flex flex-wrap justify-center gap-6">
+  {testimonials.map((testimonial, index) => (
+    <div
+      key={index}
+      className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+    >
+      <TestimonialCard
+        quote={testimonial.quote}
+        author={testimonial.author}
+        position={testimonial.position}
+        rating={testimonial.rating}
+      />
+    </div>
+  ))}
+</div>
+
+
 
         <div className="text-center mt-12">
           <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:scale-95 transition-transform duration-200" asChild>

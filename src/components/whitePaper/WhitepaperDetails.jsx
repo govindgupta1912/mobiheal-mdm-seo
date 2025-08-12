@@ -184,42 +184,38 @@ const WhitepaperDetails = ({
   
 
       {/* Hero Section */}
-      <section className="relative bg-gradient text-white py-14  sm:py-18  overflow-hidden">
-        {/* <div className="absolute inset-0 pointer-events-none  mx-auto px-24">
-          <svg width="100%" height="100%" className="opacity-20">
-            <defs>
-              <radialGradient id="bg-grad" cx="50%" cy="50%" r="80%">
-                <stop offset="0%" stopColor="#fff" stopOpacity="0.1" />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#bg-grad)" />
-          </svg>
-        </div> */}
-        <div className="container px-8 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-16 relative z-10">
-          <div className="text-center md:text-left max-w-xl w-full">
-            <h1 className="text-4xl font-extrabold leading-tight mb-4">{title}</h1>
-            <p className="text-blue-100 mb-6">{heroSubtitle}</p>
-            <Button
-              onClick={() =>
-                document.getElementById("download-form")?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="mt-4 px-6 py-3 text-lg font-semibold bg-white text-primary hover:bg-blue-100"
-            >
-              Download Whitepaper
-            </Button>
-          </div>
-          <div className="w-full sm:max-w-lg lg:max-w-xl flex justify-center">
-            <Suspense>
-              <img
-                src={heroImage}
-                alt="Whitepaper Hero"
-                className="rounded-2xl shadow-xl object-cover aspect-[4/3] w-full border-4 border-white/20 max-h-[420px]"
-              />
-            </Suspense>
-          </div>
-        </div>
-      </section>
+     <section className="relative bg-gradient text-white py-14 sm:py-18 overflow-hidden">
+  <div className="container px-8 mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 relative z-10">
+    
+    {/* Text Section */}
+    <div className="text-center lg:text-left max-w-xl w-full">
+      <h1 className="text-4xl font-extrabold leading-tight mb-4">{title}</h1>
+      <p className="text-blue-100 mb-6">{heroSubtitle}</p>
+      <Button
+        onClick={() =>
+          document.getElementById("download-form")?.scrollIntoView({ behavior: "smooth" })
+        }
+        className="mt-4 px-6 py-3 text-lg font-semibold bg-white text-primary hover:bg-blue-100"
+      >
+        Download Whitepaper
+      </Button>
+    </div>
+
+    {/* Image Section */}
+    <div className="w-full sm:max-w-xl flex justify-center">
+      <Suspense>
+        <img
+          src={heroImage}
+          alt="Whitepaper Hero"
+          className="rounded-2xl shadow-xl object-cover aspect-[4/3] w-full border-4 border-white/20 
+                     max-h-[420px] sm:max-h-[500px] md:max-h-[560px]"
+        />
+      </Suspense>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Highlights */}
       <section className="py-20 bg-white">

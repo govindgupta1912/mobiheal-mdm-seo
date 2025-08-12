@@ -53,7 +53,7 @@ const Home = () => {
   />
   <meta
     name="twitter:image"
-     content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+     content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM dashboard preview" />
 </Helmet>

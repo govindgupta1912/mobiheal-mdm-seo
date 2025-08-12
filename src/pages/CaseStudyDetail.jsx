@@ -108,21 +108,20 @@ console.log("caseStudies",study.seoTitle);
 
 
       {/* Hero Section */}
-      <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
-        <div className="container mx-auto relative z-10 px-6 sm:px-6 lg:px-8">
-          {/* Grid layout */}
-          <Link to="/case-studies">
-            <Button variant="ghost" className="text-white  mb-3">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Case Studies
-          </Button>
-        </Link>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+     <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
+  <div className="container mx-auto relative z-10 px-6 sm:px-6 lg:px-8">
+        
+    <Link to="/case-studies">
+      <Button variant="ghost" className="text-white mb-3">
+        <ArrowLeft className="mr-2 h-4 w-4" />
+        Back to Case Studies
+      </Button>
+    </Link>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
       {/* Left: Text */}
       <div className="text-left">
-       
-
         <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg tracking-tight">
           {study.title}
         </h1>
@@ -140,20 +139,19 @@ console.log("caseStudies",study.seoTitle);
       </div>
 
       {/* Right: Image */}
-      <div className="w-full flex lg:justify-end md:justify-center">
+      <div className="w-full flex justify-center lg:justify-end">
         <Suspense>
           <img
             src={study.imageSrc}
             alt="Case Study"
-            className="rounded-2xl shadow-xl w-full max-w-md object-cover border-2 border-white/30
-                       max-h-[320px] sm:max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
+            className="rounded-2xl shadow-xl w-full max-w-lg object-cover border-2 border-white/30
+                       max-h-[320px] sm:max-h-[400px] md:max-h-[520px] lg:max-h-[500px]"
           />
         </Suspense>
       </div>
     </div>
   </div>
 </section>
-
 
       {/* Executive Summary */}
       <section className="py-10 bg-white">
