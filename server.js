@@ -16,6 +16,23 @@ async function createServer() {
 
   app.use('/assets', express.static(path.resolve(__dirname, './dist/client/assets')));
 
+  // Explicit route for robots.txt
+  app.get('/robots.txt', (req, res) => {
+    res.type('text/plain');
+    res.sendFile(path.resolve(__dirname, './dist/client/robots.txt'));
+  });
+
+  // Explicit route for sitemap.xml
+  app.get('/sitemap.xml', (req, res) => {
+    res.type('application/xml');
+    res.sendFile(path.resolve(__dirname, './dist/client/sitemap.xml'));
+  });
+
+  app.get('/sitemap.xsl', (req, res) => {
+  res.type('application/xslt+xml');
+  res.sendFile(path.resolve(__dirname, './dist/client/sitemap.xsl'));
+});
+
   app.use('*all', async (req, res) => {
     // Get both rendered HTML and helmet info
     const { appHtml, helmet } = await render(req.originalUrl);
