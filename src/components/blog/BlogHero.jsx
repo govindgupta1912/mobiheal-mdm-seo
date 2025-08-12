@@ -22,7 +22,7 @@ const BlogHero = ({ blog }) => {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-24 py-18 h-full flex flex-col justify-center">
+      <div className="relative z-10 container mx-auto px-24 py-18 h-full flex flex-col ">
         <div className="max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">

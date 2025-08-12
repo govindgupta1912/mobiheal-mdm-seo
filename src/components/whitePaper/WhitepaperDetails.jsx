@@ -184,8 +184,8 @@ const WhitepaperDetails = ({
   
 
       {/* Hero Section */}
-      <section className="relative bg-gradient text-white py-14 px-4 sm:py-18 sm:px-24 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
+      <section className="relative bg-gradient text-white py-14  sm:py-18  overflow-hidden">
+        {/* <div className="absolute inset-0 pointer-events-none  mx-auto px-24">
           <svg width="100%" height="100%" className="opacity-20">
             <defs>
               <radialGradient id="bg-grad" cx="50%" cy="50%" r="80%">
@@ -195,8 +195,8 @@ const WhitepaperDetails = ({
             </defs>
             <rect width="100%" height="100%" fill="url(#bg-grad)" />
           </svg>
-        </div>
-        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-16 relative z-10">
+        </div> */}
+        <div className="container px-8 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-16 relative z-10">
           <div className="text-center md:text-left max-w-xl w-full">
             <h1 className="text-4xl font-extrabold leading-tight mb-4">{title}</h1>
             <p className="text-blue-100 mb-6">{heroSubtitle}</p>
@@ -209,7 +209,7 @@ const WhitepaperDetails = ({
               Download Whitepaper
             </Button>
           </div>
-          <div className="w-full max-w-md flex justify-center">
+          <div className="w-full sm:max-w-lg lg:max-w-xl flex justify-center">
             <Suspense>
               <img
                 src={heroImage}

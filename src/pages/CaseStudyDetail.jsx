@@ -108,24 +108,11 @@ console.log("caseStudies",study.seoTitle);
 
 
       {/* Hero Section */}
- <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
-  {/* Decorative radial background */}
-  <div className="absolute inset-0 pointer-events-none">
-    <svg width="100%" height="100%" className="opacity-20">
-      <defs>
-        <radialGradient id="cs-bg-grad" cx="50%" cy="50%" r="80%">
-          <stop offset="0%" stopColor="#fff" stopOpacity="0.1" />
-          <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#cs-bg-grad)" />
-    </svg>
-  </div>
-
-  <div className="container mx-auto relative z-10 px-6 sm:px-12 lg:px-16">
-    {/* Grid layout */}
-     <Link to="/case-studies">
-          <Button variant="ghost" className="text-white  mb-3">
+      <section className="relative bg-gradient text-white py-18 px-4 overflow-hidden shadow-lg">
+        <div className="container mx-auto relative z-10 px-6 sm:px-6 lg:px-8">
+          {/* Grid layout */}
+          <Link to="/case-studies">
+            <Button variant="ghost" className="text-white  mb-3">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Case Studies
           </Button>
@@ -153,7 +140,7 @@ console.log("caseStudies",study.seoTitle);
       </div>
 
       {/* Right: Image */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex lg:justify-end md:justify-center">
         <Suspense>
           <img
             src={study.imageSrc}

@@ -125,58 +125,73 @@ const CaseStudies = () => {
               <TabsContent key={value} value={value}>
                 <div className="space-y-16">
                   {getStudies(value).map((study, index) => (
-                    <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl">
-                      <div className="flex flex-col md:flex-row">
-                        <div className="md:w-1/3">
-                          <Suspense>
-                          <div
-                            className="h-full min-h-[250px]"
-                            style={{
-                              backgroundImage: `url('${study.imageSrc}')`,
-                              backgroundSize: "cover",
-                              backgroundPosition: "center",
-                            }}
-                          />
-                          </Suspense>
-                        </div>
-                        <div className="md:w-2/3 p-8">
-                          <div className="flex flex-wrap gap-2 mb-4">
-                            {study.tags.map((tag, tagIndex) => (
-                              <span
-                                key={tagIndex}
-                                className="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-full"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                          <h2 className="text-2xl font-bold mb-4 text-neutral-800 hover:text-primary">
-                            {study.title}
-                          </h2>
-                          <p className="text-neutral-600 mb-6">{study.summary}</p>
-                          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                            {study.results.map((result, resultIndex) => (
-                              <div
-                                key={resultIndex}
-                                className="bg-neutral-50 p-4 rounded-lg"
-                              >
-                                <div className="text-primary font-bold text-2xl">
-                                  {result.stat}
-                                </div>
-                                <div className="text-neutral-600 text-sm">
-                                  {result.label}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                          <Button asChild>
-                            <Link to={`/case-studies/${study.slug}`}>
-                              Read Full Case Study
-                            </Link>
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
+                     <Link to={`/case-studies/${study.slug}`}>
+                   <div
+  key={index}
+  className="bg-white rounded-xl overflow-hidden my-6 shadow-lg hover:shadow-xl"
+>
+  {/* Stack by default, side-by-side only on big screens */}
+  <div className="flex flex-col xl:flex-row">
+    
+    {/* Image */}
+    <div className="w-full xl:w-1/3">
+      <Suspense>
+        <div
+          className="w-full h-64 sm:h-72 xl:h-full min-h-[250px]"
+          style={{
+            backgroundImage: `url('${study.imageSrc}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+      </Suspense>
+    </div>
+
+    {/* Content */}
+    <div className="w-full xl:w-2/3 p-8">
+      <div className="flex flex-wrap gap-2 mb-4">
+        {study.tags.map((tag, tagIndex) => (
+          <span
+            key={tagIndex}
+            className="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-full"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <h2 className="text-2xl font-bold mb-4 text-neutral-800 hover:text-primary">
+        {study.title}
+      </h2>
+
+      <p className="text-neutral-600 mb-6">{study.summary}</p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        {study.results.map((result, resultIndex) => (
+          <div
+            key={resultIndex}
+            className="bg-neutral-50 p-4 rounded-lg"
+          >
+            <div className="text-primary font-bold text-2xl">
+              {result.stat}
+            </div>
+            <div className="text-neutral-600 text-sm">
+              {result.label}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <Button asChild>
+        <Link to={`/case-studies/${study.slug}`}>
+          Read Full Case Study
+        </Link>
+      </Button>
+    </div>
+  </div>
+</div>
+
+                    </Link>
                   ))}
                   {getStudies(value).length === 0 && (
                     <p className="text-center text-neutral-500">No case studies found.</p>

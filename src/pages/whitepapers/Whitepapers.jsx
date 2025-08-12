@@ -118,58 +118,61 @@ const Whitepapers = () => {
               <TabsContent key={value} value={value}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {getWhitePaper(value).map((whitepaper, index) => (
-                    <div
-                      key={index}
-                      className="bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-                    >
-                      <div className="p-6">
-                        <div className="flex items-center gap-4 mb-4">
-                          <div className="bg-primary-dark/10 rounded-full p-3">
-                            <FileTextIcon className="h-6 w-6 text-primary" />
-                          </div>
-                          <div>
-                            <span className="text-sm text-neutral-500">
-                              {whitepaper.type} • {whitepaper.pages} pages
-                            </span>
-                          </div>
-                        </div>
-                        <h2 className="text-xl font-bold mb-3 text-neutral-800 hover:text-primary">
-                          {whitepaper.title}
-                        </h2>
-                        <p className="text-neutral-600 mb-6">
-                          {whitepaper.description}
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-6">
-                          {whitepaper.tags.map((tag, tagIndex) => (
-                            <span
-                              key={tagIndex}
-                              className="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-full"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <Button
-                            variant="outline"
-                            className="border-primary text-primary hover:bg-primary/5"
-                            asChild
-                          >
-                            <Link to={`/whitepapers/${whitepaper.slug}`}>
-                              Preview
-                            </Link>
-                          </Button>
-                          <Button asChild>
-                            <Link
-                              to={`/whitepapers/${whitepaper.slug}?scrollToForm=true`}
-                            >
-                              <DownloadIcon className="mr-2 h-4 w-4" />
-                              Download
-                            </Link>
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
+                  <div key={index}
+  className="bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
+>
+  <div className="p-6 flex flex-col h-full">
+    <div className="flex items-center gap-4 mb-4">
+      <div className="bg-primary-dark/10 rounded-full p-3">
+        <FileTextIcon className="h-6 w-6 text-primary" />
+      </div>
+      <div>
+        <span className="text-sm text-neutral-500">
+          {whitepaper.type} • {whitepaper.pages} pages
+        </span>
+      </div>
+    </div>
+
+    <h2 className="text-xl font-bold mb-3 text-neutral-800 hover:text-primary">
+      {whitepaper.title}
+    </h2>
+    <p className="text-neutral-600 mb-6">
+      {whitepaper.description}
+    </p>
+
+    <div className="flex flex-wrap gap-2 mb-6">
+      {whitepaper.tags.map((tag, tagIndex) => (
+        <span
+          key={tagIndex}
+          className="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-full"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+
+    {/* Mobile: buttons follow content, Desktop: push to bottom */}
+    <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-auto">
+      <Button
+        variant="outline"
+        className="border-primary text-primary hover:bg-primary/5 flex-1"
+        asChild
+      >
+        <Link to={`/whitepapers/${whitepaper.slug}`}>
+          Preview
+        </Link>
+      </Button>
+      <Button className="flex-1" asChild>
+        <Link to={`/whitepapers/${whitepaper.slug}?scrollToForm=true`}>
+          <DownloadIcon className="mr-2 h-4 w-4" />
+          Download
+        </Link>
+      </Button>
+    </div>
+  </div>
+</div>
+
+
                   ))}
                 </div>
               </TabsContent>
