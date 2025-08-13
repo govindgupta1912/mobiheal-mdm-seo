@@ -32,7 +32,7 @@ export default function AboutUsPage() {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta property="og:image:alt" content="MobiHeal team working on cybersecurity solutions" />
 
@@ -46,7 +46,7 @@ export default function AboutUsPage() {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="MobiHeal team working on cybersecurity solutions" />
 </Helmet>

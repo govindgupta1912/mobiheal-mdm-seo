@@ -92,7 +92,7 @@ const WhitepaperDetails = ({
     try {
       setIsSubmitting(true);
 
-      const response = await fetch("https://your-api.com/submit-whitepaper", {
+      const response = await fetch("https://dev.mobiheal.in/api/save-whitepaper", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

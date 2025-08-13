@@ -67,7 +67,7 @@ const Whitepapers = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta property="og:image:alt" content="MobiHeal whitepapers preview" />
 
@@ -81,7 +81,7 @@ const Whitepapers = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="MobiHeal whitepapers preview" />
 </Helmet>

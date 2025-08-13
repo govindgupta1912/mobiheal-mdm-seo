@@ -31,7 +31,7 @@ const OwaspMobile = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta property="og:image:alt" content="OWASP Mobile Top 10 infographic preview" />
 
@@ -45,7 +45,7 @@ const OwaspMobile = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.png"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="OWASP Mobile Top 10 infographic preview" />
 </Helmet>
