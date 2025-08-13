@@ -39,7 +39,7 @@ const FAQ = () => {
 
   {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/faq" />
+  <meta property="og:url" content="https://www.mobiheal.in/faq" />
   <meta property="og:title" content="MobiHeal MDM FAQs | Deployment, Security, ROI Answers" />
   <meta
     property="og:description"
@@ -47,7 +47,7 @@ const FAQ = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta property="og:image:alt" content="MobiHeal MDM FAQs illustration" />
 
@@ -61,7 +61,7 @@ const FAQ = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM FAQs illustration" />
 </Helmet>

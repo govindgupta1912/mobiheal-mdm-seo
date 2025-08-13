@@ -137,7 +137,7 @@ const Pricing = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta property="og:image:alt" content="MobiHeal MDM pricing plans preview" />
 
@@ -154,7 +154,7 @@ const Pricing = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.svg"
+    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM pricing plans preview" />
 </Helmet>
