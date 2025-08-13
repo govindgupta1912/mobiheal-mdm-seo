@@ -26,7 +26,7 @@ const FAQSection = () => {
     },
     {
       question: "Can MobiHeal MDM integrate with our existing systems?",
-      answer: "Yes, MobiHeal MDM offers integration capabilities with enterprise systems like Microsoft 365 for implementing conditional email access."
+      answer: "Yes, MobiHeal supports certificate-based conditional email access for all major email service providers."
     },
      {
       question: "What support options are available?",

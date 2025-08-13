@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureCard = ({ icon, title, description }) => {
   return (
-    <div className="group bg-neutral-50 h-52 rounded-lg p-6 border shadow-lg hover:shadow-xl transition-shadow ease-in-out">
+    <div className="group bg-neutral-50 h-56 rounded-lg p-6 border shadow-lg hover:shadow-xl transition-shadow ease-in-out">
       <div className="text-primary text-2xl mb-4">
         {icon}
       </div>

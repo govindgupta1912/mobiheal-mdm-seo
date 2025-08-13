@@ -968,7 +968,7 @@ export const faqs = [
     category: "implementation",
     question: "Can MobiHeal integrate with our existing systems?",
     answer:
-      "Yes, MobiHeal supports integration with identity providers (Azure AD, Okta), productivity suites, and security tools. API access is also available.",
+      "Yes, MobiHeal supports certificate-based conditional email access for all major email service providers.",
   },
 
   // Support FAQs
@@ -1037,7 +1037,7 @@ export const testimonials = [
   {
     quote:
       "Our medical reps carry highly sensitive drug formulation content on their company‐issued Android devices, so we needed rock‐solid security and oversight. MobiHeal's device security, real‐time location tracking, and remote lock/wipe capabilities give us end‐to‐end control—ensuring confidential materials never fall into the wrong hands.",
-    author: "Bioleen Pharma",
+    author: "A pharma company",
     position: "",
     rating: 5,
     industry: "healthcare",
@@ -1045,7 +1045,7 @@ export const testimonials = [
   {
     quote:
       "Controlling leakage of our sensitive design and commercial data across corporate and employee devices was mission-critical. MobiHeal's USB data transfer blocking, screenshot restrictions, secure work-profile containerization, and remote lock/wipe capabilities delivered airtight data sanctity—giving us complete peace of mind over our intellectual property.",
-    author: "ADI Insulations",
+    author: "An electrical hardware manufacturing company",
     position: "",
     rating: 5,
     industry: "manufacturing",

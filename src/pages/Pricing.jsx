@@ -95,11 +95,11 @@ const Pricing = () => {
     },
     {
       question: "Is there a minimum contract length?",
-      answer: "Monthly plans have no minimum contract length. Annual plans require a 12-month commitment but offer significant savings."
+      answer: "The plans are billed in advance for total annual charges per device."
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, PayPal, and bank transfers for annual plans. Enterprise customers can also pay via invoice with net-30 terms."
+      answer: "We accept bank and UPI transfers against our tax invoices with due on receipt terms."
     },
     {
       question: "Are there any hidden fees?",

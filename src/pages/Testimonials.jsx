@@ -148,7 +148,7 @@ const Testimonials = () => {
           Explore Our Resources
         </h2>
         <p className="text-lg text-neutral-600 mb-8">
-          Discover in-depth guides, whitepapers, and tools to help you make the most of SecureMDM.
+          Discover in-depth guides, whitepapers, and tools to help you make the most of MobiHeal MDM.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" asChild>
@@ -200,7 +200,7 @@ const Testimonials = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to join our success stories?</h2>
             <p className="text-lg md:text-xl mb-8 text-blue-100">
-              Start protecting your mobile fleet today with SecureMDM.
+              Start protecting your mobile fleet today with MobiHeal MDM.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-white text-primary hover:bg-neutral-100" asChild>

@@ -22,9 +22,7 @@ const Footer = () => {
               </Suspense>
             </div>
             <p className="mb-6">
-             Mobisec Technologies Pvt. Ltd. is a mobile security company
-                offering products and services for securing mobile computing
-                devices such as smartphones and tablets to help enterprises.
+             Mobisec Technologies Pvt. Ltd. is a cybersecurity company specializing in endpoint and mobile device security, management, monitoring and auditing all types of cross-platform devices ranging from servers, VMs, workstations, desktops to mobile computing devices such as laptops, smartphones and tablets. We empower organisations to leverage modern technology, including mobility, in a secured and transparent way.
             </p>
             <div className="flex space-x-4">
               <a

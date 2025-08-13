@@ -19,13 +19,14 @@ import { Helmet } from "react-helmet-async";
 import mobihealLogo from "../assets/mobiheal_logo.webp"; // Adjust the path as necessary
 import { m } from "framer-motion";
 const Features = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const features = [
     {
       id: "data-encryption",
       icon: <LockKeyhole />,
       title: "Data Encryption",
       description:
-        "End-to-end encryption for all corporate employee devices, ensuring information remains protected."
+        "End-to-end encryption for all corporate owned devices and for work-profiles and apps on employee personal devices, ensuring corporate data remains ever protected."
     },
     {
       id: "work-profile",
@@ -108,6 +109,8 @@ const Features = () => {
 
   return (
     <>
+      
+
       {/* SEO Meta Tags */}
       
        <Helmet>
@@ -121,11 +124,11 @@ const Features = () => {
     content="MDM features, zero-touch enrollment, patch management, threat defence, compliance dashboard, kiosk mode, BYOD control"
   />
    {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/features" />
+  <link rel="canonical" href={`${siteUrl}/features`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/features" />
+  <meta property="og:url" content={`${siteUrl}/features`} />
   <meta
     property="og:title"
     content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
@@ -136,13 +139,13 @@ const Features = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal MDM Features dashboard preview" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/features" />
+  <meta name="twitter:url" content={`${siteUrl}/features`} />
   <meta
     name="twitter:title"
     content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
@@ -153,7 +156,7 @@ const Features = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM Features dashboard preview" />
  

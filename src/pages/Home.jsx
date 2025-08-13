@@ -14,6 +14,9 @@ import heroImage from "../assets/hero.png";
 
 
 const Home = () => {
+
+  const siteUrl = import.meta.env.VITE_SITE_URL;
+
   return (
     <>
      <Helmet>
@@ -27,11 +30,11 @@ const Home = () => {
     content="Mobile Device Management, MobiHeal MDM, Android Enterprise, UEM, device security, remote management, zero-touch, endpoint compliance"
   />
     {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/" />
+  <link rel="canonical" href={siteUrl} />
 
   {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/" />
+  <meta property="og:url" content={siteUrl} />
   <meta property="og:title" content="MobiHeal MDM | Unified Mobile Device Management & Security" />
   <meta
     property="og:description"
@@ -39,13 +42,13 @@ const Home = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
     />
   <meta property="og:image:alt" content="MobiHeal MDM dashboard preview" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/" />
+  <meta name="twitter:url" content={siteUrl} />
   <meta name="twitter:title" content="MobiHeal MDM | Unified Mobile Device Management & Security" />
   <meta
     name="twitter:description"
@@ -53,7 +56,7 @@ const Home = () => {
   />
   <meta
     name="twitter:image"
-     content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+     content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM dashboard preview" />
 </Helmet>
