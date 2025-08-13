@@ -16,7 +16,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import mobihealLogo from "../assets/mobiheal_logo.svg"; // Adjust the path as necessary
+import mobihealLogo from "../assets/mobiheal_logo.webp"; // Adjust the path as necessary
 import { m } from "framer-motion";
 const Features = () => {
   const features = [
