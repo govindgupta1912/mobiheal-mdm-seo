@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const [billingCycle, setBillingCycle] = useState("monthly");
   const navigate = useNavigate();
   const pricingPlans = [
@@ -122,11 +123,11 @@ const Pricing = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/pricing" />
+  <link rel="canonical" href={`${siteUrl}/pricing`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/pricing" />
+  <meta property="og:url" content={`${siteUrl}/pricing`} />
   <meta
     property="og:title"
     content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
@@ -137,13 +138,13 @@ const Pricing = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal MDM pricing plans preview" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/pricing" />
+  <meta name="twitter:url" content={`${siteUrl}/pricing`} />
   <meta
     name="twitter:title"
     content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
@@ -154,7 +155,7 @@ const Pricing = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM pricing plans preview" />
 </Helmet>

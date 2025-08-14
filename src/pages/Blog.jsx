@@ -20,6 +20,7 @@ const BlogCategories = [
 ];
 
 const Blog = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const [location, setLocation] = useState('');
   const [tabValue, setTabValue] = useState('all');
 
@@ -57,11 +58,11 @@ const Blog = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/blog" />
+  <link rel="canonical" href={`${siteUrl}/blog`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/blog" />
+  <meta property="og:url" content={`${siteUrl}/blog`} />
   <meta property="og:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
   <meta
     property="og:description"
@@ -69,13 +70,13 @@ const Blog = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal Insights Blog cover" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/blog" />
+  <meta name="twitter:url" content={`${siteUrl}/blog`} />
   <meta name="twitter:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
   <meta
     name="twitter:description"
@@ -83,7 +84,7 @@ const Blog = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal Insights Blog cover" />
 </Helmet>

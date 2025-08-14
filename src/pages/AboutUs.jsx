@@ -6,6 +6,7 @@ import about_animation1 from "../assets/about/Animation - 1750941799599.json"
 import Lottie from "lottie-react";
 import { Helmet } from "react-helmet-async";
 export default function AboutUsPage() {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   return (
     <>
       <Helmet>
@@ -20,11 +21,11 @@ export default function AboutUsPage() {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/about-us" />
+  <link rel="canonical" href={`${siteUrl}/about-us`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/about-us" />
+  <meta property="og:url" content={`${siteUrl}/about-us`} />
   <meta property="og:title" content="About MobiHeal | Our Mission in Cybersecurity & MDM" />
   <meta
     property="og:description"
@@ -32,13 +33,13 @@ export default function AboutUsPage() {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal team working on cybersecurity solutions" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/about-us" />
+  <meta name="twitter:url" content={`${siteUrl}/about-us`} />
   <meta name="twitter:title" content="About MobiHeal | Our Mission in Cybersecurity & MDM" />
   <meta
     name="twitter:description"
@@ -46,7 +47,7 @@ export default function AboutUsPage() {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal team working on cybersecurity solutions" />
 </Helmet>

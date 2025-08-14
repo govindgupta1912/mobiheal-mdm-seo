@@ -20,6 +20,7 @@ const categories = [
 ];
 
 const CaseStudies = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const [tabValue, setTabValue] = useState("all");
@@ -61,11 +62,11 @@ const CaseStudies = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/case-studies" />
+  <link rel="canonical" href={`${siteUrl}/case-studies`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/case-studies" />
+  <meta property="og:url" content={`${siteUrl}/case-studies`} />
   <meta property="og:title" content="MobiHeal Success Stories | Real-World MDM Case Studies" />
   <meta
     property="og:description"
@@ -73,13 +74,13 @@ const CaseStudies = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal case studies preview" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/case-studies" />
+  <meta name="twitter:url" content={`${siteUrl}/case-studies`} />
   <meta name="twitter:title" content="MobiHeal Success Stories | Real-World MDM Case Studies" />
   <meta
     name="twitter:description"
@@ -87,7 +88,7 @@ const CaseStudies = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal case studies preview" />
 </Helmet>

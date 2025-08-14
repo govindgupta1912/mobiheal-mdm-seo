@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 
 const Testimonials = () => {
   // Group testimonials by industry
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const industries = [
     "All",
     "Finance",
@@ -37,11 +38,11 @@ const Testimonials = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/testimonials" />
+  <link rel="canonical" href={`${siteUrl}/testimonials`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/testimonials" />
+  <meta property="og:url" content={`${siteUrl}/testimonials`} />
   <meta property="og:title" content="MobiHeal Testimonials | Trusted by Security-First Brands" />
   <meta
     property="og:description"
@@ -49,13 +50,13 @@ const Testimonials = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+    content={`${siteUrl}/assets/hero.png`}
   />
   <meta property="og:image:alt" content="Happy clients using MobiHeal MDM" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/testimonials" />
+  <meta name="twitter:url" content={`${siteUrl}/testimonials`} />
   <meta name="twitter:title" content="MobiHeal Testimonials | Trusted by Security-First Brands" />
   <meta
     name="twitter:description"
@@ -63,7 +64,7 @@ const Testimonials = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/hero.png"
+    content={`${siteUrl}/assets/hero.png`}
   />
   <meta name="twitter:image:alt" content="Happy clients using MobiHeal MDM" />
 </Helmet>

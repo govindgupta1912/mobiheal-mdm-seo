@@ -58,7 +58,7 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      const res = await fetch("/api/contactssd", {
+      const res = await fetch("https://dev.mobiheal.in/contact/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -15,6 +15,7 @@ const categories = [
 ];
 
 const Whitepapers = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const [tabValue, setTabValue] = useState("all");
@@ -55,11 +56,11 @@ const Whitepapers = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/whitepapers" />
+  <link rel="canonical" href={`${siteUrl}/whitepapers`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/whitepapers" />
+  <meta property="og:url" content={`${siteUrl}/whitepapers`} />
   <meta property="og:title" content="MobiHeal Whitepapers | Security & Compliance Deep Dives" />
   <meta
     property="og:description"
@@ -67,7 +68,7 @@ const Whitepapers = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal whitepapers preview" />
 
@@ -81,7 +82,7 @@ const Whitepapers = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal whitepapers preview" />
 </Helmet>

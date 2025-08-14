@@ -1,16 +1,20 @@
 User-agent: *
+# Allow all main pages for indexing
 Allow: /
 
-# Sitemap
-Sitemap: https://mobiheal.in/sitemap.xml
-
-# Disallow admin or private areas (if any)
+# Block sensitive or non-public paths
 Disallow: /admin/
-Disallow: /private/
+Disallow: /login/
+Disallow: /register/
+Disallow: /dashboard/
 Disallow: /api/
+Disallow: /assets/
+Disallow: /static/
+Disallow: /node_modules/
 
-# Allow all other content
-Allow: /blog/
-Allow: /case-studies/
-Allow: /whitepapers/
-Allow: /resources/ 
+# Prevent crawling of duplicate parameterized URLs
+Disallow: /*?*
+Disallow: /*&*
+
+# Specify sitemap location
+Sitemap: https://mobiheal-mdm-seo-mgqj.vercel.app/sitemap.xml

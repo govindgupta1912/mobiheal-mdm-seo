@@ -207,7 +207,7 @@ const WhitepaperDetails = ({
         <img
           src={heroImage}
           alt="Whitepaper Hero"
-          className="rounded-2xl shadow-xl object-cover aspect-[4/3] w-full border-4 border-white/20 
+          className="rounded-2xl shadow-xl object-cover  w-full border-4 border-white/20 
                      max-h-[420px] sm:max-h-[500px] md:max-h-[560px]"
         />
       </Suspense>

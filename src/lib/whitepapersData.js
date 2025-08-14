@@ -3,7 +3,12 @@ import wp1 from "@/assets/whitepaper/wp1.webp";
 import wp2 from "@/assets/whitepaper/wp2.webp";
 import wp3 from "@/assets/whitepaper/wp3.webp";
 import wp4 from "@/assets/whitepaper/wp4.webp";
+
+const siteUrl = import.meta.env.VITE_SITE_URL;
+
 export const whitepapers = [
+
+
   {
     id: "mobile-security",
     slug: "unlocking-business-potential",
@@ -11,13 +16,13 @@ export const whitepapers = [
     heroSubtitle: "Discover how Mobile Device Management solutions optimize operations, enhance security, and drive cost-efficiency.",
     heroImage: wp1,
     type: "Whitepaper",
-   
+
      // ✅ SEO Fields
   seoTitle: "Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
   seoDescription: "Explore how MDM solutions can transform your business operations by enhancing security, ensuring compliance, and reducing costs. Learn about the benefits of MDM in various industries.",
 
   // ✅ Canonical Tag
-  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/unlocking-business-potential`,
+  canonicalUrl: `${siteUrl}/whitepapers/unlocking-business-potential`,
 
   // ✅ Open Graph Tags
   ogSiteName: "MobiHeal MDM",
@@ -25,11 +30,11 @@ export const whitepapers = [
   ogTitle: "Unlocking Business Potential: How MDM Solutions Transform Operations | MobiHeal MDM",
   ogDescription: "Discover how MobiHeal's MDM solutions can optimize operations, enhance security, and reduce costs across industries.",
   ogType: "article",
-  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/unlocking-business-potential`,
+  ogUrl: `${siteUrl}/whitepapers/unlocking-business-potential`,
   get ogImage() {
     return this.heroImage?.startsWith("http")
       ? this.heroImage
-      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+      : `${siteUrl}${this.heroImage}`;
   },
 
   // ✅ Article-specific OG tags
@@ -90,7 +95,7 @@ export const whitepapers = [
   seoDescription: "Explore our Comprehensive Guide to Mobile Device Security. Learn best practices, strategies, and solutions to secure enterprise mobile devices efficiently.",
 
   // ✅ Canonical Tag
-  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/comprehensive-guide-mobile-device-security`,
+  canonicalUrl: `${siteUrl}/whitepapers/comprehensive-guide-mobile-device-security`,
 
   // ✅ Open Graph Tags
   ogSiteName: "MobiHeal MDM",
@@ -98,11 +103,11 @@ export const whitepapers = [
   ogTitle: "Comprehensive Guide to Mobile Device Security | MobiHeal MDM",
   ogDescription: "Master mobile device security with MobiHeal's comprehensive guide, covering compliance, BYOD security, kiosk mode, and advanced MDM strategies.",
   ogType: "article",
-  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/comprehensive-guide-mobile-device-security`,
+  ogUrl: `${siteUrl}/whitepapers/comprehensive-guide-mobile-device-security`,
   get ogImage() {
     return this.heroImage?.startsWith("http")
       ? this.heroImage
-      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+      : `${siteUrl}${this.heroImage}`;
   },
 
   // ✅ Article-specific OG tags
@@ -164,7 +169,7 @@ export const whitepapers = [
   seoDescription: "Discover proven strategies for secure BYOD implementation in enterprises. Learn how MobiHeal MDM ensures compliance, enhances productivity, and mitigates risks.",
 
   // ✅ Canonical Tag
-  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/best-practices-byod-enterprises`,
+  canonicalUrl: `${siteUrl}/whitepapers/best-practices-byod-enterprises`,
 
   // ✅ Open Graph Tags
   ogSiteName: "MobiHeal MDM",
@@ -172,11 +177,11 @@ export const whitepapers = [
   ogTitle: "Best Practices for BYOD Implementation in Enterprises | MobiHeal MDM",
   ogDescription: "Master BYOD security and compliance with MobiHeal's expert guide — covering risk mitigation, data separation, and policy enforcement.",
   ogType: "article",
-  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/best-practices-byod-enterprises`,
+  ogUrl: `${siteUrl}/whitepapers/best-practices-byod-enterprises`,
   get ogImage() {
     return this.heroImage?.startsWith("http")
       ? this.heroImage
-      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+      : `${siteUrl}${this.heroImage}`;
   },
 
   // ✅ Article-specific OG tags
@@ -238,7 +243,7 @@ export const whitepapers = [
   seoDescription: "Discover how MobiHeal’s next-gen Mobile Device Management solution fortifies security, optimizes costs, ensures compliance, and accelerates mobile workforce productivity for SMEs and enterprises alike.",
 
   // ✅ Canonical Tag
-  canonicalUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/mobiheal-advanced-mdm-enterprise`,
+  canonicalUrl: `${siteUrl}/whitepapers/mobiheal-advanced-mdm-enterprise`,
 
   // ✅ Open Graph Tags
   ogSiteName: "MobiHeal MDM",
@@ -246,11 +251,11 @@ export const whitepapers = [
   ogTitle: "Advanced Mobile Device Management with MobiHeal: Secure, Scalable & Future-Ready | MobiHeal MDM",
   ogDescription: "MobiHeal’s advanced MDM secures devices, streamlines operations, and empowers enterprises to scale efficiently while meeting compliance.",
   ogType: "article",
-  ogUrl: `https://mobiheal-mdm-seo-mgqj.vercel.app/whitepapers/mobiheal-advanced-mdm-enterprise`,
+  ogUrl: `${siteUrl}/whitepapers/mobiheal-advanced-mdm-enterprise`,
   get ogImage() {
     return this.heroImage?.startsWith("http")
       ? this.heroImage
-      : `https://mobiheal-mdm-seo-mgqj.vercel.app${this.heroImage}`;
+      : `${siteUrl}${this.heroImage}`;
   },
 
   // ✅ Article-specific OG tags
@@ -301,7 +306,5 @@ export const whitepapers = [
     enabled: true
   }
 }
-
-
 
 ];

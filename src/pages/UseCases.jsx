@@ -11,6 +11,9 @@ import corporate from "@/assets/useCases/corporate_owned_720.webp";
 import byod from "@/assets/useCases/byod_720.webp";
 
 const UseCases = () => {
+
+  const siteUrl = import.meta.env.VITE_SITE_URL;
+
   const [activeTab, setActiveTab] = useState("kiosk");
 
   useEffect(() => {
@@ -111,11 +114,11 @@ const UseCases = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/use-cases" />
+  <link rel="canonical" href={`${siteUrl}/use-cases`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/use-cases" />
+  <meta property="og:url" content={`${siteUrl}/use-cases`} />
   <meta
     property="og:title"
     content="MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility"
@@ -126,13 +129,13 @@ const UseCases = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/use-cases.png"
+    content={`${siteUrl}/assets/use-cases.png`}
   />
   <meta property="og:image:alt" content="MobiHeal MDM use case dashboard preview" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/use-cases" />
+  <meta name="twitter:url" content={`${siteUrl}/use-cases`} />
   <meta
     name="twitter:title"
     content="MDM Use Cases | BFSI, Defence, Healthcare & Rugged Mobility"
@@ -143,7 +146,7 @@ const UseCases = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/use-cases.png"
+    content={`${siteUrl}/assets/use-cases.png`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM use case dashboard preview" />
 </Helmet>

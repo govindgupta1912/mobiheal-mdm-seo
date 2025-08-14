@@ -4,6 +4,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const inquiryType = searchParams.get("type") || "";
@@ -23,11 +24,11 @@ const Contact = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+  <link rel="canonical" href={`${siteUrl}/contact`} />
 
   {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+  <meta property="og:url" content={`${siteUrl}/contact`} />
   <meta property="og:title" content="Contact MobiHeal | Book a Demo or Speak with MDM Experts" />
   <meta
     property="og:description"
@@ -35,13 +36,13 @@ const Contact = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal contact support team illustration" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/contact" />
+  <meta name="twitter:url" content={`${siteUrl}/contact`} />
   <meta name="twitter:title" content="Contact MobiHeal | Book a Demo or Speak with MDM Experts" />
   <meta
     name="twitter:description"
@@ -49,7 +50,7 @@ const Contact = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal contact support team illustration" />
 </Helmet>

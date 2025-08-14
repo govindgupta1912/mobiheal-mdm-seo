@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
 
 const Partners = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
+
   const certifications = [
     { name: "ISO 27001: 2022", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
     { name: "ISO 9001:2015", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
@@ -27,11 +29,11 @@ const Partners = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/partners" />
+  <link rel="canonical" href={`${siteUrl}/partners`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/partners" />
+  <meta property="og:url" content={`${siteUrl}/partners`} />
   <meta property="og:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
   <meta
     property="og:description"
@@ -39,13 +41,13 @@ const Partners = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal Partner Program graphic" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/partners" />
+  <meta name="twitter:url" content={`${siteUrl}/partners`} />
   <meta name="twitter:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
   <meta
     name="twitter:description"
@@ -53,7 +55,7 @@ const Partners = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal Partner Program graphic" />
 </Helmet>

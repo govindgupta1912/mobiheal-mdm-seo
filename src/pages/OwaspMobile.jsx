@@ -5,6 +5,7 @@ import { owaspRisks } from "@/lib/data";
 import { Helmet } from "react-helmet-async";
 
 const OwaspMobile = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   return (
     <>
    <Helmet>
@@ -19,11 +20,11 @@ const OwaspMobile = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/owasp-mobile" />
+  <link rel="canonical" href={`${siteUrl}/owasp-mobile`} />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/owasp-mobile" />
+  <meta property="og:url" content={`${siteUrl}/owasp-mobile`} />
   <meta property="og:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
   <meta
     property="og:description"
@@ -31,13 +32,13 @@ const OwaspMobile = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="OWASP Mobile Top 10 infographic preview" />
 
   {/* Twitter / X */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.mobiheal.in/owasp-mobile" />
+  <meta name="twitter:url" content={`${siteUrl}/owasp-mobile`} />
   <meta name="twitter:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
   <meta
     name="twitter:description"
@@ -45,7 +46,7 @@ const OwaspMobile = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="OWASP Mobile Top 10 infographic preview" />
 </Helmet>
@@ -121,25 +122,6 @@ const OwaspMobile = () => {
                         ))}
                       </ul>
                     </div>
-                    {/* <div className="mt-6">
-                      <h4 className=" flex items-center font-semibold text-neutral-800 mb-3 ">Example</h4>
-                      <p className="text-neutral-600">{risk.example}</p>
-
-                      </div> */}
-                    
-                    {/* {risk.relatedResource && (
-                      <div className="mt-6 pt-6 border-t border-neutral-100">
-                        <a 
-                          href={risk.relatedResource.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center text-primary hover:text-primary-dark font-medium"
-                        >
-                          {risk.relatedResource.title}
-                          <ExternalLinkIcon className="ml-1 h-4 w-4" />
-                        </a>
-                      </div>
-                    )} */}
                   </div>
                 </div>
               ))}

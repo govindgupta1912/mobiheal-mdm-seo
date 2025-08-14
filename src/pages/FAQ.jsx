@@ -19,6 +19,7 @@ const faqCategories = [
 ];
 
 const FAQ = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL;
   return (
     <>
 
@@ -35,11 +36,11 @@ const FAQ = () => {
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.mobiheal.in/faq" />
+  <link rel="canonical" href={`${siteUrl}/faq`} />
 
   {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.mobiheal.in/faq" />
+  <meta property="og:url" content={`${siteUrl}/faq`} />
   <meta property="og:title" content="MobiHeal MDM FAQs | Deployment, Security, ROI Answers" />
   <meta
     property="og:description"
@@ -47,13 +48,13 @@ const FAQ = () => {
   />
   <meta
     property="og:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta property="og:image:alt" content="MobiHeal MDM FAQs illustration" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://mobiheal-mdm-seo-mgqj.vercel.app/faq" />
+  <meta name="twitter:url" content={`${siteUrl}/faq`} />
   <meta name="twitter:title" content="MobiHeal MDM FAQs | Deployment, Security, ROI Answers" />
   <meta
     name="twitter:description"
@@ -61,7 +62,7 @@ const FAQ = () => {
   />
   <meta
     name="twitter:image"
-    content="https://mobiheal-mdm-seo-mgqj.vercel.app/assets/mobiheal_logo.webp"
+    content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM FAQs illustration" />
 </Helmet>
