@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import bg_image from "../../assets/hero_bg_sf-scaled.webp"; // Adjust the path as necessary
 
 const BlogHero = ({ blog }) => {
@@ -36,7 +37,8 @@ const BlogHero = ({ blog }) => {
           {/* Author & Date */}
           <div className="text-white/80 text-sm mb-10 space-y-1">
             <p>
-              Written by <span className="text-white font-medium">{blog.author}</span>
+              Written by{" "}
+              <span className="text-white font-medium">{blog.author}</span>
             </p>
             <p>{blog.publishedAt}</p>
           </div>
@@ -46,28 +48,54 @@ const BlogHero = ({ blog }) => {
             <span className="text-white/80 text-sm">Share On</span>
             <div className="flex gap-4">
               <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                  currentUrl
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all"
+                aria-label="Share on LinkedIn"
               >
-                <FaLinkedinIn className="text-white text-lg" />
+                <FaLinkedinIn
+                  className="text-white text-lg"
+                  aria-hidden="true"
+                />
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                  currentUrl
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all"
+                aria-label="Share on Facebook"
               >
-                <FaFacebookF className="text-white text-lg" />
+                <FaFacebookF
+                  className="text-white text-lg"
+                  aria-hidden="true"
+                />
               </a>
+
+              {/* <a
+  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all"
+  aria-label="Share on Twitter"
+>
+  <FaTwitter className="text-white text-lg" aria-hidden="true" />
+</a> */}
+
               <a
-                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                  currentUrl
+                )}&text=${encodeURIComponent(blog.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all"
+                aria-label="Share on X"
               >
-                <FaTwitter className="text-white text-lg" />
+                <FaXTwitter className="text-white text-lg" aria-hidden="true" />
               </a>
             </div>
           </div>

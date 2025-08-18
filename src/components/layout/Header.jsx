@@ -1,11 +1,7 @@
 import { Suspense, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "../../components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "../../components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,67 +15,73 @@ const Header = () => {
   const location = useLocation().pathname;
 
   return (
-   
     // </header>
-<header className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="container mx-auto w-full  px-2 sm:px-4 md:px-6 lg:px-8 py-2">
-    <div className="flex items-center justify-between gap-3 lg:gap-4 py-2 flex-nowrap">
-      {/* Logo */}
-      <div className="flex items-center flex-shrink-0">
-        <Link to="/" className="flex items-center">
-          <img src={logo} alt="MobiHeal Logo" className="h-8 w-auto" />
-        </Link>
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto w-full  px-2 sm:px-4 md:px-6 lg:px-8 py-2">
+        <div className="flex items-center justify-between gap-3 lg:gap-4 py-2 flex-nowrap">
+          {/* Logo */}
+          <div className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center">
+              <img src={logo} alt="MobiHeal Logo" className="h-8 w-auto" />
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center justify-center gap-2 md:gap-3 flex-wrap min-w-0 text-sm lg:text-base">
+            <DesktopNavigation currentPath={location} />
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-1 md:space-x-2 flex-shrink-0">
+            <Button
+              variant="ghost"
+              asChild
+              className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3"
+            >
+              <a
+                href="https://dev.mobiheal.in/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sign in to MobiHeal"
+              >
+                Sign In
+              </a>
+            </Button>
+            <Button
+              asChild
+              className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3"
+            >
+              <a
+                href="https://calendly.com/mobiheal-demo/booking"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Request Demo"
+              >
+                Request Demo
+              </a>
+            </Button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden ml-auto">
+            <MobileNavigation currentPath={location} />
+          </div>
+        </div>
       </div>
-
-      {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center justify-center gap-2 md:gap-3 flex-wrap min-w-0 text-sm lg:text-base">
-        <DesktopNavigation currentPath={location} />
-      </div>
-
-      {/* CTA Buttons */}
-      <div className="hidden md:flex items-center space-x-1 md:space-x-2 flex-shrink-0">
-        <Button
-          variant="ghost"
-          className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3"
-        >
-          Sign In
-        </Button>
-        <a
-          href="https://calendly.com/mobiheal-demo/booking"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3">
-            Request Demo
-          </Button>
-        </a>
-      </div>
-
-      {/* Mobile Navigation */}
-      <div className="md:hidden ml-auto">
-        <MobileNavigation currentPath={location} />
-      </div>
-    </div>
-  </div>
-</header>
-
-
+    </header>
   );
 };
-
-
-
 
 const DesktopNavigation = ({ currentPath }) => {
   const navigate = useNavigate();
 
   const handleHashNavigation = (target) => {
-  if (currentPath === "/use-cases") {
-    window.location.hash = target;
-  } else {
-    navigate(`/use-cases#${target}`);
-  }
-};
+    if (currentPath === "/use-cases") {
+      window.location.hash = target;
+    } else {
+      navigate(`/use-cases#${target}`);
+    }
+  };
 
   return (
     <>
@@ -89,7 +91,9 @@ const DesktopNavigation = ({ currentPath }) => {
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem onSelect={() => navigate("/features#data-encryption")}>
+          <DropdownMenuItem
+            onSelect={() => navigate("/features#data-encryption")}
+          >
             Data Encryption
           </DropdownMenuItem>
           <DropdownMenuItem onSelect={() => navigate("/features#work-profile")}>
@@ -98,7 +102,9 @@ const DesktopNavigation = ({ currentPath }) => {
           <DropdownMenuItem onSelect={() => navigate("/features#remote-lock")}>
             Remote Lock & Wipe
           </DropdownMenuItem>
-          <DropdownMenuItem onSelect={() => navigate("/features#app-management")}>
+          <DropdownMenuItem
+            onSelect={() => navigate("/features#app-management")}
+          >
             App Management
           </DropdownMenuItem>
           <DropdownMenuItem onSelect={() => navigate("/features")}>
@@ -108,25 +114,29 @@ const DesktopNavigation = ({ currentPath }) => {
       </DropdownMenu>
 
       <DropdownMenu>
-  <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
-    <span>Use Cases</span>
-    <ChevronDown className="h-4 w-4" />
-  </DropdownMenuTrigger>
-  <DropdownMenuContent>
-    <DropdownMenuItem onSelect={() => handleHashNavigation("kiosk")}>
-      Kiosk Mode Management
-    </DropdownMenuItem>
-    <DropdownMenuItem onSelect={() => handleHashNavigation("corporate")}>
-      Corporate-Owned Devices
-    </DropdownMenuItem>
-    <DropdownMenuItem onSelect={() => handleHashNavigation("byod")}>
-      BYOD Management
-    </DropdownMenuItem>
-  </DropdownMenuContent>
-</DropdownMenu>
+        <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
+          <span>Use Cases</span>
+          <ChevronDown className="h-4 w-4" />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuItem onSelect={() => handleHashNavigation("kiosk")}>
+            Kiosk Mode Management
+          </DropdownMenuItem>
+          <DropdownMenuItem onSelect={() => handleHashNavigation("corporate")}>
+            Corporate-Owned Devices
+          </DropdownMenuItem>
+          <DropdownMenuItem onSelect={() => handleHashNavigation("byod")}>
+            BYOD Management
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
 
-
-      <Link to="/pricing" className={`text-neutral-700 hover:text-primary ${currentPath === "/pricing" ? "text-primary" : ""}`}>
+      <Link
+        to="/pricing"
+        className={`text-neutral-700 hover:text-primary ${
+          currentPath === "/pricing" ? "text-primary" : ""
+        }`}
+      >
         Pricing
       </Link>
 
@@ -151,7 +161,12 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Link to="/faq" className={`text-neutral-700 hover:text-primary ${currentPath === "/faq" ? "text-primary" : ""}`}>
+      <Link
+        to="/faq"
+        className={`text-neutral-700 hover:text-primary ${
+          currentPath === "/faq" ? "text-primary" : ""
+        }`}
+      >
         FAQs
       </Link>
 
@@ -170,7 +185,12 @@ const DesktopNavigation = ({ currentPath }) => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Link to="/contact" className={`text-neutral-700 hover:text-primary ${currentPath === "/contact" ? "text-primary" : ""}`}>
+      <Link
+        to="/contact"
+        className={`text-neutral-700 hover:text-primary ${
+          currentPath === "/contact" ? "text-primary" : ""
+        }`}
+      >
         Contact
       </Link>
     </>
@@ -196,10 +216,9 @@ const MobileNavigation = ({ currentPath }) => {
           </Button>
         </SheetTrigger>
         <SheetContent
-       side="right"
-       className="w-[300px] sm:w-[400px] flex flex-col overflow-y-auto max-h-screen"
-     >
-
+          side="right"
+          className="w-[300px] sm:w-[400px] flex flex-col overflow-y-auto max-h-screen"
+        >
           <nav className="flex flex-col gap-4 mt-6 flex-1 overflow-y-auto">
             {[
               { name: "Home", path: "/" },
@@ -219,7 +238,9 @@ const MobileNavigation = ({ currentPath }) => {
               <button
                 key={item.path}
                 onClick={() => handleNavigate(item.path)}
-                className={`text-left py-2 hover:text-primary ${currentPath.includes(item.path) ? "text-primary" : ""}`}
+                className={`text-left py-2 hover:text-primary ${
+                  currentPath.includes(item.path) ? "text-primary" : ""
+                }`}
               >
                 {item.name}
               </button>
@@ -229,7 +250,11 @@ const MobileNavigation = ({ currentPath }) => {
               <Button variant="outline" className="w-full">
                 Sign In
               </Button>
-              <a href="https://calendly.com/mobiheal-demo/booking" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://calendly.com/mobiheal-demo/booking"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="w-full">Request Demo</Button>
               </a>
             </div>

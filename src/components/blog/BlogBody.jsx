@@ -113,7 +113,7 @@ const BlogBody = ({ blog }) => {
     rel="noopener noreferrer"
   >
     {blog.conclusion.cta.buttonText}
-    <FaArrowRight />
+    <FaArrowRight aria-hidden="true" />
   </a>
 </Button>
             </div>
@@ -126,29 +126,35 @@ const BlogBody = ({ blog }) => {
         <p className="text-gray-500">Share this article:</p>
         <div className="flex gap-4">
           <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-blue-600 transition"
-          >
-            <FaLinkedinIn size={20} />
-          </a>
-          <a
-            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-sky-500 transition"
-          >
-            <FaXTwitter size={20} />
-          </a>
-          <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-blue-700 transition"
-          >
-            <FaFacebookF size={20} />
-          </a>
+  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-500 hover:text-blue-600 transition"
+  aria-label="Share on LinkedIn"
+>
+  <FaLinkedinIn size={20} aria-hidden="true" />
+</a>
+
+<a
+  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-500 hover:text-sky-500 transition"
+  aria-label="Share on X"
+>
+  <FaXTwitter size={20} aria-hidden="true" />
+</a>
+
+<a
+  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-500 hover:text-blue-700 transition"
+  aria-label="Share on Facebook"
+>
+  <FaFacebookF size={20} aria-hidden="true" />
+</a>
+
         </div>
       </div>
     </motion.article>

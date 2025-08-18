@@ -92,19 +92,24 @@ const WhitepaperDetails = ({
     try {
       setIsSubmitting(true);
 
-      const response = await fetch("https://dev.mobiheal.in/api/save-whitepaper", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://dev.mobiheal.in/api/save-whitepaper",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit form");
       }
 
-      toast.success("Form submitted successfully. Download will start shortly.");
+      toast.success(
+        "Form submitted successfully. Download will start shortly."
+      );
 
       setTimeout(() => {
         const link = document.createElement("a");
@@ -130,97 +135,109 @@ const WhitepaperDetails = ({
         <meta name="description" content={seoDescription} />
       </Helmet> */}
 
-        <Helmet>
-      {/* Title & Description */}
-      <title>{seoTitle}</title>
-      <meta name="description" content={seoDescription} />
+      <Helmet>
+        {/* Title & Description */}
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
 
-      {/* Canonical */}
-      {canonicalUrl && (
-        <link rel="canonical" href={canonicalUrl} />
-      )}
+        {/* Canonical */}
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
-      {/* Meta Keywords */}
-      {metaKeywords && (
-        <meta name="keywords" content={metaKeywords.join(", ")} />
-      )}
+        {/* Meta Keywords */}
+        {metaKeywords && (
+          <meta name="keywords" content={metaKeywords.join(", ")} />
+        )}
 
-      {/* Open Graph Tags */}
-      <meta property="og:site_name" content={ogSiteName} />
-      <meta property="og:locale" content={ogLocale} />
-      <meta property="og:title" content={ogTitle} />
-      <meta property="og:description" content={ogDescription} />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={ogUrl} />
-      <meta property="og:image" content={typeof ogImage === "function" ? ogImage() : ogImage} />
+        {/* Open Graph Tags */}
+        <meta property="og:site_name" content={ogSiteName} />
+        <meta property="og:locale" content={ogLocale} />
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:description" content={ogDescription} />
+        <meta property="og:type" content={ogType} />
+        <meta property="og:url" content={ogUrl} />
+        <meta
+          property="og:image"
+          content={typeof ogImage === "function" ? ogImage() : ogImage}
+        />
 
-      {/* Article-specific Open Graph Tags */}
-      {articleAuthor && (
-        <meta property="article:author" content={articleAuthor} />
-      )}
-      {articlePublishedTime && (
-        <meta property="article:published_time" content={articlePublishedTime} />
-      )}
-      {articleModifiedTime && (
-        <meta property="article:modified_time" content={articleModifiedTime} />
-      )}
-      {articleTags &&
-        articleTags.map((tag, i) => (
-          <meta key={i} property="article:tag" content={tag} />
-        ))}
+        {/* Article-specific Open Graph Tags */}
+        {articleAuthor && (
+          <meta property="article:author" content={articleAuthor} />
+        )}
+        {articlePublishedTime && (
+          <meta
+            property="article:published_time"
+            content={articlePublishedTime}
+          />
+        )}
+        {articleModifiedTime && (
+          <meta
+            property="article:modified_time"
+            content={articleModifiedTime}
+          />
+        )}
+        {articleTags &&
+          articleTags.map((tag, i) => (
+            <meta key={i} property="article:tag" content={tag} />
+          ))}
 
-      {/* Twitter Card Tags */}
-      <meta name="twitter:card" content={twitterCard} />
-      <meta name="twitter:title" content={twitterTitle} />
-      <meta name="twitter:description" content={twitterDescription} />
-      <meta name="twitter:image" content={typeof twitterImage === "function" ? twitterImage() : twitterImage} />
-      {twitterSite && (
-        <meta name="twitter:site" content={twitterSite} />
-      )}
-      {twitterCreator && (
-        <meta name="twitter:creator" content={twitterCreator} />
-      )}
-    </Helmet>
-  
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content={twitterCard} />
+        <meta name="twitter:title" content={twitterTitle} />
+        <meta name="twitter:description" content={twitterDescription} />
+        <meta
+          name="twitter:image"
+          content={
+            typeof twitterImage === "function" ? twitterImage() : twitterImage
+          }
+        />
+        {twitterSite && <meta name="twitter:site" content={twitterSite} />}
+        {twitterCreator && (
+          <meta name="twitter:creator" content={twitterCreator} />
+        )}
+      </Helmet>
 
       {/* Hero Section */}
-     <section className="relative bg-gradient text-white py-14 sm:py-18 overflow-hidden">
-  <div className="container px-8 mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 relative z-10">
-    
-    {/* Text Section */}
-    <div className="text-center lg:text-left max-w-xl w-full">
-      <h1 className="text-4xl font-extrabold leading-tight mb-4">{title}</h1>
-      <p className="text-blue-100 mb-6">{heroSubtitle}</p>
-      <Button
-        onClick={() =>
-          document.getElementById("download-form")?.scrollIntoView({ behavior: "smooth" })
-        }
-        className="mt-4 px-6 py-3 text-lg font-semibold bg-white text-primary hover:bg-blue-100"
-      >
-        Download Whitepaper
-      </Button>
-    </div>
+      <section className="relative bg-gradient text-white py-14 sm:py-18 overflow-hidden">
+        <div className="container px-8 mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 relative z-10">
+          {/* Text Section */}
+          <div className="text-center lg:text-left max-w-xl w-full">
+            <h1 className="text-4xl font-extrabold leading-tight mb-4">
+              {title}
+            </h1>
+            <p className="text-blue-100 mb-6">{heroSubtitle}</p>
+            <Button
+              onClick={() =>
+                document
+                  .getElementById("download-form")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="mt-4 px-6 py-3 text-lg font-semibold bg-white text-primary hover:bg-blue-100"
+            >
+              Download Whitepaper
+            </Button>
+          </div>
 
-    {/* Image Section */}
-    <div className="w-full sm:max-w-xl flex justify-center">
-      <Suspense>
-        <img
-          src={heroImage}
-          alt="Whitepaper Hero"
-          className="rounded-2xl shadow-xl object-cover  w-full border-4 border-white/20 
+          {/* Image Section */}
+          <div className="w-full sm:max-w-xl flex justify-center">
+            <Suspense>
+              <img
+                src={heroImage}
+                alt="Whitepaper Hero"
+                className="rounded-2xl shadow-xl object-cover  w-full border-4 border-white/20 
                      max-h-[420px] sm:max-h-[500px] md:max-h-[560px]"
-        />
-      </Suspense>
-    </div>
-
-  </div>
-</section>
-
+              />
+            </Suspense>
+          </div>
+        </div>
+      </section>
 
       {/* Highlights */}
       <section className="py-20 bg-white">
         <div className="container max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-14">What You'll Learn</h2>
+          <h2 className="text-4xl font-bold text-center mb-14">
+            What You'll Learn
+          </h2>
           <div className="grid md:grid-cols-2 gap-8 lg:grid-cols-3">
             {highlights.map((item, idx) => (
               <div
@@ -237,10 +254,15 @@ const WhitepaperDetails = ({
 
       {/* Download Form */}
       {downloadForm?.enabled && pdfUrl && (
-        <section id="download-form" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+        <section
+          id="download-form"
+          className="py-20 bg-gradient-to-br from-blue-50 to-white"
+        >
           <div className="container max-w-3xl mx-auto px-4">
             <aside className="relative bg-white/60 backdrop-blur-lg border border-blue-200 shadow-2xl rounded-3xl p-10">
-              <h4 className="text-3xl font-bold mb-4 text-center">Get the Full Whitepaper</h4>
+              <h4 className="text-3xl font-bold mb-4 text-center">
+                Get the Full Whitepaper
+              </h4>
               <p className="text-neutral-700 mb-8 text-center">
                 Fill out this form to instantly download the whitepaper.
               </p>
@@ -250,15 +272,21 @@ const WhitepaperDetails = ({
                   onSubmit={form.handleSubmit(handleDownload)}
                   className="space-y-5 w-full"
                 >
+                  {/* First & Last Name */}
                   <div className="grid grid-cols-2 gap-4">
                     <FormField
                       name="firstName"
                       control={form.control}
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>First Name*</FormLabel>
+                          <FormLabel htmlFor="firstName">First Name*</FormLabel>
                           <FormControl>
-                            <Input {...field} placeholder="First Name" />
+                            <Input
+                              id="firstName"
+                              autoComplete="given-name"
+                              placeholder="First Name"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -269,67 +297,104 @@ const WhitepaperDetails = ({
                       control={form.control}
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Last Name*</FormLabel>
+                          <FormLabel htmlFor="lastName">Last Name*</FormLabel>
                           <FormControl>
-                            <Input {...field} placeholder="Last Name" />
+                            <Input
+                              id="lastName"
+                              autoComplete="family-name"
+                              placeholder="Last Name"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
                   </div>
+
+                  {/* Email */}
                   <FormField
                     name="email"
                     control={form.control}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email*</FormLabel>
+                        <FormLabel htmlFor="email">Email*</FormLabel>
                         <FormControl>
-                          <Input {...field} placeholder="Email Address" />
+                          <Input
+                            id="email"
+                            type="email"
+                            autoComplete="email"
+                            placeholder="Email Address"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
+
+                  {/* Phone */}
                   <FormField
                     name="phone"
                     control={form.control}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone</FormLabel>
+                        <FormLabel htmlFor="phone">Phone</FormLabel>
                         <FormControl>
-                          <Input {...field} placeholder="Phone Number" />
+                          <Input
+                            id="phone"
+                            type="tel"
+                            autoComplete="tel"
+                            placeholder="Phone Number"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
+
+                  {/* Company */}
                   <FormField
                     name="company"
                     control={form.control}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Company Name*</FormLabel>
+                        <FormLabel htmlFor="company">Company Name*</FormLabel>
                         <FormControl>
-                          <Input {...field} placeholder="Company Name" />
+                          <Input
+                            id="company"
+                            placeholder="Company Name"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
+
+                  {/* No. of Users */}
                   <FormField
                     name="users"
                     control={form.control}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>No. of Users</FormLabel>
+                        <FormLabel htmlFor="users">No. of Users</FormLabel>
                         <FormControl>
-                          <Input {...field} placeholder="Number of Users" />
+                          <Input
+                            id="users"
+                            type="number"
+                            inputMode="numeric"
+                            placeholder="Number of Users"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
+
+                  {/* Submit Button */}
                   <Button
                     type="submit"
                     disabled={isSubmitting}
@@ -342,6 +407,7 @@ const WhitepaperDetails = ({
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
+                          aria-hidden="true"
                         >
                           <circle
                             className="opacity-25"

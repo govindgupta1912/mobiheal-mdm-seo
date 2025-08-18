@@ -112,15 +112,16 @@ const ContactForm = () => {
           }}
           className="space-y-6"
         >
+          {/* First & Last Name */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField
               control={form.control}
               name="firstName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>First Name</FormLabel>
+                  <FormLabel htmlFor="firstName">First Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="John" {...field} />
+                    <Input id="firstName" placeholder="John" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -131,9 +132,9 @@ const ContactForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Last Name</FormLabel>
+                  <FormLabel htmlFor="lastName">Last Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Doe" {...field} />
+                    <Input id="lastName" placeholder="Doe" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -141,43 +142,55 @@ const ContactForm = () => {
             />
           </div>
 
+          {/* Email */}
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel htmlFor="email">Email</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="john@example.com" {...field} />
+                  <Input
+                    id="email"
+                    type="email"
+                    autoComplete="email"
+                    placeholder="john@example.com"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
 
+          {/* Company */}
           <FormField
             control={form.control}
             name="company"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Company</FormLabel>
+                <FormLabel htmlFor="company">Company</FormLabel>
                 <FormControl>
-                  <Input placeholder="Acme Inc." {...field} />
+                  <Input id="company" placeholder="Acme Inc." {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
 
+          {/* Subject */}
           <FormField
             control={form.control}
             name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Subject</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormLabel htmlFor="subject">Subject</FormLabel>
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
                   <FormControl>
-                    <SelectTrigger>
+                    <SelectTrigger id="subject">
                       <SelectValue placeholder="Select subject" />
                     </SelectTrigger>
                   </FormControl>
@@ -194,20 +207,27 @@ const ContactForm = () => {
             )}
           />
 
+          {/* Message */}
           <FormField
             control={form.control}
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message</FormLabel>
+                <FormLabel htmlFor="message">Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Your message..." rows={4} {...field} />
+                  <Textarea
+                    id="message"
+                    placeholder="Your message..."
+                    rows={4}
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
 
+          {/* Privacy Policy */}
           <FormField
             control={form.control}
             name="privacyPolicy"
@@ -215,14 +235,21 @@ const ContactForm = () => {
               <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md">
                 <FormControl>
                   <Checkbox
+                    id="privacyPolicy"
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel className="text-sm text-neutral-600">
+                  <FormLabel
+                    htmlFor="privacyPolicy"
+                    className="text-sm text-neutral-600"
+                  >
                     I agree to the{" "}
-                    <Link to="/privacy-policy" className="text-primary hover:underline">
+                    <Link
+                      to="/privacy-policy"
+                      className="text-primary hover:underline"
+                    >
                       Privacy Policy
                     </Link>{" "}
                     and consent to be contacted regarding my inquiry.
@@ -233,13 +260,13 @@ const ContactForm = () => {
             )}
           />
 
+          {/* Submit Button */}
           <div className="relative h-10 overflow-hidden">
             <div className="w-full flex justify-center relative">
               <Button
                 type="submit"
-                // onMouseEnter={handleMouseEnter}
                 disabled={isSubmitting}
-                className="transition-all duration-300 absolute w-full "
+                className="transition-all duration-300 absolute w-full"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
