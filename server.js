@@ -42,7 +42,8 @@ async function createServer() {
       .replace('<!--ssr-outlet-->', appHtml)
       .replace('${helmet.title.toString()}', helmet.title.toString())
       .replace('${helmet.meta.toString()}', helmet.meta.toString())
-      .replace('${helmet.link.toString()}', helmet.link.toString());
+      .replace('${helmet.link.toString()}', helmet.link.toString())
+      .replace('${helmet.script.toString()}', helmet.script.toString());
 
     res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
   });

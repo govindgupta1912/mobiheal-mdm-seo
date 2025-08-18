@@ -76,7 +76,7 @@ const Testimonials = () => {
               Client Testimonials
             </h1>
             <p className="text-lg md:text-xl mb-8 text-blue-100">
-              See what our customers have to say about their experience with SecureMDM.
+              See what our customers have to say about their experience with MobiHeal MDM.
             </p>
           </div>
         </div>

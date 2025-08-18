@@ -20,6 +20,41 @@ const faqCategories = [
 
 const FAQ = () => {
   const siteUrl = import.meta.env.VITE_SITE_URL;
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", 
+        "@id": `${siteUrl}/#organization` },
+      {
+        "@type": "FAQPage",
+        "@id": `${siteUrl}/faq#faqpage`,
+        mainEntityOfPage: `${siteUrl}/faq`,
+       mainEntity: [
+      { "@type": "Question", "name": "What is MobiHeal MDM?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal MDM is our enterprise-grade Mobile Device Management solution that enables IT teams to centrally enroll, configure, monitor and secure corporate and BYOD Android and iOS devices." } },
+      { "@type": "Question", "name": "Which platforms and device types are supported?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal MDM supports Android 9.0 and above (Android Enterprise-compliant devices) and iOS 12.0 and above." } },
+      { "@type": "Question", "name": "How do I enroll devices?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal MDM supports multiple enrollment options including Zero-touch enrollment, QR-code provisioning, BYOD/profile owner mode, and manual token-based enrollment. Admins can generate enrollment profiles in the console and distribute them via email or QR code." } },
+      { "@type": "Question", "name": "What enrollment modes are available?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal supports Corporate-Owned Single-Use (Kiosk), Fully Managed, COPE (Corporate-Owned, Personally Enabled), and Work-Profile (BYOD) modes." } },
+      { "@type": "Question", "name": "How are applications managed and distributed?", "acceptedAnswer": { "@type": "Answer", "text": "Apps can be deployed via public stores or a private enterprise store. MobiHeal supports silent push, app blacklisting/whitelisting, runtime permission configuration, and managed app configurations." } },
+      { "@type": "Question", "name": "Can users still install personal apps?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in BYOD mode, users can install personal apps freely. Corporate data and apps remain encrypted and containerized under IT control." } },
+      { "@type": "Question", "name": "What reporting and analytics are available?", "acceptedAnswer": { "@type": "Answer", "text": "Real-time device health dashboard (compliance, connectivity, OS version), Usage reports (app usage durations), Security audit logs (policy violations, remote actions), Custom alerts: Email/SMS triggers on critical events" } },
+      { "@type": "Question", "name": "How does MobiHeal MDM ensure data security?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal enforces AES-256 encryption, compliance policies, and DLP features like blocking copy-paste, screenshots, and USB transfers." } },
+      { "@type": "Question", "name": "What happens if a device is lost or stolen?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal allows remote lock, selective wipe of corporate data, or full factory reset depending on ownership and severity." } },
+      { "@type": "Question", "name": "How do I configure network settings (Wi-Fi, VPN, etc.)?", "acceptedAnswer": { "@type": "Answer", "text": "Network settings like Wi-Fi SSIDs and VPNs can be pushed via Policy Templates, scoped by groups, departments, or tags." } },
+      { "@type": "Question", "name": "How is MobiHeal MDM priced?", "acceptedAnswer": { "@type": "Answer", "text": "MobiHeal is priced per device per month. Volume and long-term contract discounts apply. Add-ons like advanced analytics and SOC integration are available separately." } },
+      { "@type": "Question", "name": "How is licensing and pricing structured?", "acceptedAnswer": { "@type": "Answer", "text": "Per-device, per-month subscription (billed annually), Volume discounts starting at 101 devices onwards, Enterprise term discounts for 24- and 36-month commitment, Add-on modules (Managed SOC integration, advanced analytics) available as separate SKUs" } },
+      { "@type": "Question", "name": "Is there a free trial available?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a 14-day free trial is available with full access for up to 25 devices and no credit card required." } },
+      { "@type": "Question", "name": "Can I change plans as my needs evolve?", "acceptedAnswer": { "@type": "Answer", "text": "Plans can be upgraded or downgraded at any time. Pricing changes are prorated or applied at the next cycle as appropriate." } },
+      { "@type": "Question", "name": "How do I deploy MobiHeal MDM to my organization?", "acceptedAnswer": { "@type": "Answer", "text": "Deployment involves creating an enrollment profile and using methods like QR codes or email links. Our team offers onboarding assistance." } },
+      { "@type": "Question", "name": "How do I troubleshoot common enrollment issues?", "acceptedAnswer": { "@type": "Answer", "text": "Check connectivity, date/time sync, and profile validity. Ensure the MobiHeal Buddy App is installed and configured properly." } },
+      { "@type": "Question", "name": "Can MobiHeal integrate with our existing systems?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, MobiHeal supports certificate-based conditional email access for all major email service providers." } },
+      { "@type": "Question", "name": "What support channels and escalation process do you offer?", "acceptedAnswer": { "@type": "Answer", "text": "Support includes email and call options with a 4-hour initial response. Enterprise users get a dedicated account manager and priority SLAs." } },
+      { "@type": "Question", "name": "Do you offer training for administrators?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide on-demand videos, documentation, live sessions for advanced users, and onboarding training." } },
+      { "@type": "Question", "name": "How do I request new features or submit feedback?", "acceptedAnswer": { "@type": "Answer", "text": "Contact support or your account manager. Feature requests are reviewed quarterly and prioritized based on demand and impact." } }
+    ]
+      }
+    ]
+  };
   return (
     <>
 
@@ -65,6 +100,9 @@ const FAQ = () => {
     content={`${siteUrl}/assets/mobiheal_logo.webp`}
   />
   <meta name="twitter:image:alt" content="MobiHeal MDM FAQs illustration" />
+   <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
 </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
