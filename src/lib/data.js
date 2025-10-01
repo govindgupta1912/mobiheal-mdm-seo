@@ -25,7 +25,7 @@ import cs2 from "../assets/caseStudies/cs2.webp";
 import cs3 from "../assets/caseStudies/cs3.webp";
 import cs4 from "../assets/caseStudies/cs4.webp";
 import cs5 from "../assets/caseStudies/cs5.webp";
-
+import cs6 from "../assets/caseStudies/cs6.webp";
 import cs7 from "../assets/caseStudies/cs7.webp";
 import cs8 from "../assets/caseStudies/cs8.webp";
 import cs9 from "../assets/caseStudies/cs9.webp";
@@ -33,9 +33,9 @@ import cs10 from "../assets/caseStudies/cs10.webp";
 import cs11 from "../assets/caseStudies/cs11.webp";
 import cs12 from "../assets/caseStudies/cs12.webp";
 
-import blog1 from "../assets/BlogImages/blog1.webp"
+import blog1 from "../assets/BlogImages/blog1.webp";
 import blog2 from "../assets/BlogImages/blog2.webp";
-import blog3 from "../assets/BlogImages/blog3.webp";    
+import blog3 from "../assets/BlogImages/blog3.webp";
 
 export const blogPosts = [
   {
@@ -145,9 +145,8 @@ const exampleCaseStudy = {
     { stat: "30%", label: "Cost Reduction" },
   ],
   slug: "enterprise-mdm-xyz",
-  category: "Mobile Security"
+  category: "Mobile Security",
 };
-
 
 export const caseStudies = [
   {
@@ -241,7 +240,7 @@ export const caseStudies = [
       "Boosting Customer Engagement: Secure Tablet Deployment for In-Store Product Demos",
     summary:
       "A global electronics retailer deployed 1,000+ tablets for in-store product demonstrations but faced security risks and inconsistent customer experiences. By implementing MobiHeal MDM, the brand achieved a 25% increase in sales conversions, 90% customer satisfaction, and zero data breaches over 12 months.",
-    imageSrc: "/images/case-studies/retail-engagement.jpg",
+    imageSrc: cs6,
     tags: ["Retail", "Customer Engagement", "Tablet Deployment", "Security"],
     results: [
       { stat: "25%", label: "Increase in sales conversions" },
@@ -369,7 +368,7 @@ export const whitepapers = [
     slug: "unlocking-business-potential",
     title: "Unlocking Business Potential",
     type: "Whitepaper",
-    pages: 18,
+    pages: 15,
     description: "How MDM transforms business operations and security.",
     tags: ["MDM", "Security", "Cost Reduction"],
     previewHref: "/whitepapers/unlocking-business-potential", // <- dynamic route
@@ -382,7 +381,7 @@ export const whitepapers = [
     description:
       "A complete framework for securing mobile devices in enterprise environments, including technical controls, policies, and best practices.",
     type: "Whitepaper",
-    pages: 32,
+    pages: 9,
     tags: ["Security", "Best Practices", "Technical Guide"],
     previewHref: "/whitepapers/preview/mobile-security-guide",
     downloadHref: "/whitepapers/download/mobile-security-guide",
@@ -394,7 +393,7 @@ export const whitepapers = [
     description:
       "Strategic considerations and step-by-step guidance for implementing a successful and secure BYOD program in your organization.",
     type: "Whitepaper",
-    pages: 28,
+    pages: 8,
     tags: ["BYOD", "Implementation", "Strategy"],
     previewHref: "/whitepapers/preview/byod-implementation",
     downloadHref: "/whitepapers/download/byod-implementation",
@@ -405,7 +404,7 @@ export const whitepapers = [
     title:
       "Empowering Modern Enterprises: MobiHeal’s Advanced MDM for Security, Efficiency & Growth",
     type: "Whitepaper",
-    pages: 20,
+    pages: 6,
     description:
       "How MobiHeal’s next-gen MDM secures mobile endpoints, boosts productivity, and ensures compliance at scale.",
     tags: [
@@ -556,7 +555,7 @@ export const whitepaperData = [
     ],
   },
   {
-     id: "mobile-security",
+    id: "mobile-security",
     title:
       "Unlocking Business Potential: How MDM Solutions Transform Operations",
     authorInfo: "Mobisec Technologies",
@@ -598,7 +597,6 @@ export const whitepaperData = [
     ],
   },
 ];
-
 
 export const owaspRisks = [
   {
@@ -992,7 +990,6 @@ export const faqs = [
   },
 ];
 
-
 export const testimonials = [
   {
     quote:
@@ -1083,15 +1080,14 @@ export const testimonials = [
     industry: "hospitality",
   },
   {
-  quote:
-    "With stringent internal security protocols and national data sensitivity at stake, adopting MobiHeal’s MDM was a mission-critical move. Its advanced device encryption, remote control features, and zero-trust access model allowed us to securely manage field devices—even in air-gapped or restricted environments—while staying fully compliant with government cybersecurity directives.",
-  author: "DRDO",
-  position: "",
-  rating: 5,
-  industry: "defense",
-},
+    quote:
+      "With stringent internal security protocols and national data sensitivity at stake, adopting MobiHeal’s MDM was a mission-critical move. Its advanced device encryption, remote control features, and zero-trust access model allowed us to securely manage field devices—even in air-gapped or restricted environments—while staying fully compliant with government cybersecurity directives.",
+    author: "DRDO",
+    position: "",
+    rating: 5,
+    industry: "defense",
+  },
 ];
-
 
 export const partners = [
   {
@@ -1147,7 +1143,6 @@ export const partners = [
     partnerType: "Consortium Partner",
     imageSrc: partner4,
   },
-   
 ];
 export const clients = [
   {

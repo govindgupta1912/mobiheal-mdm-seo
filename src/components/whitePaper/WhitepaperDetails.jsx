@@ -27,7 +27,7 @@ const formSchema = z.object({
   company: z.string().min(1, "Required"),
   users: z.string().optional(),
 });
-
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 const WhitepaperDetails = ({
   id,
   title,
@@ -92,16 +92,13 @@ const WhitepaperDetails = ({
     try {
       setIsSubmitting(true);
 
-      const response = await fetch(
-        "https://dev.mobiheal.in/api/save-whitepaper",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(`${API_URL}/api/save-whitepaper`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to submit form");

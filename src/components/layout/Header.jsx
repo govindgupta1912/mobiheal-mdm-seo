@@ -10,6 +10,8 @@ import {
 } from "../../components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
 import logo from "../../assets/mobiheal_logo.webp"; // Adjust the path as necessary
+const API_URL = import.meta.env.VITE_API_BASE_URL;
+const Help_URL = import.meta.env.VITE_HELP_URL;
 
 const Header = () => {
   const location = useLocation().pathname;
@@ -39,7 +41,7 @@ const Header = () => {
               className="font-medium whitespace-nowrap text-sm lg:text-base px-2 md:px-3"
             >
               <a
-                href="https://dev.mobiheal.in/login"
+                href={`${API_URL}/login`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Sign in to MobiHeal"
@@ -112,7 +114,6 @@ const DesktopNavigation = ({ currentPath }) => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
           <span>Use Cases</span>
@@ -130,7 +131,6 @@ const DesktopNavigation = ({ currentPath }) => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       <Link
         to="/pricing"
         className={`text-neutral-700 hover:text-primary ${
@@ -139,7 +139,6 @@ const DesktopNavigation = ({ currentPath }) => {
       >
         Pricing
       </Link>
-
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
           <span>Resources</span>
@@ -160,7 +159,6 @@ const DesktopNavigation = ({ currentPath }) => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       <Link
         to="/faq"
         className={`text-neutral-700 hover:text-primary ${
@@ -169,7 +167,6 @@ const DesktopNavigation = ({ currentPath }) => {
       >
         FAQs
       </Link>
-
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center space-x-1 text-neutral-700 hover:text-primary bg-transparent border-0 cursor-pointer focus:outline-none focus:ring-0">
           <span>Partners</span>
@@ -184,7 +181,6 @@ const DesktopNavigation = ({ currentPath }) => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       <Link
         to="/contact"
         className={`text-neutral-700 hover:text-primary ${
@@ -192,6 +188,15 @@ const DesktopNavigation = ({ currentPath }) => {
         }`}
       >
         Contact
+      </Link>
+
+      <Link
+        to={Help_URL}
+        className={`text-neutral-700 hover:text-primary ${
+          currentPath === "/faq" ? "text-primary" : ""
+        }`}
+      >
+        Help Center
       </Link>
     </>
   );
@@ -234,6 +239,7 @@ const MobileNavigation = ({ currentPath }) => {
               { name: "Partners", path: "/partners" },
               { name: "Testimonials", path: "/testimonials" },
               { name: "Contact", path: "/contact" },
+              { name: "Help Center", path: Help_URL },
             ].map((item) => (
               <button
                 key={item.path}
@@ -247,8 +253,18 @@ const MobileNavigation = ({ currentPath }) => {
             ))}
 
             <div className="flex flex-col gap-3 mt-4">
-              <Button variant="outline" className="w-full">
+              {/* <Button variant="outline" className="w-full">
                 Sign In
+              </Button> */}
+              <Button variant="outline" asChild className="w-full">
+                <a
+                  href={`${API_URL}/login`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sign in to MobiHeal"
+                >
+                  Sign In
+                </a>
               </Button>
               <a
                 href="https://calendly.com/mobiheal-demo/booking"

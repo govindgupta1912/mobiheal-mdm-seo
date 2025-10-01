@@ -28,6 +28,7 @@ const iconMap = {
 };
 
 const CaseStudyDetail = () => {
+  
   const { slug } = useParams();
   const study = caseStudyDetails[slug || ""];
 

@@ -3,6 +3,8 @@ import mobisecLogo from "../../assets/Footer/MOBISEC_logo-footer.webp";
 import registerLogo from "../../assets/Footer/registered2.webp";
 import { Suspense } from "react";
 
+const Help_URL = import.meta.env.VITE_HELP_URL;
+
 const Footer = () => {
   return (
     <footer className="bg-neutral-800 text-neutral-300 pt-16 pb-8">
@@ -189,6 +191,12 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold text-lg mb-4">Company</h4>
             <ul className="space-y-3">
+              <li>
+                <Link to={Help_URL} className="hover:text-white">
+                  Help Center
+                </Link>
+              </li>
+
               <li>
                 <Link to="/about-us" className="hover:text-white">
                   About Us

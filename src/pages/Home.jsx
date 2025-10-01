@@ -10,7 +10,6 @@ import UseCasesSection from "../components/home/UsesCasesSection";
 import FAQSection from "../components/home/FAQSection";
 import ContactSection from "../components/home/ContactSection";
 import ClientsBanner from "../components/home/ClientsBanner";
-import heroImage from "../assets/hero.png";
 
 
 const Home = () => {

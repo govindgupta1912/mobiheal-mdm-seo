@@ -35,7 +35,7 @@ const formSchema = z.object({
     message: "You must agree to the privacy policy.",
   }),
 });
-
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [offset, setOffset] = useState(0);
@@ -58,7 +58,7 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      const res = await fetch("https://dev.mobiheal.in/contact/", {
+      const res = await fetch(`${API_URL}/contact/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const ContactForm = () => {
 
       if (!res.ok) {
         const errorText = await res.text();
-        throw new Error(errorText || "Failed to send message");
+        throw new Error("Failed to send message");
       }
 
       toast.success("Message sent! We'll get back to you soon.");
