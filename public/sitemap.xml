@@ -1,274 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+
+  <!-- ==================== HOMEPAGE ==================== -->
   <url>
     <loc>https://mobiheal.in/</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Main pages -->
+  <!-- ==================== HIGH-VALUE COMMERCIAL PAGES ==================== -->
   <url>
-    <loc>https://mobiheal.in/about-us</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <loc>https://mobiheal.in/pricing</loc>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/features</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/use-cases</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/pricing</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/blog</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/case-studies</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/whitepapers</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/resources</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/faq</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/partners</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/testimonials</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/contact</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/use-cases</loc>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/about-us</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/owasp-mobile</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/partners</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/testimonials</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/faq</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ==================== CONTENT HUB INDEXES ==================== -->
+  <url>
+    <loc>https://mobiheal.in/blog</loc>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/case-studies</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/whitepapers</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/resources</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
-  <!-- Legal pages -->
-  <url>
-    <loc>https://mobiheal.in/privacy-policy</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/cookies-policy</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/terms-services</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mobiheal.in/acceptable-policy</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Blog posts -->
+  <!-- ==================== BLOG POSTS ==================== -->
   <url>
     <loc>https://mobiheal.in/blog/mdm-benefits</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/geo-fencing-bfsi</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/qr-code-enrollment</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/ai-driven-threat-detection</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/securing-iot-devices-healthcare</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/enhancing-retail-customer-experience-secure-mobile-kiosks</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/endpoint-security-distributed-workforces</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/zero-touch-enrollment-android</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/blog/gdpr-compliance-mdm-solutions-data-protection</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
 
-  <!-- Whitepapers -->
+  <!-- ==================== WHITEPAPERS ==================== -->
   <url>
     <loc>https://mobiheal.in/whitepapers/unlocking-business-potential</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/whitepapers/comprehensive-guide-mobile-device-security</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/whitepapers/best-practices-byod-enterprises</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/whitepapers/mobiheal-advanced-mdm-enterprise</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
 
-  <!-- Case studies -->
-  
+  <!-- ==================== CASE STUDIES ==================== -->
   <url>
     <loc>https://mobiheal.in/case-studies/preventing-mobile-fraud-banking</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/securing-customer-data-digital-wallets</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/hipaa-compliance-healthcare-tablets</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/telemedicine-device-security</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/iot-retail-security</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/retail-tablet-demos</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/education-byod-security</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/education-kiosk-mode</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/clinical-trial-mdm</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/pharma-iot-geo-fencing</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/cargo-theft-mdm-logistics</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://mobiheal.in/case-studies/warehouse-iot-mdm-logistics</loc>
-    <lastmod>2025-08-14T00:00:00Z</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
+
+  <!-- ==================== LEGAL PAGES ==================== -->
+  <url>
+    <loc>https://mobiheal.in/privacy-policy</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/cookies-policy</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/terms-services</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://mobiheal.in/acceptable-policy</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
 </urlset>
