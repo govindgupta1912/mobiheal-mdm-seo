@@ -42,7 +42,7 @@ export const blogPosts = [
     title: "5 Essential Benefits of Mobile Device Management for Enterprises",
     excerpt:
       "Discover the essential benefits of Mobile Device Management (MDM) for enterprises, including enhanced security, improved productivity, and simplified compliance with MobiHeal MDM.",
-    date: "June 10, 2025",
+    date: "April 3, 2026",
     imageSrc: blog1,
     imageAlt: "Mobile Device Management Benefits",
     href: "/blog/mdm-benefits",
@@ -52,7 +52,7 @@ export const blogPosts = [
     title: "How Geo-Fencing Enhances Security and Productivity in BFSI Sector",
     excerpt:
       "Explore how Geo-Fencing technology strengthens security and boosts productivity in the BFSI sector. Learn its key benefits and implementation strategies with MobiHeal MDM.",
-    date: "June 11, 2025",
+    date: "March 31, 2026",
     imageSrc: blog2,
     imageAlt: "Geo-Fencing in BFSI",
     href: "/blog/geo-fencing-bfsi",
@@ -62,7 +62,7 @@ export const blogPosts = [
     title: "How QR Code Enrollment Simplifies Device Setup",
     excerpt:
       "Learn how QR Code Enrollment streamlines mobile device setup for enterprises. Discover key benefits, best practices, and implementation tips with MobiHeal MDM.",
-    date: "June 11, 2025",
+    date: "March 20, 2026",
     imageSrc: blog3,
     imageAlt: "QR Code Enrollment",
     href: "/blog/qr-code-enrollment",
@@ -73,7 +73,7 @@ export const blogPosts = [
       "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises",
     excerpt:
       "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
-    date: "June 11, 2025",
+    date: "March 18, 2026",
     imageSrc: "Blog 4.docx",
     imageAlt: "AI-Driven Threat Detection",
     href: "/blog/ai-driven-threat-detection",
@@ -83,7 +83,7 @@ export const blogPosts = [
     title: "Securing IoT Devices in Healthcare: Challenges and MDM Solutions",
     excerpt:
       "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
-    date: "June 11, 2025",
+    date: "March 15, 2026",
     imageSrc: "Blog 5.docx",
     imageAlt: "Securing IoT Devices in Healthcare",
     href: "/blog/securing-iot-devices-healthcare",
@@ -93,7 +93,7 @@ export const blogPosts = [
     title: "Enhancing Retail Customer Experience with Secure Mobile Kiosks",
     excerpt:
       "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
-    date: "June 11, 2025",
+    date: "March 1, 2026",
     imageSrc: "Blog 6.docx",
     imageAlt: "Secure Mobile Kiosks in Retail",
     href: "/blog/enhancing-retail-customer-experience-secure-mobile-kiosks",
@@ -104,7 +104,7 @@ export const blogPosts = [
       "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management",
     excerpt:
       "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
-    date: "June 11, 2025",
+    date: "Feb 18, 2026",
     imageSrc: "Blog 7.docx",
     imageAlt: "Endpoint Security for Remote Workforces",
     href: "/blog/endpoint-security-distributed-workforces",
@@ -115,7 +115,7 @@ export const blogPosts = [
       "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale",
     excerpt:
       "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
-    date: "June 11, 2025",
+    date: "Feb 11, 2026",
     imageSrc: "Blog 8.docx",
     imageAlt: "Zero-Touch Enrollment Android Enterprise",
     href: "/blog/zero-touch-enrollment-android",
@@ -126,7 +126,7 @@ export const blogPosts = [
       "GDPR Compliance Made Simple: How MDM Solutions Protect Our Customer Data",
     excerpt:
       "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
-    date: "June 11, 2025",
+    date: "Feb 7, 2026",
     imageSrc: "Blog 9.docx",
     imageAlt: "GDPR Compliance MDM Solutions",
     href: "/blog/gdpr-compliance-mdm-solutions-data-protection",

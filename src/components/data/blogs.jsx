@@ -1,12 +1,12 @@
-import blog1 from "../../assets/BlogImages/blog1.webp"
-import blog2 from "../../assets/BlogImages/blog2.webp"
-import blog3 from "../../assets/BlogImages/blog3.webp"
-import blog4 from "../../assets/BlogImages/blog4.webp"
-import blog5 from "../../assets/BlogImages/blog5.webp"
-import blog6 from "../../assets/BlogImages/blog6.webp"
-import blog7 from "../../assets/BlogImages/blog7.webp"
-import blog8 from "../../assets/BlogImages/blog8.webp"
-import blog9 from "../../assets/BlogImages/blog9.webp"
+import blog1 from "../../assets/BlogImages/blog1.webp";
+import blog2 from "../../assets/BlogImages/blog2.webp";
+import blog3 from "../../assets/BlogImages/blog3.webp";
+import blog4 from "../../assets/BlogImages/blog4.webp";
+import blog5 from "../../assets/BlogImages/blog5.webp";
+import blog6 from "../../assets/BlogImages/blog6.webp";
+import blog7 from "../../assets/BlogImages/blog7.webp";
+import blog8 from "../../assets/BlogImages/blog8.webp";
+import blog9 from "../../assets/BlogImages/blog9.webp";
 
 const siteUrl = import.meta.env.VITE_SITE_URL;
 
@@ -14,7 +14,7 @@ export const blogs = [
   {
     id: "mdm-benefits",
     title: "5 Essential Benefits of Mobile Device Management for Enterprises",
-    publishedAt: "June 18, 2025",
+    publishedAt: "April 3, 2026",
     readTime: "6 min read",
     coverImage: blog1,
     featureImage: blog1,
@@ -120,7 +120,8 @@ export const blogs = [
       cta: {
         title:
           "Discover how MobiHeal MDM can simplify your enterprise mobility management",
-        description: "Request a personalized demo and experience its powerful features.",
+        description:
+          "Request a personalized demo and experience its powerful features.",
         buttonText: "Book a Demo",
         buttonLink: "https://calendly.com/mobiheal-demo/booking/",
       },
@@ -136,12 +137,14 @@ export const blogs = [
         {
           text: "Compliance Management",
           url: "/solutions/compliance",
-          description: "See how MobiHeal helps you meet industry regulations effortlessly.",
+          description:
+            "See how MobiHeal helps you meet industry regulations effortlessly.",
         },
         {
           text: "Request a Demo",
           url: "/request-demo",
-          description: "Schedule a free walkthrough with our product specialists.",
+          description:
+            "Schedule a free walkthrough with our product specialists.",
         },
       ],
     },
@@ -149,7 +152,7 @@ export const blogs = [
   {
     id: "geo-fencing-bfsi",
     title: "How Geo-Fencing Enhances Security and Productivity in BFSI Sector",
-    publishedAt: "June 11, 2025",
+    publishedAt: "March 31, 2026",
     readTime: "6 min read",
     coverImage: blog2,
     featureImage: blog2,
@@ -278,12 +281,14 @@ export const blogs = [
         {
           text: "MobiHeal Features",
           url: "/features",
-          description: "Explore all features including Geo-Fencing, app control, and remote wipe.",
+          description:
+            "Explore all features including Geo-Fencing, app control, and remote wipe.",
         },
         {
           text: "Pricing Page",
           url: "/pricing",
-          description: "Compare plans and find the right fit for your organization.",
+          description:
+            "Compare plans and find the right fit for your organization.",
         },
         {
           text: "Request Demo Page",
@@ -296,7 +301,7 @@ export const blogs = [
   {
     id: "qr-code-enrollment",
     title: "How QR Code Enrollment Simplifies Device Setup",
-    publishedAt: "June 18, 2025",
+    publishedAt: "March 20, 2026",
     readTime: "5 min read",
     coverImage: blog3,
     featureImage: blog3,
@@ -355,8 +360,7 @@ export const blogs = [
               "IT teams save significant time previously spent on repetitive manual tasks.",
               "Enterprises can rapidly deploy hundreds or thousands of devices simultaneously.",
             ],
-            note:
-              "This accelerated deployment ensures minimal downtime and increased productivity across the organization.",
+            note: "This accelerated deployment ensures minimal downtime and increased productivity across the organization.",
           },
           {
             subheading: "2. Reduced Human Error & Improved Accuracy",
@@ -369,8 +373,7 @@ export const blogs = [
               "Ensuring consistent application of security policies across all enrolled devices.",
               "Eliminating manual data entry errors during the enrollment process.",
             ],
-            note:
-              "As a result, enterprises achieve higher accuracy levels in device management and policy enforcement.",
+            note: "As a result, enterprises achieve higher accuracy levels in device management and policy enforcement.",
           },
           {
             subheading: "3. Enhanced Security & Compliance",
@@ -383,8 +386,7 @@ export const blogs = [
               "Automatic installation of required security applications and certificates.",
               "Seamless integration with advanced MDM features like remote lock/wipe and geo-fencing.",
             ],
-            note:
-              "By automating policy enforcement at the point of enrollment, organizations ensure continuous compliance with industry regulations and internal standards.",
+            note: "By automating policy enforcement at the point of enrollment, organizations ensure continuous compliance with industry regulations and internal standards.",
           },
           {
             subheading: "4. Simplified User Experience",
@@ -397,13 +399,13 @@ export const blogs = [
               "Clear instructions reduce confusion during initial setup phases.",
               "Faster onboarding leads to higher employee satisfaction levels.",
             ],
-            note:
-              "This simplified user experience encourages rapid adoption rates among employees across various organizational roles.",
+            note: "This simplified user experience encourages rapid adoption rates among employees across various organizational roles.",
           },
         ],
       },
       {
-        heading: "Best Practices for Implementing QR Code Enrollment with MobiHeal MDM",
+        heading:
+          "Best Practices for Implementing QR Code Enrollment with MobiHeal MDM",
         listItems: [
           "Generate Clear & Secure Configuration Profiles: Ensure generated profiles clearly define necessary apps, permissions, Wi-Fi settings, email accounts, VPN configurations, and corporate security policies.",
           "Provide Easy Access to Generated Codes: Distribute generated codes securely via internal portals or printed materials available during onboarding sessions or training workshops.",
@@ -416,7 +418,8 @@ export const blogs = [
       content:
         "QR Code Enrollment offers substantial advantages for enterprises seeking efficient methods to streamline mobile device management processes while enhancing overall security posture. By adopting an advanced Mobile Device Management solution like MobiHeal MDM featuring robust QR code capabilities, businesses can confidently accelerate deployments without compromising accuracy or compliance standards.",
       cta: {
-        title: "Ready to simplify your organization's mobile device setup process?",
+        title:
+          "Ready to simplify your organization's mobile device setup process?",
         description: "Request a demo today! ",
         buttonText: "Book a demo",
         buttonLink: "N/A",
@@ -444,8 +447,9 @@ export const blogs = [
   },
   {
     id: "ai-driven-threat-detection",
-    title: "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises",
-    publishedAt: "June 18, 2025",
+    title:
+      "AI-Driven Threat Detection: The Future of Mobile Security in Enterprises",
+    publishedAt: "March 18, 2026",
     readTime: "6 min read",
     coverImage: blog4,
     featureImage: blog4,
@@ -471,7 +475,8 @@ export const blogs = [
       description:
         "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
       image: `${siteUrl}/assets/BlogImages/blog4.png`,
-      imageAlt: "Illustration showing AI-powered threat detection in enterprise mobile devices",
+      imageAlt:
+        "Illustration showing AI-powered threat detection in enterprise mobile devices",
     },
     twitter: {
       card: "summary_large_image",
@@ -481,7 +486,8 @@ export const blogs = [
       description:
         "Discover how AI-driven threat detection is revolutionizing mobile security for enterprises. Learn about benefits, real-world applications, and best practices for future-ready protection.",
       image: `${siteUrl}/assets/BlogImages/blog4.png`,
-      imageAlt: "Illustration showing AI-powered threat detection in enterprise mobile devices",
+      imageAlt:
+        "Illustration showing AI-powered threat detection in enterprise mobile devices",
     },
     sections: [
       {
@@ -495,8 +501,7 @@ export const blogs = [
           "Automated Response: Instantly reacts to identified threats, reducing response times.",
           "Continuous Learning: Improves detection accuracy by learning from new data and attack techniques.",
         ],
-        note:
-          "According to Gartner, by 2025, 80% of mobile security solutions will incorporate some form of AI or machine learning to enhance threat detection and response capabilities.",
+        note: "According to Gartner, by 2025, 80% of mobile security solutions will incorporate some form of AI or machine learning to enhance threat detection and response capabilities.",
       },
       {
         heading: "Why Enterprises Need AI-Driven Mobile Security",
@@ -575,7 +580,8 @@ export const blogs = [
       content:
         "AI-driven threat detection is no longer a futuristic concept—it's a necessity for enterprises seeking robust mobile security. By harnessing the power of artificial intelligence, organizations can proactively defend against evolving threats, reduce response times, and secure their mobile workforce for the future.",
       cta: {
-        title: "Ready to upgrade your mobile security with AI-powered solutions?",
+        title:
+          "Ready to upgrade your mobile security with AI-powered solutions?",
         description: "Request a demo of MobiHeal MDM today.",
         buttonText: "Book a demo",
         buttonLink: "N/A",
@@ -604,7 +610,7 @@ export const blogs = [
   {
     id: "securing-iot-devices-healthcare",
     title: "Securing IoT Devices in Healthcare: Challenges and MDM Solutions",
-    publishedAt: "June 18, 2025",
+    publishedAt: "March 15, 2026",
     readTime: "6 min read",
     coverImage: blog5,
     featureImage: blog5,
@@ -630,7 +636,8 @@ export const blogs = [
       description:
         "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
       image: `${siteUrl}/assets/BlogImages/blog5.png`,
-      imageAlt: "Illustration showing secure IoT devices in a healthcare environment",
+      imageAlt:
+        "Illustration showing secure IoT devices in a healthcare environment",
     },
     twitter: {
       card: "summary_large_image",
@@ -640,7 +647,8 @@ export const blogs = [
       description:
         "Discover how MDM solutions address IoT security challenges in healthcare. Learn strategies to protect patient data, ensure HIPAA compliance, and secure connected medical devices.",
       image: `${siteUrl}/assets/BlogImages/blog5.png`,
-      imageAlt: "Illustration showing secure IoT devices in a healthcare environment",
+      imageAlt:
+        "Illustration showing secure IoT devices in a healthcare environment",
     },
     sections: [
       {
@@ -687,9 +695,7 @@ export const blogs = [
           },
           {
             subheading: "2. Automated Compliance Monitoring",
-            content: [
-              "MDM solutions simplify HIPAA compliance by:",
-            ],
+            content: ["MDM solutions simplify HIPAA compliance by:"],
             listItems: [
               "Encrypting PHI during transmission and storage.",
               "Generating audit-ready reports for device access logs and policy adherence.",
@@ -698,9 +704,7 @@ export const blogs = [
           },
           {
             subheading: "3. Secure Over-the-Air (OTA) Updates",
-            content: [
-              "MobiHeal MDM enables IT teams to:",
-            ],
+            content: ["MobiHeal MDM enables IT teams to:"],
             listItems: [
               "Schedule and deploy security patches during off-hours to avoid disrupting critical operations.",
               "Roll back updates if compatibility issues arise, ensuring device functionality.",
@@ -787,7 +791,7 @@ export const blogs = [
   {
     id: "enhancing-retail-customer-experience-secure-mobile-kiosks",
     title: "Enhancing Retail Customer Experience with Secure Mobile Kiosks",
-    publishedAt: "June 18, 2025",
+    publishedAt: "March 1, 2026",
     readTime: "5 min read",
     coverImage: blog6,
     featureImage: blog6,
@@ -814,7 +818,8 @@ export const blogs = [
       description:
         "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
       image: `${siteUrl}/assets/BlogImages/blog6.png`,
-      imageAlt: "Illustration showing secure mobile kiosks enhancing retail customer interactions",
+      imageAlt:
+        "Illustration showing secure mobile kiosks enhancing retail customer interactions",
     },
     twitter: {
       card: "summary_large_image",
@@ -824,14 +829,13 @@ export const blogs = [
       description:
         "Discover how secure mobile kiosks elevate retail customer experience. Learn strategies to safeguard POS systems, streamline engagement, and prevent cyber threats.",
       image: `${siteUrl}/assets/BlogImages/blog6.png`,
-      imageAlt: "Illustration showing secure mobile kiosks enhancing retail customer interactions",
+      imageAlt:
+        "Illustration showing secure mobile kiosks enhancing retail customer interactions",
     },
     sections: [
       {
         heading: "The Rise of Mobile Kiosks in Retail",
-        content: [
-          "Mobile kiosks are transforming retail by:",
-        ],
+        content: ["Mobile kiosks are transforming retail by:"],
         listItems: [
           "Reducing checkout wait times by 30%",
           "Enabling personalized product recommendations via AI-driven interfaces",
@@ -879,9 +883,7 @@ export const blogs = [
           },
           {
             subheading: "2. End-to-End POS System Security",
-            content: [
-              "MobiHeal MDM enhances POS security through:",
-            ],
+            content: ["MobiHeal MDM enhances POS security through:"],
             listItems: [
               "Encrypt payment data transmissions using TLS 1.3 protocols",
               "Automatically update POS software to patch vulnerabilities",
@@ -921,9 +923,7 @@ export const blogs = [
           },
           {
             subheading: "2. Operational Efficiency",
-            content: [
-              "Secure kiosks streamline operations by:",
-            ],
+            content: ["Secure kiosks streamline operations by:"],
             listItems: [
               "Staff Allocation: Free employees to assist customers instead of managing checkouts",
               "Inventory Management: Sync kiosk data with backend systems for real-time stock updates",
@@ -985,8 +985,9 @@ export const blogs = [
   },
   {
     id: "endpoint-security-distributed-workforces",
-    title: "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management",
-    publishedAt: "June 18, 2025",
+    title:
+      "Endpoint Security for Distributed Workforces: Best Practices for Remote Device Management",
+    publishedAt: "Feb 18, 2026",
     readTime: "5 min read",
     coverImage: blog7,
     featureImage: blog7,
@@ -1013,7 +1014,8 @@ export const blogs = [
       description:
         "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
       image: `${siteUrl}/assets/BlogImages/blog7.png`,
-      imageAlt: "Illustration showing secure remote workforce endpoint management",
+      imageAlt:
+        "Illustration showing secure remote workforce endpoint management",
     },
     twitter: {
       card: "summary_large_image",
@@ -1023,7 +1025,8 @@ export const blogs = [
       description:
         "Discover how MobiHeal MDM secures distributed workforces with zero-touch enrollment, BYOD policies, and AI-driven threat detection. Ensure compliance and prevent breaches.",
       image: `${siteUrl}/assets/BlogImages/blog7.png`,
-      imageAlt: "Illustration showing secure remote workforce endpoint management",
+      imageAlt:
+        "Illustration showing secure remote workforce endpoint management",
     },
     sections: [
       {
@@ -1167,8 +1170,9 @@ export const blogs = [
   },
   {
     id: "zero-touch-enrollment-android",
-    title: "Zero-Touch Enrollment for Android Enterprise: Streamlining Device Setup at Scale",
-    publishedAt: "June 18, 2025",
+    title:
+      "Zero-Touch Enrollment for Android Enterprise: Streamlining Device Setup at Scale",
+    publishedAt: "Feb 11, 2026",
     readTime: "4 min read",
     coverImage: blog8,
     featureImage: blog8,
@@ -1190,20 +1194,24 @@ export const blogs = [
     og: {
       type: "article",
       url: `${siteUrl}/blog/zero-touch-enrollment-android`,
-      title: "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
+      title:
+        "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
       description:
         "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
       image: `${siteUrl}/assets/BlogImages/blog8.png`,
-      imageAlt: "Illustration showing automated Android device provisioning via Zero-Touch Enrollment",
+      imageAlt:
+        "Illustration showing automated Android device provisioning via Zero-Touch Enrollment",
     },
     twitter: {
       card: "summary_large_image",
       url: `${siteUrl}/blog/zero-touch-enrollment-android`,
-      title: "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
+      title:
+        "Zero-Touch Enrollment for Android Enterprise: Streamline Device Setup at Scale | MobiHeal MDM",
       description:
         "Discover how Zero-Touch Enrollment simplifies Android Enterprise device setup. Learn best practices for bulk provisioning, security, and compliance with MobiHeal MDM.",
       image: `${siteUrl}/assets/BlogImages/blog8.png`,
-      imageAlt: "Illustration showing automated Android device provisioning via Zero-Touch Enrollment",
+      imageAlt:
+        "Illustration showing automated Android device provisioning via Zero-Touch Enrollment",
     },
     sections: [
       {
@@ -1298,9 +1306,7 @@ export const blogs = [
           },
           {
             subheading: "Results",
-            content: [
-              "The retail chain achieved:",
-            ],
+            content: ["The retail chain achieved:"],
             listItems: [
               "95% Faster Deployment: Tablets were operational within 10 minutes of unboxing.",
               "Zero Security Incidents: No breaches in 12 months due to pre-configured encryption.",
@@ -1344,8 +1350,9 @@ export const blogs = [
   },
   {
     id: "gdpr-compliance-mdm-solutions-data-protection",
-    title: "GDPR Compliance Made Simple: How MDM Solutions Protect Customer Data",
-    publishedAt: "June 18, 2025",
+    title:
+      "GDPR Compliance Made Simple: How MDM Solutions Protect Customer Data",
+    publishedAt: "Feb 7, 2026",
     readTime: "4 min read",
     coverImage: blog9,
     featureImage: blog9,
@@ -1372,7 +1379,8 @@ export const blogs = [
       description:
         "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
       image: `${siteUrl}/assets/BlogImages/blog9.png`,
-      imageAlt: "Illustration showing GDPR compliance with secure mobile device management",
+      imageAlt:
+        "Illustration showing GDPR compliance with secure mobile device management",
     },
     twitter: {
       card: "summary_large_image",
@@ -1382,7 +1390,8 @@ export const blogs = [
       description:
         "Learn how MobiHeal MDM simplifies GDPR compliance with secure data management, automated audit trails, and encrypted data erasure. Avoid fines and build trust.",
       image: `${siteUrl}/assets/BlogImages/blog9.png`,
-      imageAlt: "Illustration showing GDPR compliance with secure mobile device management",
+      imageAlt:
+        "Illustration showing GDPR compliance with secure mobile device management",
     },
     sections: [
       {
@@ -1390,7 +1399,7 @@ export const blogs = [
         listItems: [
           "Data Access Controls: Employees using personal devices (BYOD) risk exposing sensitive data through unsecured apps or cloud storage.",
           "Breach Notification Requirements: GDPR requires breaches to be reported within 72 hours—challenging without real-time device monitoring.",
-          "Right to Erasure (\"Right to Be Forgotten\"): Manually deleting customer data across devices and backups is error-prone and time-consuming.",
+          'Right to Erasure ("Right to Be Forgotten"): Manually deleting customer data across devices and backups is error-prone and time-consuming.',
           "Audit Complexity: Demonstrating compliance during audits requires detailed logs of data access, which many organizations lack.",
         ],
       },
@@ -1404,7 +1413,7 @@ export const blogs = [
             ],
             listItems: [
               "AES-256 Encryption: Protect data at rest and in transit across all managed devices.",
-              "Policy-Based Tagging: Automatically classify sensitive data (e.g., \"Customer PII\") for granular control.",
+              'Policy-Based Tagging: Automatically classify sensitive data (e.g., "Customer PII") for granular control.',
             ],
           },
           {
@@ -1430,7 +1439,7 @@ export const blogs = [
           {
             subheading: "4. Simplified Right to Erasure",
             content: [
-              "MobiHeal MDM streamlines the \"Right to Erasure\" process:",
+              'MobiHeal MDM streamlines the "Right to Erasure" process:',
             ],
             listItems: [
               "Bulk Data Deletion: Remove customer data from all devices and cloud backups with one click.",
@@ -1466,14 +1475,12 @@ export const blogs = [
             listItems: [
               "Enforced encryption and containerization for all BYOD devices.",
               "Automated breach detection and reporting.",
-              "Conducted quarterly \"Right to Erasure\" drills.",
+              'Conducted quarterly "Right to Erasure" drills.',
             ],
           },
           {
             subheading: "Results",
-            content: [
-              "The retailer achieved:",
-            ],
+            content: ["The retailer achieved:"],
             listItems: [
               "100% Compliance: Passed GDPR audits with zero violations.",
               "80% Faster Audits: Reduced preparation time from 200 hours to 40 hours.",
@@ -1502,7 +1509,8 @@ export const blogs = [
         "GDPR compliance doesn’t have to be a burden. With MobiHeal MDM, enterprises can automate data protection, streamline audits, and avoid costly penalties.",
       cta: {
         title: "Achieve stress-free GDPR compliance",
-        description: "Request a demo of MobiHeal MDM and simplify your data governance strategy today.",
+        description:
+          "Request a demo of MobiHeal MDM and simplify your data governance strategy today.",
         buttonText: "Book a Demo",
         buttonLink: "/request-demo",
       },
@@ -1512,17 +1520,20 @@ export const blogs = [
         {
           text: "BYOD Security Management",
           url: "/features/byod-management",
-          description: "Learn how MobiHeal secures personal devices without compromising user privacy.",
+          description:
+            "Learn how MobiHeal secures personal devices without compromising user privacy.",
         },
         {
           text: "Data Encryption Features",
           url: "/features/device-security",
-          description: "See how AES-256 encryption protects your enterprise data with MobiHeal.",
+          description:
+            "See how AES-256 encryption protects your enterprise data with MobiHeal.",
         },
         {
           text: "Request a Demo",
           url: "/request-demo",
-          description: "Explore how MobiHeal helps you stay GDPR compliant effortlessly.",
+          description:
+            "Explore how MobiHeal helps you stay GDPR compliant effortlessly.",
         },
       ],
     },

@@ -88,8 +88,16 @@ const ContactForm = () => {
     }
   };
 
+  // const handleMouseEnter = () => {
+  //   if (form.formState.isValid) return;
+  //   const newOffset = directionRight ? 250 : -250;
+  //   setOffset(newOffset);
+  //   setDirectionRight(!directionRight);
+  // };
+
   const handleMouseEnter = () => {
     if (form.formState.isValid) return;
+
     const newOffset = directionRight ? 250 : -250;
     setOffset(newOffset);
     setDirectionRight(!directionRight);
@@ -97,7 +105,7 @@ const ContactForm = () => {
 
   useEffect(() => {
     if (form.formState.isValid) {
-      setOffset(0);
+      setOffset(0); // reset position when valid
     }
   }, [form.formState.isValid]);
 
@@ -272,6 +280,19 @@ const ContactForm = () => {
               </Button>
             </div>
           </div>
+          {/* <div className="relative h-20 overflow-hidden">
+            <div className="w-full flex justify-center relative">
+              <Button
+                type="submit"
+                onMouseEnter={handleMouseEnter}
+                disabled={isSubmitting}
+                className="transition-all duration-300 absolute w-full"
+                style={{ transform: `translateX(${offset}px)` }}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
+            </div>
+          </div> */}
         </form>
       </Form>
     </div>
