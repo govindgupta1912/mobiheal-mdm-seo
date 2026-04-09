@@ -21,22 +21,34 @@ const Navbar = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuItem>
-            <Link href="/features#data-encryption" className="w-full hover:text-primary">
+            <Link
+              href="/features#encryption"
+              className="w-full hover:text-primary"
+            >
               Data Encryption
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/features#work-profile" className="w-full hover:text-primary">
+            <Link
+              href="/features#work-profile"
+              className="w-full hover:text-primary"
+            >
               Work Profile Container
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/features#remote-lock" className="w-full hover:text-primary">
+            <Link
+              href="/features#remote-lock"
+              className="w-full hover:text-primary"
+            >
               Remote Lock & Wipe
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/features#app-management" className="w-full hover:text-primary">
+            <Link
+              href="/features#app-management"
+              className="w-full hover:text-primary"
+            >
               App Management
             </Link>
           </DropdownMenuItem>
@@ -61,7 +73,10 @@ const Navbar = () => {
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/use-cases#corporate" className="w-full hover:text-primary">
+            <Link
+              href="/use-cases#corporate"
+              className="w-full hover:text-primary"
+            >
               Corporate-Owned Devices
             </Link>
           </DropdownMenuItem>
@@ -74,7 +89,10 @@ const Navbar = () => {
       </DropdownMenu>
 
       {/* Pricing */}
-      <Link href="/pricing" className={`text-neutral-700 hover:text-primary ${location === "/pricing" ? "text-primary" : ""}`}>
+      <Link
+        href="/pricing"
+        className={`text-neutral-700 hover:text-primary ${location === "/pricing" ? "text-primary" : ""}`}
+      >
         Pricing
       </Link>
 
@@ -109,7 +127,10 @@ const Navbar = () => {
       </DropdownMenu>
 
       {/* FAQs */}
-      <Link href="/faq" className={`text-neutral-700 hover:text-primary ${location === "/faq" ? "text-primary" : ""}`}>
+      <Link
+        href="/faq"
+        className={`text-neutral-700 hover:text-primary ${location === "/faq" ? "text-primary" : ""}`}
+      >
         FAQs
       </Link>
 
@@ -134,7 +155,10 @@ const Navbar = () => {
       </DropdownMenu>
 
       {/* Contact */}
-      <Link href="/contact" className={`text-neutral-700 hover:text-primary ${location === "/contact" ? "text-primary" : ""}`}>
+      <Link
+        href="/contact"
+        className={`text-neutral-700 hover:text-primary ${location === "/contact" ? "text-primary" : ""}`}
+      >
         Contact
       </Link>
     </nav>

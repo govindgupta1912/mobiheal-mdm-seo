@@ -8,48 +8,60 @@ const OwaspMobile = () => {
   const siteUrl = import.meta.env.VITE_SITE_URL;
   return (
     <>
-   <Helmet>
-  <title>OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM</title>
-  <meta
-    name="description"
-    content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
-  />
-  <meta
-    name="keywords"
-    content="OWASP Mobile Top 10, mobile risks, insecure data storage, MobiHeal mitigation, mobile security, threat prevention"
-  />
+      <Helmet>
+        <title>OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM</title>
+        <meta
+          name="description"
+          content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
+        />
+        <meta
+          name="keywords"
+          content="OWASP Mobile Top 10, mobile risks, insecure data storage, MobiHeal mitigation, mobile security, threat prevention"
+        />
 
-  {/* Canonical */}
-  <link rel="canonical" href={`${siteUrl}/owasp-mobile`} />
+        {/* Canonical */}
+        <link rel="canonical" href={`${siteUrl}/owasp-mobile`} />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={`${siteUrl}/owasp-mobile`} />
-  <meta property="og:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
-  <meta
-    property="og:description"
-    content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
-  />
-  <meta
-    property="og:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta property="og:image:alt" content="OWASP Mobile Top 10 infographic preview" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}/owasp-mobile`} />
+        <meta
+          property="og:title"
+          content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM"
+        />
+        <meta
+          property="og:description"
+          content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
+        />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          property="og:image:alt"
+          content="OWASP Mobile Top 10 infographic preview"
+        />
 
-  {/* Twitter / X */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content={`${siteUrl}/owasp-mobile`} />
-  <meta name="twitter:title" content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM" />
-  <meta
-    name="twitter:description"
-    content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
-  />
-  <meta
-    name="twitter:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta name="twitter:image:alt" content="OWASP Mobile Top 10 infographic preview" />
-</Helmet>
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteUrl}/owasp-mobile`} />
+        <meta
+          name="twitter:title"
+          content="OWASP Mobile Top 10 Risks | Mitigation with MobiHeal MDM"
+        />
+        <meta
+          name="twitter:description"
+          content="Understand OWASP Mobile Top 10 2024 risks and see how MobiHeal neutralises threats like insecure data storage and other M1-M10 vectors."
+        />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          name="twitter:image:alt"
+          content="OWASP Mobile Top 10 infographic preview"
+        />
+      </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +70,8 @@ const OwaspMobile = () => {
               OWASP Mobile Top 10 Security Risks
             </h1>
             <p className="text-lg md:text-xl mb-8 text-blue-100">
-              Understanding and addressing the most critical security vulnerabilities in mobile applications.
+              Understanding and addressing the most critical security
+              vulnerabilities in mobile applications.
             </p>
           </div>
         </div>
@@ -68,14 +81,22 @@ const OwaspMobile = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-neutral-50 border-l-4 border-primary p-6 rounded-r-lg mb-8">
-              <h2 className="text-xl font-bold mb-2 text-neutral-800">What is the OWASP Mobile Top 10?</h2>
+              <h2 className="text-xl font-bold mb-2 text-neutral-800">
+                What is the OWASP Mobile Top 10?
+              </h2>
               <p className="text-neutral-600">
-               The OWASP Mobile Top 10 Risks is a globally recognized list of critical security vulnerabilities plaguing mobile applications. For enterprises leveraging mobile solutions like MobiHeal MDM, understanding these risks is essential to safeguarding sensitive data and ensuring compliance. This guide explores the 2025 OWASP Mobile Top 10 Risks, their impact, and actionable mitigation strategies.
+                The OWASP Mobile Top 10 Risks is a globally recognized list of
+                critical security vulnerabilities plaguing mobile applications.
+                For enterprises leveraging mobile solutions like MobiHeal MDM,
+                understanding these risks is essential to safeguarding sensitive
+                data and ensuring compliance. This guide explores the 2025 OWASP
+                Mobile Top 10 Risks, their impact, and actionable mitigation
+                strategies.
               </p>
               <div className="mt-4">
-                <a 
-                  href="https://owasp.org/www-project-mobile-top-10/" 
-                  target="_blank" 
+                <a
+                  href="https://owasp.org/www-project-mobile-top-10/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-primary hover:text-primary-dark font-medium"
                 >
@@ -85,20 +106,27 @@ const OwaspMobile = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold mb-6 text-neutral-800">The Mobile Top 10 Security Risks</h2>
-            
+            <h2 className="text-2xl font-bold mb-6 text-neutral-800">
+              The Mobile Top 10 Security Risks
+            </h2>
+
             <div className="space-y-6">
               {owaspRisks.map((risk, index) => (
-                <div key={index} className="border border-neutral-200 rounded-xl overflow-hidden shadow-sm">
+                <div
+                  key={index}
+                  className="border border-neutral-200 rounded-xl overflow-hidden shadow-sm"
+                >
                   <div className="flex items-center bg-neutral-50 p-4 border-b border-neutral-200">
-                    <span className="bg-primary text-white font-bold text-lg h-8 w-8 rounded-full flex items-center justify-center mr-3">
+                    <span className="bg-primary text-white font-bold text-[11px] h-8 w-8 rounded-full flex items-center justify-center mr-3">
                       {risk.id}
                     </span>
-                    <h3 className="text-xl font-bold text-neutral-800">{risk.title}</h3>
+                    <h3 className="text-xl font-bold text-neutral-800">
+                      {risk.title}
+                    </h3>
                   </div>
                   <div className="p-6">
                     <p className="text-neutral-600 mb-6">{risk.description}</p>
-                    
+
                     <div className="mb-6">
                       <h4 className="flex items-center font-semibold text-neutral-800 mb-3">
                         <AlertTriangleIcon className="text-red-500 mr-2 h-5 w-5" />
@@ -110,7 +138,7 @@ const OwaspMobile = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="flex items-center font-semibold text-neutral-800 mb-3">
                         <CheckIcon className="text-green-500 mr-2 h-5 w-5" />
@@ -129,14 +157,20 @@ const OwaspMobile = () => {
           </div>
 
           <div className="max-w-4xl mx-auto bg-primary/5 border border-primary/20 rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4 text-neutral-800">How Mobiheal Addresses OWASP Mobile Top 10</h2>
+            <h2 className="text-2xl font-bold mb-4 text-neutral-800">
+              How Mobiheal Addresses OWASP Mobile Top 10
+            </h2>
             <p className="text-neutral-600 mb-6">
-              Our MDM solution includes comprehensive security features designed to help organizations address these critical mobile security risks:
+              Our MDM solution includes comprehensive security features designed
+              to help organizations address these critical mobile security
+              risks:
             </p>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
-                <span>End-to-end encryption for all data in transit and at rest</span>
+                <span>
+                  End-to-end encryption for all data in transit and at rest
+                </span>
               </li>
               <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
@@ -156,43 +190,45 @@ const OwaspMobile = () => {
               </li>
               <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
-                <span>Security policy enforcement across all managed devices</span>
+                <span>
+                  Security policy enforcement across all managed devices
+                </span>
               </li>
               <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
                 <span>Regular Penetration Testing</span>
               </li>
-               <li className="flex items-start">
+              <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
-                <span>Simulate attacks using frameworks like MITRE ATT&CK.</span>
+                <span>
+                  Simulate attacks using frameworks like MITRE ATT&CK.
+                </span>
               </li>
 
-                <li className="flex items-start">
+              <li className="flex items-start">
                 <CheckIcon className="text-green-500 mt-1 mr-2 h-5 w-5 flex-shrink-0" />
                 <span>Regular Penetration Testing</span>
               </li>
             </ul>
 
-          
             <div className="mt-8 text-center">
               <Button asChild>
-                <Link to="/features">
-                  Explore Our Security Features
-                </Link>
+                <Link to="/features">Explore Our Security Features</Link>
               </Button>
             </div>
-
-            
           </div>
 
-           <div className="max-w-4xl mx-auto mt-16 bg-primary/5 border border-primary/20 rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4 text-neutral-800 text-center">Conclusion</h2>
+          <div className="max-w-4xl mx-auto mt-16 bg-primary/5 border border-primary/20 rounded-xl p-8">
+            <h2 className="text-2xl font-bold mb-4 text-neutral-800 text-center">
+              Conclusion
+            </h2>
             <p className="text-neutral-600 mb-6 text-center">
-            The OWASP Mobile Top 10 Risks highlight critical areas where mobile apps are vulnerable. By leveraging MobiHeal MDM, enterprises can automate compliance, enforce encryption, and mitigate these risks effectively
+              The OWASP Mobile Top 10 Risks highlight critical areas where
+              mobile apps are vulnerable. By leveraging MobiHeal MDM,
+              enterprises can automate compliance, enforce encryption, and
+              mitigate these risks effectively
             </p>
-            
 
-          
             {/* <div className="mt-8 text-center">
               <Button asChild>
                 <Link href="/features">
@@ -200,11 +236,7 @@ const OwaspMobile = () => {
                 </Link>
               </Button>
             </div> */}
-
-            
           </div>
-
-
         </div>
       </section>
 
@@ -214,13 +246,19 @@ const OwaspMobile = () => {
             Need help securing your mobile device fleet?
           </h2>
           <p className="text-lg text-neutral-600 mb-8">
-            Our security experts can help you implement robust mobile security measures to protect your organization.
+            Our security experts can help you implement robust mobile security
+            measures to protect your organization.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild>
               <Link to="/contact">Schedule a Security Consultation</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/5"
+              asChild
+            >
               <Link to="/resources">View More Resources</Link>
             </Button>
           </div>

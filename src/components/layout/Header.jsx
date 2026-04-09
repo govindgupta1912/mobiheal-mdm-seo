@@ -93,9 +93,7 @@ const DesktopNavigation = ({ currentPath }) => {
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem
-            onSelect={() => navigate("/features#data-encryption")}
-          >
+          <DropdownMenuItem onSelect={() => navigate("/features#encryption")}>
             Data Encryption
           </DropdownMenuItem>
           <DropdownMenuItem onSelect={() => navigate("/features#work-profile")}>

@@ -34,8 +34,8 @@ const Pricing = () => {
         { name: "Bring Your Own Device (BYOD)", included: true },
         { name: "Remote Lock & Wipe", included: true },
         { name: "Audit Logs", included: true },
-        { name: "Two Devices", included: true }
-      ]
+        { name: "Two Devices", included: true },
+      ],
     },
     {
       title: "Essential",
@@ -55,8 +55,8 @@ const Pricing = () => {
         { name: "Bring Your Own Device (BYOD)", included: true },
         { name: "Remote Lock & Wipe", included: true },
         { name: "Audit Logs", included: true },
-        { name: "Unlimited Devices", included: true }
-      ]
+        { name: "Unlimited Devices", included: true },
+      ],
     },
     {
       title: "Professional",
@@ -80,85 +80,96 @@ const Pricing = () => {
         { name: "Geo Location", included: true },
         { name: "Geo Fencing", included: true },
         { name: "Unlimited Devices", included: true },
-        { name: "Customer Support", included: true }
-      ]
-    }
+        { name: "Customer Support", included: true },
+      ],
+    },
   ];
 
   const faqItems = [
     {
       question: "Do you offer a free trial?",
-      answer: "Yes, we offer a 14-day free trial for our Basic and Essential plans. For the Professional plan, we provide a personalized demo with a trial period tailored to your organization's needs."
+      answer:
+        "Yes, we offer a 14-day free trial for our Basic and Essential plans. For the Professional plan, we provide a personalized demo with a trial period tailored to your organization's needs.",
     },
     {
       question: "Can I upgrade or downgrade my plan later?",
-      answer: "Yes, you can upgrade your plan at any time. The new pricing will be prorated for the remainder of your billing cycle. Downgrades will take effect at the start of your next billing cycle."
+      answer:
+        "Yes, you can upgrade your plan at any time. The new pricing will be prorated for the remainder of your billing cycle. Downgrades will take effect at the start of your next billing cycle.",
     },
     {
       question: "Is there a minimum contract length?",
-      answer: "The plans are billed in advance for total annual charges per device."
+      answer:
+        "The plans are billed in advance for total annual charges per device.",
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept bank and UPI transfers against our tax invoices with due on receipt terms."
+      answer:
+        "We accept bank and UPI transfers against our tax invoices with due on receipt terms.",
     },
     {
       question: "Are there any hidden fees?",
-      answer: "No hidden fees. The price you see is the price you pay. All features listed in each plan are included at no additional cost."
-    }
+      answer:
+        "No hidden fees. The price you see is the price you pay. All features listed in each plan are included at no additional cost.",
+    },
   ];
 
   return (
     <>
-    <Helmet>
-  {/* Title & Description */}
-  <title>MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI</title>
-  <meta
-    name="description"
-    content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
-  />
-  <meta
-    name="keywords"
-    content="MDM pricing, SaaS MDM cost, on-premises device management, transparent pricing, ROI, enterprise support, bulk licensing"
-  />
+      <Helmet>
+        {/* Title & Description */}
+        <title>MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI</title>
+        <meta
+          name="description"
+          content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
+        />
+        <meta
+          name="keywords"
+          content="MDM pricing, SaaS MDM cost, on-premises device management, transparent pricing, ROI, enterprise support, bulk licensing"
+        />
 
-  {/* Canonical */}
-  <link rel="canonical" href={`${siteUrl}/pricing`} />
+        {/* Canonical */}
+        <link rel="canonical" href={`${siteUrl}/pricing`} />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={`${siteUrl}/pricing`} />
-  <meta
-    property="og:title"
-    content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
-  />
-  <meta
-    property="og:description"
-    content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
-  />
-  <meta
-    property="og:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta property="og:image:alt" content="MobiHeal MDM pricing plans preview" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}/pricing`} />
+        <meta
+          property="og:title"
+          content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
+        />
+        <meta
+          property="og:description"
+          content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
+        />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          property="og:image:alt"
+          content="MobiHeal MDM pricing plans preview"
+        />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content={`${siteUrl}/pricing`} />
-  <meta
-    name="twitter:title"
-    content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
-  />
-  <meta
-    name="twitter:description"
-    content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
-  />
-  <meta
-    name="twitter:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta name="twitter:image:alt" content="MobiHeal MDM pricing plans preview" />
-</Helmet>
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteUrl}/pricing`} />
+        <meta
+          name="twitter:title"
+          content="MobiHeal MDM Pricing | SaaS & On-Prem Plans, Clear ROI"
+        />
+        <meta
+          name="twitter:description"
+          content="Simple per-device pricing for SaaS, on-prem and air-gapped deployments. No hidden fees—enterprise support and rapid ROI included."
+        />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          name="twitter:image:alt"
+          content="MobiHeal MDM pricing plans preview"
+        />
+      </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -167,16 +178,17 @@ const Pricing = () => {
               Simple, Transparent Pricing
             </h1>
             <p className="text-lg md:text-xl mb-8 text-blue-100">
-              Choose the plan that fits your organization's needs with our straightforward pricing structure.
+              Choose the plan that fits your organization's needs with our
+              straightforward pricing structure.
             </p>
-            <div className="inline-flex items-center p-1 bg-primary-dark/30 rounded-lg">
+            {/* <div className="inline-flex items-center p-1 bg-primary-dark/30 rounded-lg">
               <button
                 className={`px-4 py-2 rounded-md text-sm ${billingCycle === "monthly" ? "bg-white text-primary" : "text-white"}`}
                 onClick={() => setBillingCycle("monthly")}
               >
                 Monthly Billing
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -186,7 +198,9 @@ const Pricing = () => {
           <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
             {pricingPlans.map((plan, index) => (
               <div key={index} className="lg:w-1/3 relative">
-                <div className={`group h-full bg-white border rounded-xl transition-shadow ${plan.popular ? 'border-primary shadow-md hover:shadow-lg scale-105' : 'border-neutral-200 hover:border-primary shadow-sm hover:shadow-md scale-95'}`}>
+                <div
+                  className={`group h-full bg-white border rounded-xl transition-shadow ${plan.popular ? "border-primary shadow-md hover:shadow-lg scale-105" : "border-neutral-200 hover:border-primary shadow-sm hover:shadow-md scale-95"}`}
+                >
                   {plan.popular && (
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2  -translate-y-1/2">
                       <span className="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium inline-block  shadow">
@@ -195,10 +209,14 @@ const Pricing = () => {
                     </div>
                   )}
                   <div className="p-6 border-b border-neutral-100">
-                    <h3 className="text-xl font-bold text-neutral-800 mb-2">{plan.title}</h3>
+                    <h3 className="text-xl font-bold text-neutral-800 mb-2">
+                      {plan.title}
+                    </h3>
                     <p className="text-neutral-600 mb-4">{plan.description}</p>
                     {plan.subDescription && (
-                      <p className="text-sm text-neutral-500 mb-4">{plan.subDescription}</p>
+                      <p className="text-sm text-neutral-500 mb-4">
+                        {plan.subDescription}
+                      </p>
                     )}
                     <div className="mb-4">
                       <div className="flex items-baseline gap-2">
@@ -223,13 +241,15 @@ const Pricing = () => {
                     <Button
                       variant={plan.popular ? "default" : "outline"}
                       onClick={() => navigate(plan.ctaLink)}
-                      className={`w-full ${plan.popular ? 'bg-primary hover:bg-primary-dark text-white' : 'text-primary hover:bg-primary hover:text-white'} hover:scale-95 transition-transform duration-300 ease-in-out`}
+                      className={`w-full ${plan.popular ? "bg-primary hover:bg-primary-dark text-white" : "text-primary hover:bg-primary hover:text-white"} hover:scale-95 transition-transform duration-300 ease-in-out`}
                     >
                       {plan.ctaText}
                     </Button>
                   </div>
                   <div className="p-6">
-                    <h4 className="font-medium text-sm text-neutral-500 uppercase tracking-wider mb-4">Features include:</h4>
+                    <h4 className="font-medium text-sm text-neutral-500 uppercase tracking-wider mb-4">
+                      Features include:
+                    </h4>
                     <ul className="space-y-3">
                       <TooltipProvider>
                         {plan.features.map((feature, featureIndex) => (
@@ -237,9 +257,15 @@ const Pricing = () => {
                             {feature.included ? (
                               <CheckIcon className="text-green-500 mt-1 mr-2 h-4 w-4 flex-shrink-0" />
                             ) : (
-                              <div className="text-neutral-300 mt-1 mr-2 h-4 w-4 flex-shrink-0">—</div>
+                              <div className="text-neutral-300 mt-1 mr-2 h-4 w-4 flex-shrink-0">
+                                —
+                              </div>
                             )}
-                            <span className={feature.included ? "" : "text-neutral-400"}>
+                            <span
+                              className={
+                                feature.included ? "" : "text-neutral-400"
+                              }
+                            >
                               {feature.name}
                               {feature.tooltip && (
                                 <Tooltip>
@@ -263,8 +289,13 @@ const Pricing = () => {
           </div>
 
           <div className="text-center mt-16">
-            <p className="text-neutral-600 mb-4">Need a custom plan for your organization?</p>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white hover:scale-95 transition-transform duration-300 ease-in-out">
+            <p className="text-neutral-600 mb-4">
+              Need a custom plan for your organization?
+            </p>
+            <Button
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-white hover:scale-95 transition-transform duration-300 ease-in-out"
+            >
               <a href="/contact">Contact our Sales Team</a>
             </Button>
           </div>
@@ -273,20 +304,29 @@ const Pricing = () => {
 
       <section className="py-16 md:py-20 bg-neutral-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 text-neutral-800 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 text-neutral-800 text-center">
+            Frequently Asked Questions
+          </h2>
 
           <div className="space-y-6">
             {faqItems.map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-neutral-800 mb-2">{item.question}</h3>
+                <h3 className="text-lg font-semibold text-neutral-800 mb-2">
+                  {item.question}
+                </h3>
                 <p className="text-neutral-600">{item.answer}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-neutral-600 mb-4">Have more questions about our pricing?</p>
-            <Button asChild className="hover:scale-95 transition-transform duration-300 ease-in-out">
+            <p className="text-neutral-600 mb-4">
+              Have more questions about our pricing?
+            </p>
+            <Button
+              asChild
+              className="hover:scale-95 transition-transform duration-300 ease-in-out"
+            >
               <a href="/contact">Contact Our Sales Team</a>
             </Button>
           </div>

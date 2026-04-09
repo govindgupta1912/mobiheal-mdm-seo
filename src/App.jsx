@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router";
 import { QueryClientProvider } from "@tanstack/react-query";
 
-
 import { queryClient } from "./lib/queryClient";
 import Blog from "./pages/Blog";
 import AboutUs from "./pages/AboutUs";
@@ -29,7 +28,7 @@ import BlogDetailPage from "./pages/BlogDetailPage";
 import WhitepaperDetailPage from "./pages/whitepapers/[slug]";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/common/ScrollToTop";
-
+import FloatingButtons from "./components/common/FloatingButtons";
 
 function Router() {
   return (
@@ -38,26 +37,28 @@ function Router() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/features" element={<Features />} />
 
-      
       <Route path="/use-cases" element={<UseCases />} />
-      <Route path="/pricing" element={<Pricing/>} />
-       <Route path="/blog" element={<Blog />} />
-             <Route path="/blogs/category/:category" element={<Blog />} />
+      <Route path="/pricing" element={<Pricing />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blogs/category/:category" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogDetailPage />} />
       <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
-             <Route path="/case-studies/category/:category" element={<CaseStudies />} />
+      <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+      <Route
+        path="/case-studies/category/:category"
+        element={<CaseStudies />}
+      />
       <Route path="/whitepapers" element={<Whitepapers />} />
       <Route path="/whitepapers/category/:category" element={<Whitepapers />} />
       <Route path="/whitepapers/:slug" element={<WhitepaperDetailPage />} />
 
       <Route path="/resources" element={<Resources />} />
-       <Route path="/faq" element={<FAQ />} />
-        <Route path="/partners" element={<Partners />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/partners" element={<Partners />} />
       <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/contact" element={<Contact />} />
-         <Route path="/owasp-mobile" element={<OwaspMobile />} />
-     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/owasp-mobile" element={<OwaspMobile />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookies-policy" element={<CookiesPolicy />} />
       <Route path="/terms-services" element={<TermsOfService />} />
       <Route path="/acceptable-policy" element={<AcceptableUsePolicy />} />
@@ -75,18 +76,16 @@ function Router() {
 
 function App() {
   return (
-
     <QueryClientProvider client={queryClient}>
-       <ScrollToTop /> 
-       <Layout>
+      <ScrollToTop />
+      <Layout>
         <Router />
-        </Layout>
-      
-      {/* <Toaster /> */}
-              <ToastContainer position="top-right" autoClose={3000} />
+      </Layout>
+      <FloatingButtons />
 
+      {/* <Toaster /> */}
+      <ToastContainer position="top-right" autoClose={3000} />
     </QueryClientProvider>
-    
   );
 }
 

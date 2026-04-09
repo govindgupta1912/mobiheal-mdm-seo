@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import FeatureCard from "@/components/common/FeatureCard";
 import {
@@ -13,155 +13,170 @@ import {
   BellRing,
   Map,
   FlaskConical,
-  BarChart3
+  BarChart3,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import mobihealLogo from "../assets/mobiheal_logo.webp"; // Adjust the path as necessary
 import { m } from "framer-motion";
+import { useEffect } from "react";
 const Features = () => {
   const siteUrl = import.meta.env.VITE_SITE_URL;
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   const features = [
     {
-      id: "data-encryption",
+      id: "encryption",
       icon: <LockKeyhole />,
       title: "Data Encryption",
       description:
-        "End-to-end encryption for all corporate owned devices and for work-profiles and apps on employee personal devices, ensuring corporate data remains ever protected."
+        "End-to-end encryption for all corporate owned devices and for work-profiles and apps on employee personal devices, ensuring corporate data remains ever protected.",
     },
-    {
-      id: "work-profile",
-      icon: <FolderLock />,
-      title: "Work Profile Container",
-      description:
-        "Separate work and personal data with secure containerization, providing privacy for BYOD scenarios."
-    },
-    {
-      id: "remote-lock",
-      icon: <TowerControl />,
-      title: "Remote Lock & Wipe",
-      description:
-        "Instantly lock or wipe lost/stolen devices to prevent unauthorized access to company data."
-    },
-    {
-      id: "app-management",
-      icon: <AppWindow />,
-      title: "App Management",
-      description:
-        "Deploy, update, and remove applications remotely across your entire device fleet from a central console."
-    },
+
     {
       id: "kiosk-mode",
       icon: <Smartphone />,
       title: "Kiosk Mode",
       description:
-        "Lock devices to specific applications for customer-facing or special-purpose deployments."
+        "Lock devices to specific applications for customer-facing or special-purpose deployments.",
     },
     {
       id: "unified-dashboard",
       icon: <LayoutDashboard />,
       title: "Unified Dashboard",
       description:
-        "Manage all devices from a single, intuitive dashboard with real-time compliance monitoring."
+        "Manage all devices from a single, intuitive dashboard with real-time compliance monitoring.",
+    },
+    {
+      id: "work-profile",
+      icon: <FolderLock />,
+      title: "Work Profile Container",
+      description:
+        "Separate work and personal data with secure containerization, providing privacy for BYOD scenarios.",
     },
     {
       id: "compliance-management",
       icon: <Shield />,
       title: "Compliance Management",
       description:
-        "Enforce security policies and ensure devices meet organizational compliance requirements."
+        "Enforce security policies and ensure devices meet organizational compliance requirements.",
     },
     {
       id: "identity-management",
       icon: <UserCheck />,
       title: "Identity Management",
       description:
-        "Integrate with your existing identity providers for seamless authentication and authorization."
+        "Integrate with your existing identity providers for seamless authentication and authorization.",
+    },
+    {
+      id: "remote-lock",
+      icon: <TowerControl />,
+      title: "Remote Lock & Wipe",
+      description:
+        "Instantly lock or wipe lost/stolen devices to prevent unauthorized access to company data.",
     },
     {
       id: "real-time-alerts",
       icon: <BellRing />,
       title: "Real-time Alerts",
       description:
-        "Get instant notifications about security incidents, policy violations, and other critical events."
+        "Get instant notifications about security incidents, policy violations, and other critical events.",
     },
     {
       id: "geo-fencing",
       icon: <Map />,
       title: "Geo-fencing",
       description:
-        "Create virtual boundaries to trigger actions when devices enter or exit specific locations."
+        "Create virtual boundaries to trigger actions when devices enter or exit specific locations.",
     },
     {
       id: "security-testing",
       icon: <FlaskConical />,
       title: "Security Testing",
       description:
-        "Automated vulnerability scanning and security assessment for all managed devices."
+        "Automated vulnerability scanning and security assessment for all managed devices.",
     },
     {
       id: "analytics-reporting",
       icon: <BarChart3 />,
       title: "Analytics & Reporting",
       description:
-        "Comprehensive reporting and analytics to track device usage, compliance, and security metrics."
-    }
+        "Comprehensive reporting and analytics to track device usage, compliance, and security metrics.",
+    },
+    {
+      id: "app-management",
+      icon: <AppWindow />,
+      title: "App Management",
+      description:
+        "Deploy, update, and remove applications remotely across your entire device fleet from a central console.",
+    },
   ];
 
   return (
     <>
-      
-
       {/* SEO Meta Tags */}
-      
-       <Helmet>
-  <title>MobiHeal MDM Features | Zero-Touch, Compliance, Defence</title>
-  <meta
-    name="description"
-    content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
-  />
-  <meta
-    name="keywords"
-    content="MDM features, zero-touch enrollment, patch management, threat defence, compliance dashboard, kiosk mode, BYOD control"
-  />
-   {/* Canonical */}
-  <link rel="canonical" href={`${siteUrl}/features`} />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={`${siteUrl}/features`} />
-  <meta
-    property="og:title"
-    content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
-  />
-  <meta
-    property="og:description"
-    content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
-  />
-  <meta
-    property="og:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta property="og:image:alt" content="MobiHeal MDM Features dashboard preview" />
+      <Helmet>
+        <title>MobiHeal MDM Features | Zero-Touch, Compliance, Defence</title>
+        <meta
+          name="description"
+          content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
+        />
+        <meta
+          name="keywords"
+          content="MDM features, zero-touch enrollment, patch management, threat defence, compliance dashboard, kiosk mode, BYOD control"
+        />
+        {/* Canonical */}
+        <link rel="canonical" href={`${siteUrl}/features`} />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content={`${siteUrl}/features`} />
-  <meta
-    name="twitter:title"
-    content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
-  />
-  <meta
-    name="twitter:description"
-    content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
-  />
-  <meta
-    name="twitter:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta name="twitter:image:alt" content="MobiHeal MDM Features dashboard preview" />
- 
-</Helmet>
-      
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}/features`} />
+        <meta
+          property="og:title"
+          content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
+        />
+        <meta
+          property="og:description"
+          content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
+        />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          property="og:image:alt"
+          content="MobiHeal MDM Features dashboard preview"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteUrl}/features`} />
+        <meta
+          name="twitter:title"
+          content="MobiHeal MDM Features | Zero-Touch, Compliance, Defence"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore zero-touch enrollment, app control, threat defence, patch management and CIS-aligned compliance dashboards."
+        />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          name="twitter:image:alt"
+          content="MobiHeal MDM Features dashboard preview"
+        />
+      </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,7 +185,8 @@ const Features = () => {
               Comprehensive MDM Features
             </h1>
             <p className="text-lg md:text-xl  text-blue-100">
-              Our enterprise-grade MDM solution offers a full suite of features to help you manage, secure, and optimize your mobile device fleet.
+              Our enterprise-grade MDM solution offers a full suite of features
+              to help you manage, secure, and optimize your mobile device fleet.
             </p>
           </div>
         </div>
@@ -180,15 +196,17 @@ const Features = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature) => (
-              <a href={`/features#${feature.id}`} key={feature.id}>
-                <div id={feature.id} className="cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                  <FeatureCard
-                    icon={feature.icon}
-                    title={feature.title}
-                    description={feature.description}
-                  />
-                </div>
-              </a>
+              <div
+                id={feature.id}
+                key={feature.id}
+                className=" hover:shadow-lg transition-shadow duration-300"
+              >
+                <FeatureCard
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                />
+              </div>
             ))}
           </div>
 

@@ -129,7 +129,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel htmlFor="firstName">First Name</FormLabel>
                   <FormControl>
-                    <Input id="firstName" placeholder="John" {...field} />
+                    <Input id="firstName" placeholder="Arun" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -142,7 +142,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel htmlFor="lastName">Last Name</FormLabel>
                   <FormControl>
-                    <Input id="lastName" placeholder="Doe" {...field} />
+                    <Input id="lastName" placeholder="Kumar" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -162,7 +162,7 @@ const ContactForm = () => {
                     id="email"
                     type="email"
                     autoComplete="email"
-                    placeholder="john@example.com"
+                    placeholder="arun@example.com"
                     {...field}
                   />
                 </FormControl>
@@ -179,7 +179,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel htmlFor="company">Company</FormLabel>
                 <FormControl>
-                  <Input id="company" placeholder="Acme Inc." {...field} />
+                  <Input id="company" placeholder="Company Name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

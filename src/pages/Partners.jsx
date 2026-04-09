@@ -9,56 +9,74 @@ const Partners = () => {
   const siteUrl = import.meta.env.VITE_SITE_URL;
 
   const certifications = [
-    { name: "ISO 27001: 2022", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
-    { name: "ISO 9001:2015", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
-    { name: "MSME", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
-    { name: "GeM OEM", icon: <ShieldCheck className="w-5 h-5 text-blue-600" /> },
+    {
+      name: "ISO 27001: 2022",
+      icon: <ShieldCheck className="w-5 h-5 text-primary" />,
+    },
+    {
+      name: "ISO 9001:2015",
+      icon: <ShieldCheck className="w-5 h-5 text-primary" />,
+    },
+    { name: "MSME", icon: <ShieldCheck className="w-5 h-5 text-primary" /> },
+    { name: "GeM OEM", icon: <ShieldCheck className="w-5 h-5 text-primary" /> },
   ];
 
   return (
     <>
-    <Helmet>
-  <title>MobiHeal Partner Program | Reseller & MSP Opportunities</title>
-  <meta
-    name="description"
-    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
-  />
-  <meta
-    name="keywords"
-    content="MDM partner program, reseller opportunity, MSP, channel partner, deal registration, partner margin, MDF, training"
-  />
+      <Helmet>
+        <title>MobiHeal Partner Program | Reseller & MSP Opportunities</title>
+        <meta
+          name="description"
+          content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+        />
+        <meta
+          name="keywords"
+          content="MDM partner program, reseller opportunity, MSP, channel partner, deal registration, partner margin, MDF, training"
+        />
 
-  {/* Canonical */}
-  <link rel="canonical" href={`${siteUrl}/partners`} />
+        {/* Canonical */}
+        <link rel="canonical" href={`${siteUrl}/partners`} />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={`${siteUrl}/partners`} />
-  <meta property="og:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
-  <meta
-    property="og:description"
-    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
-  />
-  <meta
-    property="og:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta property="og:image:alt" content="MobiHeal Partner Program graphic" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}/partners`} />
+        <meta
+          property="og:title"
+          content="MobiHeal Partner Program | Reseller & MSP Opportunities"
+        />
+        <meta
+          property="og:description"
+          content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+        />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          property="og:image:alt"
+          content="MobiHeal Partner Program graphic"
+        />
 
-  {/* Twitter / X */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content={`${siteUrl}/partners`} />
-  <meta name="twitter:title" content="MobiHeal Partner Program | Reseller & MSP Opportunities" />
-  <meta
-    name="twitter:description"
-    content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
-  />
-  <meta
-    name="twitter:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta name="twitter:image:alt" content="MobiHeal Partner Program graphic" />
-</Helmet>
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteUrl}/partners`} />
+        <meta
+          name="twitter:title"
+          content="MobiHeal Partner Program | Reseller & MSP Opportunities"
+        />
+        <meta
+          name="twitter:description"
+          content="Join a high-margin ecosystem: co-sell MobiHeal, access deal registration, training, MDF and priority engineering support."
+        />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta
+          name="twitter:image:alt"
+          content="MobiHeal Partner Program graphic"
+        />
+      </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,35 +97,34 @@ const Partners = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800 text-center">
               Strategic Partners
             </h2>
-        <div className="mb-16 flex flex-wrap justify-center gap-8">
-  {partners.map((partner, index) => (
-    <div
-      key={index}
-      className="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-md transition-shadow
+            <div className="mb-16 flex flex-wrap justify-center gap-8">
+              {partners.map((partner, index) => (
+                <div
+                  key={index}
+                  className="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-md transition-shadow
                  w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)]"
-    >
-      <div className="flex items-center justify-center h-20 mb-6">
-        <Suspense fallback={<div>Loading...</div>}>
-          <img
-            src={partner.imageSrc}
-            alt={partner.name}
-            className="max-h-28 object-contain"
-          />
-        </Suspense>
-      </div>
-      <h3 className="text-xl font-semibold mb-2 text-neutral-800">{partner.name}</h3>
-      <p className="text-neutral-600 mb-4">{partner.description}</p>
-      <div className="flex items-center text-sm text-neutral-500">
-        <span className="mr-2 px-2 py-1 bg-neutral-100 rounded-full">
-          {partner.partnerType}
-        </span>
-      </div>
-    </div>
-  ))}
-</div>
-
-
-
+                >
+                  <div className="flex items-center justify-center h-20 mb-6">
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <img
+                        src={partner.imageSrc}
+                        alt={partner.name}
+                        className="max-h-28 object-contain"
+                      />
+                    </Suspense>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-neutral-800">
+                    {partner.name}
+                  </h3>
+                  <p className="text-neutral-600 mb-4">{partner.description}</p>
+                  <div className="flex items-center text-sm text-neutral-500">
+                    <span className="mr-2 px-2 py-1 bg-neutral-100 rounded-full">
+                      {partner.partnerType}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
 
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800 text-center">
@@ -115,27 +132,30 @@ const Partners = () => {
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
                 {clients.map((client, index) => (
-                  <div key={index} className="flex items-center justify-center p-6 bg-white">
-                   <Suspense fallback={<div>Loading...</div>}>
-                    <img
-                      src={client.imageSrc}
-                      alt={client.name}
-                      className="object-contain"
-                    />
+                  <div
+                    key={index}
+                    className="flex items-center justify-center p-6 bg-white"
+                  >
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <img
+                        src={client.imageSrc}
+                        alt={client.name}
+                        className="object-contain"
+                      />
                     </Suspense>
                   </div>
                 ))}
               </div>
 
               <div className="text-center mb-12">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
-                  <Link to="/testimonials">
-                    View Client Testimonials
-                  </Link>
+                <Button
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary/5"
+                  asChild
+                >
+                  <Link to="/testimonials">View Client Testimonials</Link>
                 </Button>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -144,7 +164,11 @@ const Partners = () => {
       {/* Improved Certifications Section */}
 
       <section className="py-16 px-4 bg-neutral-50">
-        <div className="bg-white rounded-3xl p-10 border border-neutral-200 shadow-md text-center max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div
+          className="bg-white rounded-3xl p-10 border border-neutral-200 shadow-md text-center max-w-5xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <h3 className="text-2xl sm:text-3xl font-bold text-neutral-800 mb-6">
             Industry Certifications & Compliance
           </h3>
@@ -168,8 +192,7 @@ const Partners = () => {
         </div>
       </section>
 
-
-      <section className="py-16 bg-primary/5">
+      <section className="pb-16 bg-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-3xl shadow-md border border-neutral-200">
@@ -178,8 +201,10 @@ const Partners = () => {
                   Become a Partner
                 </h2>
                 <p className="text-neutral-600 max-w-2xl mx-auto">
-                  Join our partner program to empower your customers with next-gen device management, while ensuring competitive benefits, comprehensive training, and dedicated support for you.
-                  For collaboration inquiries, contact us
+                  Join our partner program to empower your customers with
+                  next-gen device management, while ensuring competitive
+                  benefits, comprehensive training, and dedicated support for
+                  you. For collaboration inquiries, contact us
                 </p>
               </div>
               <div className="text-center">

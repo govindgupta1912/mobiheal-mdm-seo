@@ -25,14 +25,13 @@ const ContactSection = () => {
                     Office Location
                   </h3>
                   <p className="text-neutral-600">
-                    2B-5D, R&I Park
+                    L-92, 2nd floor
                     <br />
-                    IIT Delhi, New Delhi – 110016
+                    Munirka, New Delhi - 110067
                   </p>
 
-                  <br/>
-                  
-                  
+                  <br />
+
                   <p className="text-neutral-600">
                     F-200, FF, Phase-I,
                     <br />
@@ -41,12 +40,8 @@ const ContactSection = () => {
                     Gurugram – 122017
                   </p>
                 </div>
-
-                
-                
               </div>
 
-             
               <div className="flex items-start">
                 <div className="text-primary text-xl mt-1 mr-4">
                   <Phone className="h-5 w-5" />
@@ -56,7 +51,7 @@ const ContactSection = () => {
                   <p className="text-neutral-600">
                     {/* Sales: +91 11 6926 8029
                     <br /> */}
-                     +91 11 6926 8029
+                    +91 11 6926 8029
                   </p>
                 </div>
               </div>
@@ -70,7 +65,7 @@ const ContactSection = () => {
                   <p className="text-neutral-600">
                     {/* Sales: support@mobiheal.in
                     <br /> */}
-                   support@mobiheal.in
+                    support@mobiheal.in
                   </p>
                 </div>
               </div>

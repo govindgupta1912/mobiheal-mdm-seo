@@ -1,93 +1,99 @@
-import { Button } from '../components/ui/button';
-import BlogPostCard from '../components/common/BlogPostCard';
-import { blogPosts } from '../lib/data';
-import { useEffect, useState } from 'react';
+import { Button } from "../components/ui/button";
+import BlogPostCard from "../components/common/BlogPostCard";
+import { blogPosts } from "../lib/data";
+import { useEffect, useState } from "react";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '../components/ui/tabs';
-import { Helmet } from 'react-helmet-async';
+} from "../components/ui/tabs";
+import { Helmet } from "react-helmet-async";
 
 const BlogCategories = [
-  { name: 'All', value: 'all' },
-  { name: 'Mobile Security', value: 'mobile-security' },
-  { name: 'MDM Best Practices', value: 'mdm-best-practices' },
-  { name: 'BYOD', value: 'byod' },
-  { name: 'Compliance', value: 'compliance' },
-  { name: 'Industry Trends', value: 'industry-trends' },
+  { name: "All", value: "all" },
+  { name: "Mobile Security", value: "mobile-security" },
+  { name: "MDM Best Practices", value: "mdm-best-practices" },
+  { name: "BYOD", value: "byod" },
+  { name: "Compliance", value: "compliance" },
+  { name: "Industry Trends", value: "industry-trends" },
 ];
 
 const Blog = () => {
   const siteUrl = import.meta.env.VITE_SITE_URL;
-  const [location, setLocation] = useState('');
-  const [tabValue, setTabValue] = useState('all');
+  const [location, setLocation] = useState("");
+  const [tabValue, setTabValue] = useState("all");
 
   useEffect(() => {
-    const fromURL = location.split('/')[3]?.toLowerCase() || 'all';
+    const fromURL = location.split("/")[3]?.toLowerCase() || "all";
     setTabValue(fromURL);
   }, [location]);
 
   const handleTabChange = (value) => {
     setTabValue(value);
-    if (value === 'all') {
-      setLocation('/blog');
+    if (value === "all") {
+      setLocation("/blog");
     } else {
       setLocation(`/blogs/category/${value}`);
     }
   };
 
   const getblogs = (category) => {
-    return category === 'all'
+    return category === "all"
       ? blogPosts
       : blogPosts.filter((study) => study.category.toLowerCase() === category);
   };
 
   return (
     <>
-     <Helmet>
-  <title>MobiHeal Insights Blog | Mobile Security Trends & How-Tos</title>
-  <meta
-    name="description"
-    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
-  />
-  <meta
-    name="keywords"
-    content="MDM blog, mobile security trends, zero trust, Android Enterprise blog, device management tips, threat landscape"
-  />
+      <Helmet>
+        <title>MobiHeal Insights Blog | Mobile Security Trends & How-Tos</title>
+        <meta
+          name="description"
+          content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+        />
+        <meta
+          name="keywords"
+          content="MDM blog, mobile security trends, zero trust, Android Enterprise blog, device management tips, threat landscape"
+        />
 
-  {/* Canonical */}
-  <link rel="canonical" href={`${siteUrl}/blog`} />
+        {/* Canonical */}
+        <link rel="canonical" href={`${siteUrl}/blog`} />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={`${siteUrl}/blog`} />
-  <meta property="og:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
-  <meta
-    property="og:description"
-    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
-  />
-  <meta
-    property="og:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta property="og:image:alt" content="MobiHeal Insights Blog cover" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}/blog`} />
+        <meta
+          property="og:title"
+          content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos"
+        />
+        <meta
+          property="og:description"
+          content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+        />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta property="og:image:alt" content="MobiHeal Insights Blog cover" />
 
-  {/* Twitter / X */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content={`${siteUrl}/blog`} />
-  <meta name="twitter:title" content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos" />
-  <meta
-    name="twitter:description"
-    content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
-  />
-  <meta
-    name="twitter:image"
-    content={`${siteUrl}/assets/mobiheal_logo.webp`}
-  />
-  <meta name="twitter:image:alt" content="MobiHeal Insights Blog cover" />
-</Helmet>
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteUrl}/blog`} />
+        <meta
+          name="twitter:title"
+          content="MobiHeal Insights Blog | Mobile Security Trends & How-Tos"
+        />
+        <meta
+          name="twitter:description"
+          content="Actionable posts on Android Enterprise, Zero Trust, mobile threat landscape and MDM best practices from the MobiHeal research desk."
+        />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}/assets/mobiheal_logo.webp`}
+        />
+        <meta name="twitter:image:alt" content="MobiHeal Insights Blog cover" />
+      </Helmet>
 
       <section className="bg-gradient text-white py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -106,17 +112,9 @@ const Blog = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs value={tabValue} onValueChange={handleTabChange}>
-            <TabsList className="flex flex-wrap gap-3 mb-12">
+            <TabsList className="mx-auto flex flex-wrap w-fit justify-center gap-3 mb-12">
               {BlogCategories.map((cat) => (
-                <TabsTrigger
-                  key={cat.value}
-                  value={cat.value}
-                  className="px-4 py-2 rounded-full text-sm 
-                    bg-neutral-100 text-neutral-700 
-                    hover:bg-neutral-200 
-                    data-[state=active]:bg-primary 
-                    data-[state=active]:text-white 
-                    transition-colors duration-200">
+                <TabsTrigger key={cat.value} value={cat.value}>
                   {cat.name}
                 </TabsTrigger>
               ))}
