@@ -17,14 +17,10 @@ import {
   LifeBuoy,
 } from "lucide-react";
 
-// const faqCategories = [
-//   { name: "General", icon: "🔍", id: "general" },
-//   { name: "Features", icon: "⚙️", id: "features" },
-//   { name: "Security", icon: "🔒", id: "security" },
-//   { name: "Pricing", icon: "💰", id: "pricing" },
-//   { name: "Implementation", icon: "🚀", id: "implementation" },
-//   { name: "Support", icon: "🛟", id: "support" },
-// ];
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
 
 const faqCategories = [
   { name: "General", icon: Search, id: "general" },
@@ -36,7 +32,7 @@ const faqCategories = [
 ];
 
 const FAQ = () => {
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  //const siteUrl = import.meta.env.VITE_SITE_URL;
 
   const faqSchema = {
     "@context": "https://schema.org",

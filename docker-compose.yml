@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  react-ssr-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5175:5173"
+    environment:
+      - PORT=5173
+      - VITE_SITE_URL=https://mobiheal-mdm-seo-mgqj.vercel.app
+      - VITE_API_BASE_URL=https://devapp.mobiheal.in
+      - VITE_HELP_URL=https://dev.mobiheal.in/help-center-app
+      - VITE_SITE_NAME=MobiHeal
+
+    restart: unless-stopped
+
+    # Or load from file:
+    # env_file:
+    #   - .env.production

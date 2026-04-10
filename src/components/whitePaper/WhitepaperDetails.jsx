@@ -27,7 +27,10 @@ const formSchema = z.object({
   company: z.string().min(1, "Required"),
   users: z.string().optional(),
 });
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+import {
+  VITE_API_BASE_URL as API_URL,
+  VITE_HELP_URL as Help_URL,
+} from "@/config/env";
 const WhitepaperDetails = ({
   id,
   title,
@@ -105,7 +108,7 @@ const WhitepaperDetails = ({
       }
 
       toast.success(
-        "Form submitted successfully. Download will start shortly."
+        "Form submitted successfully. Download will start shortly.",
       );
 
       setTimeout(() => {

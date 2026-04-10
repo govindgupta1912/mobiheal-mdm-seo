@@ -6,6 +6,11 @@ import { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Helmet } from "react-helmet-async";
 
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
+
 const categories = [
   { label: "All Topics", value: "all" },
   { label: "Security", value: "security" },
@@ -15,7 +20,7 @@ const categories = [
 ];
 
 const Whitepapers = () => {
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  // const siteUrl = import.meta.env.VITE_SITE_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const [tabValue, setTabValue] = useState("all");

@@ -3,7 +3,9 @@ import mobisecLogo from "../../assets/Footer/MOBISEC_logo-footer.webp";
 import registerLogo from "../../assets/Footer/registered2.webp";
 import { Suspense } from "react";
 
-const Help_URL = import.meta.env.VITE_HELP_URL;
+//const Help_URL = import.meta.env.VITE_HELP_URL;
+
+import { VITE_HELP_URL as Help_URL } from "@/config/env";
 
 const Footer = () => {
   return (

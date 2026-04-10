@@ -19,8 +19,14 @@ import { Helmet } from "react-helmet-async";
 import mobihealLogo from "../assets/mobiheal_logo.webp"; // Adjust the path as necessary
 import { m } from "framer-motion";
 import { useEffect } from "react";
+
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
+
 const Features = () => {
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  //const siteUrl = import.meta.env.VITE_SITE_URL;
 
   const location = useLocation();
 

@@ -10,6 +10,11 @@ import { Button } from "../components/ui/button";
 import { caseStudies } from "../lib/data";
 import { Helmet } from "react-helmet-async";
 
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
+
 const categories = [
   { label: "All Industries", value: "all" },
   { label: "Retail", value: "retail" },
@@ -20,7 +25,7 @@ const categories = [
 ];
 
 const CaseStudies = () => {
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  // const siteUrl = import.meta.env.VITE_SITE_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const [tabValue, setTabValue] = useState("all");

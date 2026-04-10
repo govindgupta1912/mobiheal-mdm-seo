@@ -10,8 +10,14 @@ import {
 } from "../../components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
 import logo from "../../assets/mobiheal_logo.webp"; // Adjust the path as necessary
-const API_URL = import.meta.env.VITE_API_BASE_URL;
-const Help_URL = import.meta.env.VITE_HELP_URL;
+// const API_URL = import.meta.env.VITE_API_BASE_URL;
+// const Help_URL = import.meta.env.VITE_HELP_URL;
+
+// ✅ New — just change the import, variable names stay the same
+import {
+  VITE_API_BASE_URL as API_URL,
+  VITE_HELP_URL as Help_URL,
+} from "@/config/env";
 
 const Header = () => {
   const location = useLocation().pathname;

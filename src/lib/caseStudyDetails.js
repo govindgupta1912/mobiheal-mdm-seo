@@ -12,7 +12,12 @@ import cs10 from "../assets/caseStudies/cs10.webp";
 import cs11 from "../assets/caseStudies/cs11.webp";
 import cs12 from "../assets/caseStudies/cs12.webp";
 
-const siteUrl = import.meta.env.VITE_SITE_URL;
+//const siteUrl = import.meta.env.VITE_SITE_URL;
+
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
 
 export const caseStudyDetails = {
   "preventing-mobile-fraud-banking": {

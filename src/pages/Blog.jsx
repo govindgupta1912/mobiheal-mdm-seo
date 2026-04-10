@@ -10,6 +10,11 @@ import {
 } from "../components/ui/tabs";
 import { Helmet } from "react-helmet-async";
 
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
+
 const BlogCategories = [
   { name: "All", value: "all" },
   { name: "Mobile Security", value: "mobile-security" },
@@ -20,7 +25,7 @@ const BlogCategories = [
 ];
 
 const Blog = () => {
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  //const siteUrl = import.meta.env.VITE_SITE_URL;
   const [location, setLocation] = useState("");
   const [tabValue, setTabValue] = useState("all");
 

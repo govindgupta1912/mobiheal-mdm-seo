@@ -8,7 +8,8 @@ import blog7 from "../../assets/BlogImages/blog7.webp";
 import blog8 from "../../assets/BlogImages/blog8.webp";
 import blog9 from "../../assets/BlogImages/blog9.webp";
 
-const siteUrl = import.meta.env.VITE_SITE_URL;
+//const siteUrl = import.meta.env.VITE_SITE_URL;
+import { VITE_SITE_URL as siteUrl } from "@/config/env";
 
 export const blogs = [
   {

@@ -35,7 +35,10 @@ const formSchema = z.object({
     message: "You must agree to the privacy policy.",
   }),
 });
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+import {
+  VITE_API_BASE_URL as API_URL,
+  VITE_HELP_URL as Help_URL,
+} from "@/config/env";
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [offset, setOffset] = useState(0);

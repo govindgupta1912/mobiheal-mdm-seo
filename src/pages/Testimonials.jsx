@@ -10,9 +10,15 @@ import {
 } from "../components/ui/tabs";
 import { Helmet } from "react-helmet-async";
 
+import {
+  VITE_SITE_URL as siteUrl,
+  VITE_API_BASE_URL as API_URL,
+} from "@/config/env";
+
 const Testimonials = () => {
   // Group testimonials by industry
-  const siteUrl = import.meta.env.VITE_SITE_URL;
+  // const siteUrl = import.meta.env.VITE_SITE_URL;
+
   const industries = [
     "All",
     "Finance",
