@@ -899,7 +899,7 @@ export const faqs = [
     category: "features",
     question: "What reporting and analytics are available?",
     answer:
-      "    • Real-time device health dashboard (compliance, connectivity, OS version), Usage reports (app usage durations), Security audit logs (policy violations, remote actions), Custom alerts: Email/SMS triggers on critical events",
+      "    Real-time device health dashboard (compliance, connectivity, OS version), Usage reports (app usage durations), Security audit logs (policy violations, remote actions), Custom alerts: Email/SMS triggers on critical events.",
   },
 
   // Security FAQs
@@ -934,13 +934,13 @@ export const faqs = [
     category: "pricing",
     question: "How is licensing and pricing structured?",
     answer:
-      "   Per-device, per-month subscription (billed annually), Volume discounts starting at 101 devices onwards ,Enterprise term discounts for 24- and 36-month commitment, Add-on modules (Managed SOC integration, advanced analytics) available as separate SKUs",
+      "   Per-device, per-month subscription (billed annually), Volume discounts starting at 101 devices onwards ,Enterprise term discounts for 24- and 36-month commitment, Add-on modules (Managed SOC integration, advanced analytics) available as separate SKUs.",
   },
   {
     category: "pricing",
     question: "Is there a free trial available?",
     answer:
-      "Yes, a 14-day free trial is available with full access for up to 25 devices and no credit card required.",
+      "Yes, a 14-day free trial is available, allowing you to explore all core MDM features with full access for up to 2 devices. During the trial, you can use capabilities such as Android Enterprise, application and permission management, kiosk mode, BYOD support, remote lock & wipe, and audit logs.",
   },
   {
     category: "pricing",

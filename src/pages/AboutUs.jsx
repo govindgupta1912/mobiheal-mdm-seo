@@ -229,7 +229,7 @@ export default function AboutUsPage() {
             </p>
             <p className="flex items-center gap-2 mb-4">
               <MapPin className="text-primary" size={20} />
-              2B-5D, R&I Park, IIT Delhi, New Delhi – 110016, India
+              L-92, 2nd floor, Munirka, New Delhi - 110067, India
             </p>
             <p className="flex items-center gap-2 mb-4">
               <Phone className="text-primary" size={20} />

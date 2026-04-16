@@ -1,15 +1,9 @@
 import { Link } from "react-router";
 
-const BlogPostCard = ({
-  title,
-  excerpt,
-  date,
-  imageSrc,
-  href,
-}) => {
+const BlogPostCard = ({ title, excerpt, date, imageSrc, href }) => {
   return (
     <Link to={href}>
-      <div className="group block bg-white rounded-lg overflow-hidden  shadow-lg hover:shadow-xl transition-shadow ease-in-out">
+      <div className="group block bg-white h-full rounded-lg overflow-hidden  shadow-lg hover:shadow-xl transition-shadow ease-in-out">
         <div className="p-5">
           <div className="text-sm text-neutral-500 mb-2">{date}</div>
           <h4 className="text-lg font-semibold mb-2 text-neutral-800 line-2 group-hover:text-primary transition-colors">

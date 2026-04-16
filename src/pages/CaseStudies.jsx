@@ -229,8 +229,16 @@ const CaseStudies = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild>
-              <Link to="/contact">Schedule a Consultation</Link>
+              <a
+                href="https://calendly.com/mobiheal-demo/booking"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Request Demo"
+              >
+                Schedule a Consultation
+              </a>
             </Button>
+
             <Button
               size="lg"
               variant="outline"

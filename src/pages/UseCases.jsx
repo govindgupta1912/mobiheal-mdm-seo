@@ -336,12 +336,15 @@ const UseCases = () => {
             for your specific business needs.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button
-              size="lg"
-              className="hover:scale-95 transition-transform"
-              asChild
-            >
-              <Link to="/contact">Schedule a Consultation</Link>
+            <Button size="lg" asChild>
+              <a
+                href="https://calendly.com/mobiheal-demo/booking"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Request Demo"
+              >
+                Schedule a Consultation
+              </a>
             </Button>
             <Button
               size="lg"

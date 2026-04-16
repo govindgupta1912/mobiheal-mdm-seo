@@ -205,7 +205,7 @@ const Features = () => {
               <div
                 id={feature.id}
                 key={feature.id}
-                className=" hover:shadow-lg transition-shadow duration-300"
+                className=" hover:shadow-lg transition-shadow duration-300 scroll-mt-24"
               >
                 <FeatureCard
                   icon={feature.icon}

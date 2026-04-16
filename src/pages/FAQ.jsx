@@ -144,7 +144,7 @@ const FAQ = () => {
             name: "Is there a free trial available?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, a 14-day free trial is available with full access for up to 25 devices and no credit card required.",
+              text: "Yes, a 14-day free trial is available, allowing you to explore all core MDM features with full access for up to 2 devices. During the trial, you can use capabilities such as Android Enterprise, application and permission management, kiosk mode, BYOD support, remote lock & wipe, and audit logs.",
             },
           },
           {
@@ -318,7 +318,11 @@ const FAQ = () => {
 
             <div className="lg:col-span-3">
               {faqCategories.map((category) => (
-                <div key={category.id} id={category.id} className="mb-16">
+                <div
+                  key={category.id}
+                  id={category.id}
+                  className="mb-16 scroll-mt-24"
+                >
                   <h2 className="text-2xl font-bold mb-6 text-neutral-800 flex items-center">
                     {/* <span className="mr-2 text-2xl">{category.icon}</span> */}
                     <category.icon size={24} className="mr-2 text-primary" />
@@ -344,13 +348,13 @@ const FAQ = () => {
                             {faq.question}
                           </AccordionTrigger>
                           <AccordionContent
-                            className="px-5 pb-4 pt-0 text-neutral-600"
+                            className="px-5 pb-4 pt-0 text-neutral-800"
                             itemScope
                             itemProp="acceptedAnswer"
                             itemType="https://schema.org/Answer"
                           >
                             <div itemProp="text">
-                              <p>{faq.answer}</p>
+                              <p className="text-gray-700">{faq.answer}</p>
                               {faq.link && (
                                 <div className="mt-2">
                                   <Link
